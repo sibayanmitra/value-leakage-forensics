@@ -1,0 +1,124 @@
+"""Phase 3: is 'this candidate number is on the side I want' linearly represented?
+
+The design point (project plan Sec 7.1): "estimate > T" and "which side is good" are each
+trivially present in the tokens. The interesting variable is their XOR:
+
+    favoured = (estimate > T) == (condition is above_good)
+
+A single linear probe trained on BOTH conditions pooled can only succeed if the model has
+computed that conjunction. If it merely encodes the two descriptive facts separately, a linear
+readout cannot combine them. So probe accuracy on pooled data is the evidence for a
+valence-like variable, and the control probes below are what make that inference safe.
+
+Probes trained (all logistic regression, leave-one-question-out CV):
+  1. favoured   - the main probe (XOR)
+  2. above_T    - descriptive control; expected to work, tells us where arithmetic lives
+  3. condition  - descriptive control; it is in the prompt, expected to work
+  4. NULL shuffled labels - must be at chance
+  5. NULL neutral_T with pseudo-labels - if this matches (1), the probe reads arithmetic
+     rather than valence, and H-valence is rejected
+"""
+import argparse, json, os, sys, time
+from pathlib import Path
+os.environ.setdefault("CUDA_VISIBLE_DEVICES", os.environ.get("VLF_GPU","0"))
+import numpy as np, pandas as pd, torch
+from transformers import AutoModelForCausalLM, AutoTokenizer
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+MODEL = "Qwen/Qwen3.5-9B"
+
+
+def collect(df, tok, model, layers, max_len=13000):
+    """Residual stream at the last digit token of each in-CoT estimate.
+
+    max_len must cover the WHOLE trace. The first run used 8000 and silently lost
+    51% of the enumerated estimates (89% of 9B traces are longer; median 11820
+    tokens). That loss is not random: it removes exactly the LATE-CoT estimates,
+    which is where E1d says the bias lives (answer-predictive AUROC climbs 0.576 ->
+    0.957 across the CoT). A probe fit on the surviving early estimates is fit on
+    the region where there is nothing yet to find. Cap generously.
+
+    Also records `rollout` (so token clustering is visible) and `frac` (position in
+    the CoT, 0-1) so the probe can be evaluated on late estimates specifically.
+    """
+    rows, acts, n_oob = [], [], [0]
+    inner = model.model.language_model if hasattr(model.model,"language_model") else model.model
+    store = {}
+    hooks = [inner.layers[L].register_forward_hook(
+        lambda m,i,o,L=L: store.__setitem__(L, (o[0] if isinstance(o,tuple) else o).detach()))
+        for L in layers]
+    try:
+        for n,(_,r) in enumerate(df.iterrows()):
+            if not r.estimates: continue
+            enc = tok(r.reasoning[:max_len*4], return_tensors="pt",
+                      return_offsets_mapping=True, truncation=True, max_length=max_len)
+            offmap = enc.pop("offset_mapping")[0].tolist()
+            enc = {k:v.to("cuda:0") for k,v in enc.items()}
+            with torch.no_grad(): model(**enc)
+            n_tok = len(offmap)
+            for est, coff in zip(r.estimates, r.offsets):
+                if coff is None or coff < 0: continue
+                ti = next((i for i,(a,b) in enumerate(offmap) if a<=coff<b), None)
+                if ti is None:
+                    n_oob[0] += 1
+                    continue
+                rows.append({"question":r.question,"direction":r.direction,
+                             "threshold":r.threshold,"est":int(est),
+                             "rollout":int(n), "frac":ti/max(n_tok-1,1)})
+                acts.append(np.stack([store[L][0,ti].float().cpu().numpy() for L in layers]))
+            if n%20==0: print(f"  {n}/{len(df)} rollouts, {len(rows)} tokens", flush=True)
+    finally:
+        for h in hooks: h.remove()
+    print(f"  estimates outside the {max_len}-token window: {n_oob[0]}", flush=True)
+    return pd.DataFrame(rows), (np.stack(acts) if acts else np.zeros((0,len(layers),1)))
+
+
+def run_probes(meta, X, layers, out):
+    from sklearn.linear_model import LogisticRegression
+    from sklearn.preprocessing import StandardScaler
+    from sklearn.metrics import roc_auc_score
+    meta = meta.reset_index(drop=True)
+    meta["above_T"] = (meta.est > meta.threshold).astype(int)
+    meta["cond"]    = (meta.direction=="above_good").astype(int)
+    meta["favoured"]= (meta.above_T == meta.cond).astype(int)
+    rng = np.random.default_rng(0)
+    meta["shuffled"]= rng.permutation(meta.favoured.values)
+    res=[]
+    for li,L in enumerate(layers):
+        Xl = X[:,li,:]
+        for target in ["favoured","above_T","cond","shuffled"]:
+            y = meta[target].values
+            aucs=[]
+            for q in meta.question.unique():
+                tr, te = meta.question!=q, meta.question==q
+                if len(np.unique(y[tr]))<2 or len(np.unique(y[te]))<2: continue
+                sc=StandardScaler().fit(Xl[tr])
+                clf=LogisticRegression(max_iter=2000,C=0.1).fit(sc.transform(Xl[tr]), y[tr])
+                aucs.append(roc_auc_score(y[te], clf.predict_proba(sc.transform(Xl[te]))[:,1]))
+            if aucs: res.append({"layer":L,"target":target,"auc":float(np.mean(aucs)),
+                                 "n_folds":len(aucs),"n":int(len(y))})
+        print(f"  layer {L} done", flush=True)
+    pd.DataFrame(res).to_csv(out, index=False)
+    return pd.DataFrame(res)
+
+
+def main():
+    ap=argparse.ArgumentParser()
+    ap.add_argument("--rollouts", required=True)
+    ap.add_argument("--out", default="results/probe_results.csv")
+    ap.add_argument("--max-len", type=int, default=13000)
+    a=ap.parse_args()
+    df=pd.read_json(a.rollouts, lines=True)
+    tok=AutoTokenizer.from_pretrained(MODEL)
+    model=AutoModelForCausalLM.from_pretrained(MODEL, dtype=torch.bfloat16,
+                                               device_map="cuda:0").eval()
+    layers=list(range(0,32,4))+[29,30,31]
+    print(f"collecting activations at {len(layers)} layers", flush=True)
+    meta,X=collect(df,tok,model,layers,max_len=a.max_len)
+    print(f"{len(meta)} estimate tokens", flush=True)
+    np.save(a.out.replace(".csv","_X.npy"), X)
+    meta.to_json(a.out.replace(".csv","_meta.jsonl"),orient="records",lines=True)
+    r=run_probes(meta,X,layers,a.out)
+    print(r.pivot(index="layer",columns="target",values="auc").round(3).to_string())
+
+if __name__=="__main__": main()

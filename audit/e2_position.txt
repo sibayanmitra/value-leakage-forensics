@@ -1,0 +1,24 @@
+==============================================================================
+WHERE THE AIM SENTENCE SITS
+==============================================================================
+  n=47 sources   relative position (chars): median 0.236  IQR 0.172-0.416  min 0.010 max 0.677
+  by sentence index:              median 0.335  IQR 0.219-0.624
+
+==============================================================================
+DOES POSITION PREDICT HOW MUCH THE SENTENCE MATTERS?
+==============================================================================
+  corr(position, aim effect) = -0.272 [-0.524, +0.060]  n=47
+  aim effect, EARLY half (before median) +0.123 [+0.015, +0.236]  n=24
+  aim effect, LATE half                  +0.054 [-0.028, +0.138]  n=23
+
+  corr(position, original-nosent) = -0.309  n=47
+  original - nosent, EARLY half           +0.086 [+0.028, +0.149]  n=24
+  original - nosent, LATE half            -0.004 [-0.060, +0.050]  n=23
+
+==============================================================================
+INTERACTION: is the aim effect really different in T-restating sentences?
+==============================================================================
+  (aim effect | no T restated) - (aim effect | T restated)
+    = +0.155 [-0.047, +0.352]   n=19 sources with all four cells
+  -> CI spans zero: the two strata are NOT shown to differ. Report the split as
+     'the effect is not explained by number-restatement', not as an interaction.

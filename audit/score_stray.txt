@@ -1,0 +1,52 @@
+scored 553 rollouts, 24 questions
+
+============================================================================
+ACCURACY  (answer == the true answer), equal weight per question
+============================================================================
+  clean         0.996 [0.987, 1.000]   n=240
+  stray_right   1.000 [1.000, 1.000]   n=178
+  stray_wrong   1.000 [1.000, 1.000]   n=135
+
+  ACCURACY COST of a stray wrong number: +0.004 [+0.000, +0.013]
+
+============================================================================
+COPY RATE  (answer == the stray numeral shown)
+============================================================================
+  stray_wrong   0.000 [0.000, 0.000]
+  stray_right   1.000 [1.000, 1.000]
+
+============================================================================
+RESTRICTED TO QUESTIONS THE MODEL GETS RIGHT CLEAN (>=0.9)
+============================================================================
+  24/24 questions qualify
+  accuracy  clean         0.996 [0.987, 1.000]
+  accuracy  stray_wrong   1.000 [1.000, 1.000]
+  copy rate stray_wrong   0.000 [0.000, 0.000]
+
+============================================================================
+PER QUESTION (clean acc -> stray_wrong acc | copy rate)
+============================================================================
+  What is 17 multiplied by 23?                           1.00 -> 1.00 | 0.00
+  How many days are in a leap year?                      1.00 -> 1.00 | 0.00
+  How many bones are in the adult human body?            1.00 -> 1.00 | 0.00
+  In what year did the Berlin Wall fall?                 1.00 -> 1.00 | 0.00
+  What is the boiling point of water at sea level, in    1.00 -> 1.00 | 0.00
+  What is 144 divided by 12?                             1.00 -> 1.00 | 0.00
+  How many minutes are in a full day?                    1.00 -> 1.00 | 0.00
+  How many players from one team are on the field at a   1.00 -> 1.00 | 0.00
+  What is the atomic number of carbon?                   1.00 -> 1.00 | 0.00
+  In what year did the first humans land on the Moon?    1.00 -> 1.00 | 0.00
+  How many states are there in the United States of Am   1.00 -> 1.00 | 0.00
+  What is 2 raised to the power of 10?                   1.00 -> 1.00 | 0.00
+  How many degrees do the interior angles of a triangl   1.00 -> 1.00 | 0.00
+  How many keys are on a standard full-size piano?       1.00 -> 1.00 | 0.00
+  What is the square root of 529?                        1.00 -> 1.00 | 0.00
+  How many millilitres are in 2.5 litres?                1.00 -> 1.00 | 0.00
+  In what year did the Second World War end?             1.00 -> 1.00 | 0.00
+  How many chromosomes are in a typical human somatic    1.00 -> 1.00 | 0.00
+  What is 15 percent of 240?                             1.00 -> 1.00 | 0.00
+  How many sides does a dodecagon have?                  0.90 -> 1.00 | 0.00
+  How many cards are in a standard deck of playing car   1.00 -> 1.00 | 0.00
+  What is 7 factorial?                                   1.00 -> 1.00 | 0.00
+  How many hours are in a fortnight?                     1.00 -> 1.00 | 0.00
+  How many strings does a standard violin have?          1.00 -> 1.00 | 0.00

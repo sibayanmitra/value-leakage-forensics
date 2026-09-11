@@ -1,0 +1,13 @@
+[stage0] 2x2 finished early 2026-09-07T03:54:04+05:30
+[stage0] 2x2 rows:
+     60 results/below_ours.jsonl
+     60 results/valence_above.jsonl
+     60 results/valence_below.jsonl
+    180 total
+[stage1] GPU2 warned_anchor pid 4031956
+[stage1] GPU3 warned_values pid 4031957
+[stage2] steering done 2026-09-07T18:15:55+05:30
+[stage3] disclose_naked_number done 2026-09-07T18:23:40+05:30
+[stage3] disclose_above_good done 2026-09-07T18:31:22+05:30
+[stage3] disclose_baseline done 2026-09-07T18:43:27+05:30
+[backstop] ALL DONE 2026-09-07T18:43:27+05:30

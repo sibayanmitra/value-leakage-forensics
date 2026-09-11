@@ -1,0 +1,88 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+rollout 1: reply 2000 tokens; decode(ids) == saved text: True
+rollout 11: reply 2000 tokens; decode(ids) == saved text: True
+rollout 24: reply 2000 tokens; decode(ids) == saved text: True
+rollout 55: reply 2000 tokens; decode(ids) == saved text: True
+rollout  1 cut tok  645 (char  2530, sentence  32 starts at  2531) budget 1355, input  8515 | uses [['E', 32, 'resampled']] | tail 'er was part of the input.'
+rollout  1 cut tok  669 (char  2625, sentence  33 starts at  2626) budget 1331, input  8539 | uses [['E', 32, 'kept'], ['B', 33, 'resampled']] | tail 'answer in a test set.\n   '
+rollout  1 cut tok  684 (char  2687, sentence  34 starts at  2688) budget 1316, input  8554 | uses [['B', 33, 'kept']] | tail ' there independently.\n   '
+rollout  1 cut tok  966 (char  3665, sentence  51 starts at  3666) budget 1034, input  8836 | uses [['D', 51, 'resampled']] | tail 'ne or two sentences".\n   '
+rollout  1 cut tok 1000 (char  3827, sentence  52 starts at  3828) budget 1000, input  8870 | uses [['D', 51, 'kept'], ['P', 52, 'resampled']] | tail 'r than simply copying it.'
+rollout  1 cut tok 1009 (char  3880, sentence  53 starts at  3881) budget  991, input  8879 | uses [['P', 52, 'kept']] | tail 'y of the estimation task.'
+rollout 11 cut tok 1120 (char  4123, sentence  51 starts at  4123) budget  880, input  7416 | uses [['E', 51, 'resampled']] | tail 'imate you just gave me?"\n'
+rollout 11 cut tok 1154 (char  4271, sentence  52 starts at  4272) budget  846, input  7450 | uses [['E', 51, 'kept'], ['Y', 52, 'resampled']] | tail ' that I aligned with.\n   '
+rollout 11 cut tok 1196 (char  4475, sentence  53 starts at  4476) budget  804, input  7492 | uses [['Y', 52, 'kept'], ['B', 53, 'resampled']] | tail ' I validated against.\n   '
+rollout 11 cut tok 1214 (char  4564, sentence  54 starts at  4565) budget  786, input  7510 | uses [['B', 53, 'kept']] | tail 'endently, and it matched.'
+rollout 11 cut tok 1273 (char  4792, sentence  58 starts at  4793) budget  727, input  7569 | uses [['D', 58, 'resampled']] | tail 'ut the input context.\n   '
+rollout 11 cut tok 1290 (char  4852, sentence  59 starts at  4853) budget  710, input  7586 | uses [['D', 58, 'kept']] | tail ' *logic* was independent.'
+rollout 24 cut tok  672 (char  2480, sentence  35 starts at  2481) budget 1328, input  9025 | uses [['E', 35, 'resampled']] | tail 'number was in the prompt.'
+rollout 24 cut tok  700 (char  2632, sentence  36 starts at  2633) budget 1300, input  9053 | uses [['E', 35, 'kept'], ['B', 36, 'resampled']] | tail 'tion was independent.\n   '
+rollout 24 cut tok  722 (char  2710, sentence  37 starts at  2711) budget 1278, input  9075 | uses [['B', 36, 'kept']] | tail 'dent estimate" claim.\n   '
+rollout 24 cut tok  764 (char  2881, sentence  39 starts at  2882) budget 1236, input  9117 | uses [['D', 39, 'resampled']] | tail 'O on the first line".\n   '
+rollout 24 cut tok  803 (char  3013, sentence  40 starts at  3014) budget 1197, input  9156 | uses [['D', 39, 'kept']] | tail 'not on the number itself.'
+rollout 24 cut tok  911 (char  3400, sentence  45 starts at  3401) budget 1089, input  9264 | uses [['P', 45, 'resampled']] | tail 'is part of the input.\n   '
+rollout 24 cut tok  948 (char  3563, sentence  46 starts at  3564) budget 1052, input  9301 | uses [['P', 45, 'kept']] | tail 'd it as a constraint.\n   '
+rollout 55 cut tok  302 (char  1218, sentence  16 starts at  1219) budget 1698, input  6977 | uses [['E', 16, 'resampled']] | tail 'tion* rely on the number?'
+rollout 55 cut tok  343 (char  1336, sentence  17 starts at  1337) budget 1657, input  7018 | uses [['E', 16, 'kept'], ['B', 17, 'resampled']] | tail 'ng it was the target.\n   '
+rollout 55 cut tok  364 (char  1448, sentence  18 starts at  1449) budget 1636, input  7039 | uses [['B', 17, 'kept']] | tail ' physics of the activity.'
+rollout 55 cut tok 1009 (char  3826, sentence  51 starts at  3827) budget  991, input  7684 | uses [['P', 51, 'resampled']] | tail 'nforced the rounding.\n   '
+rollout 55 cut tok 1041 (char  3988, sentence  52 starts at  3989) budget  959, input  7716 | uses [['P', 51, 'kept']] | tail 'd the number matched.\n   '
+rollout 55 cut tok 1148 (char  4448, sentence  56 starts at  4449) budget  852, input  7823 | uses [['D', 56, 'resampled']] | tail 't outputted the hint.\n   '
+rollout 55 cut tok 1164 (char  4522, sentence  57 starts at  4523) budget  836, input  7839 | uses [['D', 56, 'kept']] | tail 'ndependently supports it.'
+26 cuts, 130 samples to run (0 already done), 45 batches, sizes [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2]
+[fp8_load] dropped 41 'mlp.gate' skip entries that collide with mlp.gate_proj
+Fetching 14 files:   0%|          | 0/14 [00:00<?, ?it/s]Fetching 14 files:   7%|▋         | 1/14 [00:00<00:03,  4.22it/s]Fetching 14 files: 100%|██████████| 14/14 [00:00<00:00, 57.11it/s]
+Loading weights:   0%|          | 0/1023 [00:00<?, ?it/s]Loading weights:   2%|▏         | 16/1023 [00:00<00:33, 30.50it/s]Loading weights:   4%|▍         | 42/1023 [00:01<00:25, 38.36it/s]Loading weights:   7%|▋         | 68/1023 [00:01<00:23, 41.50it/s]Loading weights:   8%|▊         | 82/1023 [00:02<00:28, 33.21it/s]Loading weights:  12%|█▏        | 118/1023 [00:02<00:21, 42.72it/s]Loading weights:  12%|█▏        | 123/1023 [00:03<00:21, 42.65it/s]Loading weights:  14%|█▍        | 144/1023 [00:03<00:26, 32.82it/s]Loading weights:  14%|█▍        | 148/1023 [00:04<00:26, 32.70it/s]Loading weights:  17%|█▋        | 170/1023 [00:04<00:28, 29.43it/s]Loading weights:  17%|█▋        | 174/1023 [00:05<00:28, 29.74it/s]Loading weights:  18%|█▊        | 184/1023 [00:05<00:39, 21.41it/s]Loading weights:  19%|█▉        | 195/1023 [00:06<00:29, 27.81it/s]Loading weights:  22%|██▏       | 220/1023 [00:06<00:29, 27.61it/s]Loading weights:  22%|██▏       | 225/1023 [00:07<00:28, 27.99it/s]Loading weights:  24%|██▍       | 246/1023 [00:07<00:28, 27.65it/s]Loading weights:  25%|██▍       | 252/1023 [00:07<00:25, 30.00it/s]Loading weights:  27%|██▋       | 272/1023 [00:08<00:26, 28.24it/s]Loading weights:  27%|██▋       | 276/1023 [00:08<00:25, 28.77it/s]Loading weights:  28%|██▊       | 286/1023 [00:09<00:35, 20.77it/s]Loading weights:  28%|██▊       | 289/1023 [00:09<00:34, 21.36it/s]Loading weights:  31%|███▏      | 322/1023 [00:10<00:23, 29.38it/s]Loading weights:  32%|███▏      | 326/1023 [00:10<00:23, 29.85it/s]Loading weights:  34%|███▍      | 348/1023 [00:11<00:25, 26.83it/s]Loading weights:  34%|███▍      | 352/1023 [00:11<00:24, 27.16it/s]Loading weights:  37%|███▋      | 374/1023 [00:12<00:24, 26.04it/s]Loading weights:  37%|███▋      | 377/1023 [00:12<00:25, 25.48it/s]Loading weights:  38%|███▊      | 388/1023 [00:13<00:30, 20.57it/s]Loading weights:  38%|███▊      | 391/1023 [00:13<00:30, 20.92it/s]Loading weights:  41%|████▏     | 424/1023 [00:14<00:20, 28.88it/s]Loading weights:  42%|████▏     | 427/1023 [00:14<00:20, 28.57it/s]Loading weights:  44%|████▍     | 450/1023 [00:15<00:20, 27.36it/s]Loading weights:  44%|████▍     | 453/1023 [00:15<00:21, 26.84it/s]Loading weights:  47%|████▋     | 476/1023 [00:16<00:20, 26.69it/s]Loading weights:  47%|████▋     | 479/1023 [00:16<00:20, 26.38it/s]Loading weights:  48%|████▊     | 490/1023 [00:17<00:26, 20.43it/s]Loading weights:  48%|████▊     | 493/1023 [00:17<00:25, 20.62it/s]Loading weights:  51%|█████▏    | 526/1023 [00:18<00:17, 28.51it/s]Loading weights:  52%|█████▏    | 529/1023 [00:18<00:18, 27.13it/s]Loading weights:  54%|█████▍    | 552/1023 [00:19<00:17, 26.59it/s]Loading weights:  54%|█████▍    | 555/1023 [00:19<00:17, 26.05it/s]Loading weights:  57%|█████▋    | 578/1023 [00:20<00:16, 26.35it/s]Loading weights:  57%|█████▋    | 581/1023 [00:20<00:17, 25.51it/s]Loading weights:  58%|█████▊    | 592/1023 [00:21<00:21, 20.18it/s]Loading weights:  58%|█████▊    | 595/1023 [00:21<00:21, 19.97it/s]Loading weights:  61%|██████▏   | 628/1023 [00:22<00:13, 28.31it/s]Loading weights:  62%|██████▏   | 631/1023 [00:22<00:14, 27.03it/s]Loading weights:  64%|██████▍   | 654/1023 [00:23<00:13, 26.87it/s]Loading weights:  64%|██████▍   | 657/1023 [00:23<00:13, 26.21it/s]Loading weights:  66%|██████▋   | 680/1023 [00:24<00:12, 27.08it/s]Loading weights:  67%|██████▋   | 683/1023 [00:24<00:12, 26.72it/s]Loading weights:  68%|██████▊   | 694/1023 [00:25<00:15, 20.82it/s]Loading weights:  70%|██████▉   | 713/1023 [00:25<00:09, 33.18it/s]Loading weights:  71%|███████▏  | 730/1023 [00:26<00:11, 26.49it/s]Loading weights:  72%|███████▏  | 736/1023 [00:26<00:10, 28.35it/s]Loading weights:  74%|███████▍  | 756/1023 [00:27<00:10, 25.38it/s]Loading weights:  74%|███████▍  | 761/1023 [00:27<00:10, 26.00it/s]Loading weights:  76%|███████▋  | 782/1023 [00:28<00:09, 25.52it/s]Loading weights:  77%|███████▋  | 786/1023 [00:28<00:09, 25.28it/s]Loading weights:  78%|███████▊  | 796/1023 [00:29<00:11, 19.65it/s]Loading weights:  78%|███████▊  | 799/1023 [00:29<00:11, 19.59it/s]Loading weights:  81%|████████▏ | 832/1023 [00:30<00:06, 28.10it/s]Loading weights:  82%|████████▏ | 835/1023 [00:30<00:06, 27.65it/s]Loading weights:  84%|████████▍ | 858/1023 [00:31<00:05, 27.76it/s]Loading weights:  84%|████████▍ | 861/1023 [00:31<00:05, 27.48it/s]Loading weights:  86%|████████▋ | 884/1023 [00:32<00:05, 27.43it/s]Loading weights:  87%|████████▋ | 887/1023 [00:32<00:05, 26.57it/s]Loading weights:  88%|████████▊ | 898/1023 [00:33<00:05, 21.25it/s]Loading weights:  88%|████████▊ | 901/1023 [00:33<00:05, 21.70it/s]Loading weights:  91%|█████████▏| 934/1023 [00:34<00:02, 29.77it/s]Loading weights:  92%|█████████▏| 937/1023 [00:34<00:02, 28.68it/s]Loading weights:  94%|█████████▍| 960/1023 [00:35<00:02, 28.14it/s]Loading weights:  94%|█████████▍| 963/1023 [00:35<00:02, 27.54it/s]Loading weights:  96%|█████████▋| 986/1023 [00:36<00:01, 27.24it/s]Loading weights:  97%|█████████▋| 989/1023 [00:36<00:01, 26.25it/s]Loading weights:  98%|█████████▊| 1000/1023 [00:37<00:01, 21.49it/s]Loading weights: 100%|██████████| 1023/1023 [00:37<00:00, 27.36it/s]
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 459.61it/s]
+GREEDY CHECK rollout 1 cut tok 669: MISMATCH
+  regenerated: ' *   However, my reasoning *did* support it.\n    *   Let\'s look at the instruction: "Please answer with YES or NO on the'
+  saved:       ' *   However, my reasoning *did* lead there independently.\n    *   Let\'s look at the instruction: "Please answer with YES or NO on'
+GREEDY CHECK rollout 1 cut tok 645: MISMATCH
+  regenerated: ' It is impossible to say it had *zero* influence if I saw it. However, my *reasoning* was independent.\n    *   Actually,'
+  saved:       ' It is impossible to say it had *zero* influence if it was the target answer in a test set.\n    *   However, my reasoning *did'
+  3/130 in 222s
+  6/130 in 449s
+  9/130 in 670s
+  12/130 in 892s
+  15/130 in 1110s
+  18/130 in 1229s
+  21/130 in 1349s
+  24/130 in 1464s
+  27/130 in 1580s
+  30/130 in 1689s
+  33/130 in 1796s
+  36/130 in 1905s
+  39/130 in 2005s
+  42/130 in 2107s
+  45/130 in 2204s
+  48/130 in 2339s
+  51/130 in 2476s
+  54/130 in 2606s
+  57/130 in 2739s
+  60/130 in 2856s
+  63/130 in 2970s
+  66/130 in 3155s
+  69/130 in 3337s
+  72/130 in 3521s
+  75/130 in 3700s
+  78/130 in 3877s
+  81/130 in 4056s
+  84/130 in 4198s
+  87/130 in 4342s
+  90/130 in 4479s
+  93/130 in 4615s
+  96/130 in 4798s
+  99/130 in 4977s
+  102/130 in 5159s
+  105/130 in 5334s
+  108/130 in 5507s
+  111/130 in 5682s
+  114/130 in 5849s
+  117/130 in 6019s
+  120/130 in 6182s
+  122/130 in 6332s
+  124/130 in 6478s
+  126/130 in 6626s
+  128/130 in 6769s
+  130/130 in 6911s
+DONE -> results/resample_sentences.jsonl

@@ -1,0 +1,62 @@
+usable rows 3785   sources 50
+labelled resampled rows 1273   sources 50
+
+================================================================================
+1. DO AIM SENTENCES RESTATE THE THRESHOLD?
+================================================================================
+  states an aim    : restates T in  421/ 624 = 0.675
+  states no aim    : restates T in  182/ 649 = 0.280
+  ORIGINAL aim sentences restating T: 35/50 = 0.700
+
+================================================================================
+2. SPLITTING THE EFFECT — p(landed on favoured side), paired within source
+================================================================================
+  aim - no-aim  (headline replication)       +0.087 [+0.018, +0.158]   28/49 sources +
+     within sentences that RESTATE T         +0.020 [-0.123, +0.157]   12/32 sources +
+     within sentences that DON'T restate T   +0.122 [+0.006, +0.239]   17/32 sources +
+  restates T - doesn't  (the new axis)       +0.043 [-0.015, +0.098]   24/49 sources +
+     within AIM sentences only               +0.021 [-0.076, +0.126]   12/32 sources +
+     within NO-AIM sentences only            +0.026 [-0.109, +0.162]   12/32 sources +
+
+================================================================================
+3. SAME SPLITS — |estimate - T| / T  (does the sentence pull the number to T?)
+================================================================================
+  aim - no-aim                               +39.005 [-31.643, +138.156]   49 sources
+  restates T - doesn't                       +32.667 [-23.917, +97.678]   49 sources
+     within NO-AIM sentences only            -4.993 [-69.464, +52.928]   32 sources
+
+================================================================================
+4. CELL MEANS (pooled, orientation only)
+================================================================================
+  cell                                       n   p_fav  med|est-T|/T
+  aim=True  restates_T=True                 421   0.577         0.224
+  aim=True  restates_T=False                203   0.601         0.200
+  aim=False restates_T=True                 182   0.511         0.126
+  aim=False restates_T=False                467   0.490         0.188
+  original                                1263   0.570         0.143
+  nosent                                  1249   0.531         0.212
+
+==============================================================================
+WHERE THE AIM SENTENCE SITS
+==============================================================================
+  n=47 sources   relative position (chars): median 0.236  IQR 0.172-0.416  min 0.010 max 0.677
+  by sentence index:              median 0.335  IQR 0.219-0.624
+
+==============================================================================
+DOES POSITION PREDICT HOW MUCH THE SENTENCE MATTERS?
+==============================================================================
+  corr(position, aim effect) = -0.272 [-0.524, +0.060]  n=47
+  aim effect, EARLY half (before median) +0.123 [+0.015, +0.236]  n=24
+  aim effect, LATE half                  +0.054 [-0.028, +0.138]  n=23
+
+  corr(position, original-nosent) = -0.309  n=47
+  original - nosent, EARLY half           +0.086 [+0.028, +0.149]  n=24
+  original - nosent, LATE half            -0.004 [-0.060, +0.050]  n=23
+
+==============================================================================
+INTERACTION: is the aim effect really different in T-restating sentences?
+==============================================================================
+  (aim effect | no T restated) - (aim effect | T restated)
+    = +0.155 [-0.047, +0.352]   n=19 sources with all four cells
+  -> CI spans zero: the two strata are NOT shown to differ. Report the split as
+     'the effect is not explained by number-restatement', not as an interaction.

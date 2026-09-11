@@ -1,0 +1,20 @@
+450 rollouts, est $0.04
+  balance $5.30 | est. cost $0.04 | reserve $2.50
+done in 28s
+
+=== disclosure distribution ===
+disclosure
+mentions      194
+admits        180
+denies         66
+no_mention     10
+
+=== by direction ===
+direction   above_good  below_good
+disclosure                        
+admits           0.271       0.529
+denies           0.187       0.107
+mentions         0.520       0.342
+no_mention       0.022       0.022
+
+wrote results/disclosure.jsonl

@@ -1,0 +1,29 @@
+rollout  1 cut tok  645: saved token is the top choice 30/32; first miss at +17: saved ' in' p=0.223 vs top ' provided' p=0.286
+rollout  1 cut tok  669: saved token is the top choice 30/32; first miss at +5: saved ' reasoning' p=0.398 vs top ' *' p=0.451
+rollout  1 cut tok  684: saved token is the top choice 32/32
+rollout  1 cut tok  966: saved token is the top choice 31/32; first miss at +22: saved ' naturally' p=0.235 vs top ' independently' p=0.342
+rollout  1 cut tok 1000: saved token is the top choice 31/32; first miss at +17: saved 'basis' p=0.155 vs top 'reason' p=0.199
+rollout  1 cut tok 1009: saved token is the top choice 31/32; first miss at +8: saved 'basis' p=0.155 vs top 'reason' p=0.199
+rollout 11 cut tok 1120: saved token is the top choice 29/32; first miss at +4: saved ' the' p=0.330 vs top ' my' p=0.374
+rollout 11 cut tok 1154: saved token is the top choice 31/32; first miss at +10: saved ' number' p=0.266 vs top ' presence' p=0.388
+rollout 11 cut tok 1196: saved token is the top choice 31/32; first miss at +16: saved ' matched' p=0.372 vs top ' coinc' p=0.478
+rollout 11 cut tok 1214: saved token is the top choice 32/32
+rollout 11 cut tok 1273: saved token is the top choice 31/32; first miss at +12: saved 'logic' p=0.191 vs top 'method' p=0.216
+rollout 11 cut tok 1290: saved token is the top choice 30/32; first miss at +13: saved ' I' p=0.309 vs top ',' p=0.350
+rollout 24 cut tok  672: saved token is the top choice 30/32; first miss at +2: saved ' highly' p=0.220 vs top ' impossible' p=0.283
+rollout 24 cut tok  700: saved token is the top choice 32/32
+rollout 24 cut tok  722: saved token is the top choice 31/32; first miss at +13: saved ' context' p=0.345 vs top ' the' p=0.345
+rollout 24 cut tok  764: saved token is the top choice 31/32; first miss at +11: saved 'calc' p=0.272 vs top 'method' p=0.308
+rollout 24 cut tok  803: saved token is the top choice 29/32; first miss at +1: saved ' match' p=0.266 vs top ' number' p=0.301
+rollout 24 cut tok  911: saved token is the top choice 32/32
+rollout 24 cut tok  948: saved token is the top choice 31/32; first miss at +25: saved ' I' p=0.328 vs top ' bias' p=0.421
+rollout 55 cut tok  302: saved token is the top choice 32/32
+rollout 55 cut tok  343: saved token is the top choice 31/32; first miss at +22: saved ' presence' p=0.259 vs top ' prompt' p=0.294
+rollout 55 cut tok  364: saved token is the top choice 30/32; first miss at +15: saved ' confirmed' p=0.206 vs top ' acted' p=0.233
+rollout 55 cut tok 1009: saved token is the top choice 30/32; first miss at +22: saved ' class' p=0.209 vs top ' parameters' p=0.268
+rollout 55 cut tok 1041: saved token is the top choice 32/32
+rollout 55 cut tok 1148: saved token is the top choice 32/32
+rollout 55 cut tok 1164: saved token is the top choice 29/32; first miss at +18: saved ' hint' p=0.238 vs top ' ' p=0.238
+ALL CUTS: saved token = top choice in 801/832 (0.963); shifted-by-one contrast 5/832 (0.006)
+
+summary: cuts with a miss in 32 tokens: 19/26; at the first miss saved-token p median 0.259, top-token p median 0.301, saved p min 0.155 max 0.398

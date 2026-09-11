@@ -1,0 +1,6 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+trying ['dtype', 'tp_plan']
+[transformers] You have loaded an FP8 model on CPU and have a CUDA or XPU device available, make sure to set your model on a GPU or XPU device in order to run your model. To remove this warning, pass device_map = 'cuda' or 'xpu'. 
+  FAILED: AttributeError: 'NoneType' object has no attribute 'get'
+trying ['dtype']
+  FAILED: AttributeError: 'NoneType' object has no attribute 'get'

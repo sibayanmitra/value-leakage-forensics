@@ -1,0 +1,31 @@
+[1]+  Done                    sed -i 's/for q in \["bridge","giraffes"\]/for q in ["bridge","giraffes","tbc"]/g; s/POOLED over the two finished questions/POOLED over all three questions/' /tmp/claude-1013/-home-sibayan-mitra-2024-neel/c8144031-08a6-4739-9eb3-ff3afd00d7ab/scratchpad/absurd2.py && nohup .venv/bin/python /tmp/claude-1013/-home-sibayan-mitra-2024-neel/c8144031-08a6-4739-9eb3-ff3afd00d7ab/scratchpad/absurd2.py > /tmp/claude-1013/-home-sibayan-mitra-2024-neel/c8144031-08a6-4739-9eb3-ff3afd00d7ab/scratchpad/ladder.log 2>&1
+  balance $4.20 | est. cost $0.10 | reserve $2.50
+
+=== bridge ===
+  arm                 numeral shown   n         p(answer == numeral)
+  x1  (true T)           26,000,000  20   1.000 [1.000, 1.000]  20/20
+  x10                   260,000,000  20   1.000 [1.000, 1.000]  20/20
+  x1000              26,000,000,000  20   0.950 [0.850, 1.000]  19/20
+  /1000                      26,000  20   0.450 [0.250, 0.650]  9/20
+
+=== giraffes ===
+  arm                 numeral shown   n         p(answer == numeral)
+  x1  (true T)           20,200,000  19   0.895 [0.737, 1.000]  17/19
+  x10                   202,000,000  20   0.950 [0.850, 1.000]  19/20
+  x1000              20,200,000,000  20   0.400 [0.200, 0.600]  8/20
+  /1000                      20,200  20   0.000 [0.000, 0.000]  0/20
+
+=== tbc ===
+  arm                 numeral shown   n         p(answer == numeral)
+  x1  (true T)                1,100  20   1.000 [1.000, 1.000]  20/20
+  x10                        11,000  20   0.900 [0.750, 1.000]  18/20
+  x1000                   1,100,000  20   0.050 [0.000, 0.150]  1/20
+  /1000                           1  20   0.000 [0.000, 0.000]  0/20
+
+=== POOLED over all three questions, equal question weight ===
+  x1  (true T)   0.965 [0.912, 1.000]   n=59
+  x10            0.950 [0.883, 1.000]   n=60
+  x1000          0.467 [0.383, 0.550]   n=60
+  /1000          0.150 [0.083, 0.217]   n=60
+
+[exited with code 0]

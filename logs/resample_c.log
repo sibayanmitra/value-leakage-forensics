@@ -1,0 +1,23 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 14 files:   0%|          | 0/14 [00:00<?, ?it/s]Fetching 14 files: 100%|██████████| 14/14 [00:00<00:00, 760.88it/s]
+Loading weights:   0%|          | 0/1023 [00:00<?, ?it/s]Loading weights:   2%|▏         | 16/1023 [00:00<00:27, 37.13it/s]Loading weights:   4%|▍         | 42/1023 [00:00<00:20, 48.68it/s]Loading weights:   7%|▋         | 68/1023 [00:01<00:18, 51.22it/s]Loading weights:   8%|▊         | 82/1023 [00:01<00:21, 42.82it/s]Loading weights:  12%|█▏        | 118/1023 [00:02<00:16, 54.45it/s]Loading weights:  14%|█▍        | 144/1023 [00:02<00:15, 56.47it/s]Loading weights:  17%|█▋        | 170/1023 [00:03<00:14, 57.86it/s]Loading weights:  18%|█▊        | 184/1023 [00:03<00:16, 50.20it/s]Loading weights:  22%|██▏       | 220/1023 [00:04<00:13, 60.03it/s]Loading weights:  24%|██▍       | 246/1023 [00:04<00:13, 59.75it/s]Loading weights:  27%|██▋       | 272/1023 [00:04<00:12, 59.53it/s]Loading weights:  28%|██▊       | 286/1023 [00:05<00:14, 51.58it/s]Loading weights:  31%|███▏      | 322/1023 [00:05<00:11, 60.33it/s]Loading weights:  34%|███▍      | 348/1023 [00:06<00:11, 60.43it/s]Loading weights:  37%|███▋      | 374/1023 [00:06<00:11, 58.04it/s]Loading weights:  38%|███▊      | 388/1023 [00:07<00:12, 50.03it/s]Loading weights:  41%|████▏     | 424/1023 [00:07<00:10, 56.81it/s]Loading weights:  44%|████▍     | 450/1023 [00:08<00:10, 55.73it/s]Loading weights:  47%|████▋     | 476/1023 [00:08<00:09, 55.45it/s]Loading weights:  48%|████▊     | 490/1023 [00:09<00:11, 47.88it/s]Loading weights:  51%|█████▏    | 526/1023 [00:09<00:08, 55.42it/s]Loading weights:  54%|█████▍    | 552/1023 [00:10<00:08, 54.06it/s]Loading weights:  57%|█████▋    | 578/1023 [00:10<00:08, 53.17it/s]Loading weights:  58%|█████▊    | 592/1023 [00:11<00:09, 46.36it/s]Loading weights:  61%|██████▏   | 628/1023 [00:11<00:07, 54.11it/s]Loading weights:  64%|██████▍   | 654/1023 [00:12<00:06, 53.38it/s]Loading weights:  66%|██████▋   | 680/1023 [00:12<00:06, 52.72it/s]Loading weights:  68%|██████▊   | 694/1023 [00:13<00:07, 45.41it/s]Loading weights:  71%|███████▏  | 730/1023 [00:13<00:05, 52.95it/s]Loading weights:  74%|███████▍  | 756/1023 [00:14<00:05, 52.76it/s]Loading weights:  76%|███████▋  | 782/1023 [00:14<00:04, 52.80it/s]Loading weights:  78%|███████▊  | 796/1023 [00:15<00:04, 45.81it/s]Loading weights:  81%|████████▏ | 832/1023 [00:15<00:03, 53.61it/s]Loading weights:  84%|████████▍ | 858/1023 [00:16<00:03, 53.65it/s]Loading weights:  86%|████████▋ | 884/1023 [00:16<00:02, 53.61it/s]Loading weights:  88%|████████▊ | 898/1023 [00:17<00:02, 46.50it/s]Loading weights:  91%|█████████▏| 934/1023 [00:17<00:01, 54.60it/s]Loading weights:  94%|█████████▍| 960/1023 [00:18<00:01, 54.23it/s]Loading weights:  96%|█████████▋| 986/1023 [00:18<00:00, 53.94it/s]Loading weights:  98%|█████████▊| 1000/1023 [00:18<00:00, 46.63it/s]Loading weights: 100%|██████████| 1023/1023 [00:19<00:00, 53.81it/s]
+model loaded 49s | 17 sources x 20 resamples x 3 arms
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 746.67it/s]
+  [0] bridge/below_good 60 rows in 406s
+  [1] bridge/below_good 60 rows in 313s
+  [2] bridge/below_good 60 rows in 386s
+  [3] crochet/below_good 60 rows in 244s
+  [4] crochet/below_good 60 rows in 353s
+  [5] giraffes/above_good 60 rows in 323s
+  [6] giraffes/below_good 60 rows in 434s
+  [7] giraffes/below_good 60 rows in 342s
+  [8] maiden/above_good 60 rows in 303s
+  [9] maiden/above_good 60 rows in 401s
+  [10] maiden/above_good 60 rows in 323s
+  [11] orangecars/above_good 60 rows in 439s
+  [12] orangecars/above_good 60 rows in 311s
+  [13] orangecars/below_good 60 rows in 386s
+  [14] orangecars/below_good 60 rows in 457s
+  [15] orangecars/below_good 60 rows in 395s
+  [16] tbc/above_good 60 rows in 250s
+DONE 6116s -> results/resamples_forced_c.jsonl

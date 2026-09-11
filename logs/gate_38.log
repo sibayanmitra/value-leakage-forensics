@@ -1,0 +1,64 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 66 files:   0%|          | 0/66 [00:00<?, ?it/s]Fetching 66 files: 100%|██████████| 66/66 [00:00<00:00, 1078.54it/s]
+Loading weights:   0%|          | 0/1187 [00:00<?, ?it/s]Loading weights:   0%|          | 1/1187 [00:00<16:24,  1.20it/s]Loading weights:   2%|▏         | 19/1187 [00:00<00:43, 27.10it/s]Loading weights:   3%|▎         | 38/1187 [00:01<00:21, 53.97it/s]Loading weights:   5%|▍         | 56/1187 [00:01<00:14, 77.59it/s]Loading weights:   6%|▌         | 73/1187 [00:01<00:11, 96.83it/s]Loading weights:   8%|▊         | 93/1187 [00:01<00:09, 118.44it/s]Loading weights:   9%|▉         | 112/1187 [00:01<00:08, 128.81it/s]Loading weights:  11%|█         | 131/1187 [00:01<00:07, 137.68it/s]Loading weights:  12%|█▏        | 148/1187 [00:01<00:07, 143.05it/s]Loading weights:  14%|█▍        | 167/1187 [00:01<00:06, 147.32it/s]Loading weights:  16%|█▌        | 186/1187 [00:01<00:06, 151.95it/s]Loading weights:  17%|█▋        | 204/1187 [00:02<00:06, 154.59it/s]Loading weights:  19%|█▊        | 221/1187 [00:02<00:06, 154.17it/s]Loading weights:  20%|██        | 240/1187 [00:02<00:06, 156.59it/s]Loading weights:  22%|██▏       | 260/1187 [00:02<00:05, 165.37it/s]Loading weights:  24%|██▎       | 279/1187 [00:02<00:05, 167.73it/s]Loading weights:  25%|██▍       | 296/1187 [00:02<00:05, 164.44it/s]Loading weights:  27%|██▋       | 324/1187 [00:02<00:04, 188.65it/s]Loading weights:  29%|██▉       | 345/1187 [00:02<00:04, 192.38it/s]Loading weights:  31%|███       | 365/1187 [00:02<00:04, 166.41it/s]Loading weights:  33%|███▎      | 388/1187 [00:03<00:04, 167.96it/s]Loading weights:  34%|███▍      | 408/1187 [00:03<00:04, 168.65it/s]Loading weights:  36%|███▌      | 427/1187 [00:03<00:04, 167.53it/s]Loading weights:  37%|███▋      | 444/1187 [00:03<00:04, 162.53it/s]Loading weights:  39%|███▉      | 462/1187 [00:03<00:04, 160.86it/s]Loading weights:  41%|████      | 482/1187 [00:03<00:04, 170.66it/s]Loading weights:  42%|████▏     | 501/1187 [00:03<00:04, 169.88it/s]Loading weights:  44%|████▎     | 519/1187 [00:03<00:04, 165.03it/s]Loading weights:  45%|████▌     | 537/1187 [00:04<00:04, 158.93it/s]Loading weights:  47%|████▋     | 555/1187 [00:04<00:03, 159.94it/s]Loading weights:  49%|████▉     | 579/1187 [00:04<00:03, 174.01it/s]Loading weights:  51%|█████     | 603/1187 [00:04<00:03, 187.53it/s]Loading weights:  52%|█████▏    | 622/1187 [00:04<00:03, 185.71it/s]Loading weights:  54%|█████▍    | 641/1187 [00:04<00:03, 179.32it/s]Loading weights:  56%|█████▌    | 659/1187 [00:04<00:03, 154.80it/s]Loading weights:  58%|█████▊    | 684/1187 [00:04<00:03, 158.82it/s]Loading weights:  59%|█████▉    | 704/1187 [00:05<00:02, 161.03it/s]Loading weights:  61%|██████    | 722/1187 [00:05<00:02, 158.69it/s]Loading weights:  62%|██████▏   | 739/1187 [00:05<00:02, 161.51it/s]Loading weights:  64%|██████▍   | 759/1187 [00:05<00:02, 169.24it/s]Loading weights:  65%|██████▌   | 777/1187 [00:05<00:02, 168.46it/s]Loading weights:  67%|██████▋   | 797/1187 [00:05<00:02, 170.82it/s]Loading weights:  69%|██████▉   | 819/1187 [00:05<00:02, 177.98it/s]Loading weights:  71%|███████   | 841/1187 [00:05<00:01, 177.72it/s]Loading weights:  72%|███████▏  | 860/1187 [00:05<00:01, 176.90it/s]Loading weights:  74%|███████▍  | 878/1187 [00:06<00:02, 148.83it/s]Loading weights:  76%|███████▋  | 906/1187 [00:06<00:01, 170.93it/s]Loading weights:  78%|███████▊  | 925/1187 [00:06<00:01, 171.43it/s]Loading weights:  80%|███████▉  | 944/1187 [00:06<00:01, 164.97it/s]Loading weights:  81%|████████  | 961/1187 [00:06<00:01, 164.42it/s]Loading weights:  83%|████████▎ | 981/1187 [00:06<00:01, 170.79it/s]Loading weights:  84%|████████▍ | 1000/1187 [00:06<00:01, 167.24it/s]Loading weights:  86%|████████▌ | 1018/1187 [00:06<00:01, 162.33it/s]Loading weights:  87%|████████▋ | 1035/1187 [00:07<00:00, 162.31it/s]Loading weights:  89%|████████▉ | 1054/1187 [00:07<00:00, 163.25it/s]Loading weights:  90%|█████████ | 1074/1187 [00:07<00:00, 166.10it/s]Loading weights:  92%|█████████▏| 1093/1187 [00:07<00:00, 167.30it/s]Loading weights:  94%|█████████▍| 1119/1187 [00:07<00:00, 185.14it/s]Loading weights:  96%|█████████▌| 1138/1187 [00:07<00:00, 176.57it/s]Loading weights:  97%|█████████▋| 1156/1187 [00:07<00:00, 172.46it/s]Loading weights:  99%|█████████▉| 1174/1187 [00:07<00:00, 146.42it/s]Loading weights: 100%|██████████| 1187/1187 [00:07<00:00, 150.15it/s]
+[transformers] [1mQwen3_5ForCausalLM LOAD REPORT[0m from: Qwen/Qwen3.8-27B-FP8
+Key                                                  | Status     |  | 
+-----------------------------------------------------+------------+--+-
+model.layers.{0...63}.mlp.gate_proj.weight_scale_inv | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Qwen/Qwen3.8-27B-FP8 loaded 74s
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 729.79it/s]
+Traceback (most recent call last):
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/src/gate_model.py", line 60, in <module>
+    if __name__=="__main__": main()
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/src/gate_model.py", line 48, in main
+    o=m.generate(**enc,max_new_tokens=a.max_new,do_sample=True,temperature=1.0,
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/generation/utils.py", line 2668, in generate
+    result = decoding_method(
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/generation/utils.py", line 2868, in _sample
+    outputs = self._prefill(
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/generation/utils.py", line 3948, in _prefill
+    return self(**model_inputs, return_dict=True)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/utils/generic.py", line 939, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 1631, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/utils/generic.py", line 1068, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/utils/output_capturing.py", line 262, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 1206, in forward
+    hidden_states = decoder_layer(
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/modeling_layers.py", line 114, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 793, in forward
+    hidden_states = self.mlp(hidden_states)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 719, in forward
+    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: expected mat1 and mat2 to have the same dtype, but got: c10::BFloat16 != c10::Float8_e4m3fn

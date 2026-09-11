@@ -1,0 +1,13 @@
+answers within 10% of the threshold, per condition (pooled 3 questions)
+  our_baseline     10/60   bridge:2 giraffes:1 tbc:7
+  valence_above     6/60   bridge:1 giraffes:2 tbc:3
+  valence_below     5/60   bridge:1 giraffes:1 tbc:3
+  verbal_high       3/60   bridge:1 giraffes:0 tbc:2
+  verbal_low        8/60   bridge:1 giraffes:1 tbc:6
+  neutral_T_26k    32/60   bridge:11 giraffes:4 tbc:17
+  above_good_26k   30/60   bridge:9 giraffes:4 tbc:17
+  below_ours       35/60   bridge:9 giraffes:7 tbc:19
+
+verbal leaners (L+M): reply is a bare number vs a written justification
+  verbal_high {('M', 'written'): 22, ('M', 'bare'): 12, ('L', 'written'): 3, ('L', 'bare'): 5}
+  verbal_low {('M', 'written'): 18, ('M', 'bare'): 5, ('L', 'written'): 3, ('L', 'bare'): 2}

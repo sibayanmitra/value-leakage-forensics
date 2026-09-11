@@ -1,0 +1,9 @@
+subsample: 450 traces (25/question/direction)
+  already cached (free): 125
+  billable             : 325  ~= $0.55
+DONE in 700s   actual spend this run: $0.76
+  n_est  : mean=60.8 median=60 min=0 max=174
+  zero   : 6 (1.33%)
+  >=2 est: 98.67%  (paper's criterion)
+  range-filter drops: 150
+  traces needing reorder: 94.2%

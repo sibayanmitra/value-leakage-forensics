@@ -1,0 +1,4 @@
+judging 2700 answers with 32 workers...
+  judge nulls: 81 (3.00%)
+  regex==judge: 2418/2700 (89.56%)
+  wrote results/authors_extracted.jsonl

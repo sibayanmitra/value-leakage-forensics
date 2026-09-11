@@ -1,0 +1,16 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+tokenizer ok
+Traceback (most recent call last):
+  File "/tmp/test_hf_load.py", line 8, in <module>
+    model = AutoModelForCausalLM.from_pretrained(M, dtype="auto", device_map="cuda:0")
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 402, in from_pretrained
+    return model_class.from_pretrained(
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4270, in from_pretrained
+    hf_quantizer, config, device_map = get_hf_quantizer(
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/quantizers/auto.py", line 363, in get_hf_quantizer
+    config = hf_quantizer.update_tp_plan(config)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/quantizers/quantizer_finegrained_fp8.py", line 195, in update_tp_plan
+    updated_plan = {k: layer_overrides.get(v, v) for k, v in base_plan.items()}
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/quantizers/quantizer_finegrained_fp8.py", line 195, in <dictcomp>
+    updated_plan = {k: layer_overrides.get(v, v) for k, v in base_plan.items()}
+AttributeError: 'NoneType' object has no attribute 'get'

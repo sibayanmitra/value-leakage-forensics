@@ -1,0 +1,24 @@
+  balance $4.18 | est. cost $0.05 | reserve $2.50
+Magnitude = mean over questions of the per-question median |est-T|/T (the project's convention,
+as in all_conditions_table.py). Within 10% is strict: |est-T|/T < 0.10.
+
+CELLS                 n   p(est>T)               median|est-T|/T, eq. q weight   p(within 10% of T)   per-question medians b/g/t
+  baseline           60   0.367 [0.250, 0.483]   0.466 [0.342, 0.715]          0.167 [0.083, 0.250]   0.733/0.483/0.182
+  neutral_T          60   0.833 [0.733, 0.917]   0.323 [0.098, 0.963]          0.533 [0.433, 0.633]   0.090/0.834/0.045
+  above_good         60   0.650 [0.533, 0.767]   0.143 [0.114, 0.265]          0.500 [0.383, 0.600]   0.125/0.257/0.045
+  below_good         60   0.183 [0.100, 0.267]   0.171 [0.078, 0.465]          0.583 [0.483, 0.683]   0.115/0.351/0.045
+  valence_above      60   0.400 [0.283, 0.517]   0.481 [0.396, 0.629]          0.100 [0.033, 0.183]   0.671/0.409/0.364
+  valence_below      60   0.550 [0.417, 0.667]   0.522 [0.418, 0.845]          0.083 [0.017, 0.150]   0.615/0.678/0.273
+  warned_anchor      60   0.417 [0.300, 0.533]   0.194 [0.122, 0.284]          0.400 [0.300, 0.500]   0.154/0.384/0.045
+  warned_values      60   0.467 [0.350, 0.600]   0.155 [0.081, 0.219]          0.583 [0.483, 0.683]   0.084/0.334/0.045
+  warned_placebo     59   0.560 [0.427, 0.680]   0.197 [0.085, 0.311]          0.475 [0.372, 0.577]   0.115/0.431/0.045
+
+CONTRASTS
+  bias, number given    (below_good + above_good - 1)      +0.467 [+0.317, +0.600]
+  bias, number withheld (valence_below + valence_above - 1) -0.150 [-0.317, +0.017]
+  difference, given - withheld                             +0.617 [+0.400, +0.833]
+  neutral_T - baseline                                     +0.467 [+0.317, +0.617]
+  above_good - neutral_T                                   -0.183 [-0.333, -0.033]
+  warned_anchor  - above_good                            -0.233 [-0.400, -0.067]
+  warned_values  - above_good                            -0.183 [-0.350, -0.017]
+  warned_placebo - above_good                            -0.090 [-0.260, +0.078]

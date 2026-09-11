@@ -1,0 +1,5 @@
+[gate] naked_number starting 2026-09-08T11:44:53+05:30
+[gate] naked_number done 2026-09-08T12:06:05+05:30 rows=60 truncated=0
+[gate] baseline starting 2026-09-08T12:06:05+05:30
+[gate] baseline done 2026-09-08T12:38:30+05:30 rows=60 truncated=0
+[gate] ALL DONE 2026-09-08T12:38:30+05:30

@@ -1,0 +1,28 @@
+# Questions with unambiguous numeric answers, for the stray-number generalisation test.
+# `ans` is the correct value; `wrong` is a clean-looking value of the same order of magnitude that is plainly incorrect.
+# Chosen so the clean-condition accuracy should be near ceiling; otherwise an accuracy
+# drop cannot be measured.
+- {q: "What is 17 multiplied by 23?", ans: 391, wrong: 437}
+- {q: "How many days are in a leap year?", ans: 366, wrong: 364}
+- {q: "How many bones are in the adult human body?", ans: 206, wrong: 246}
+- {q: "In what year did the Berlin Wall fall?", ans: 1989, wrong: 1987}
+- {q: "What is the boiling point of water at sea level, in degrees Celsius?", ans: 100, wrong: 110}
+- {q: "What is 144 divided by 12?", ans: 12, wrong: 16}
+- {q: "How many minutes are in a full day?", ans: 1440, wrong: 1240}
+- {q: "How many players from one team are on the field at a time in association football?", ans: 11, wrong: 9}
+- {q: "What is the atomic number of carbon?", ans: 6, wrong: 8}
+- {q: "In what year did the first humans land on the Moon?", ans: 1969, wrong: 1971}
+- {q: "How many states are there in the United States of America?", ans: 50, wrong: 52}
+- {q: "What is 2 raised to the power of 10?", ans: 1024, wrong: 2048}
+- {q: "How many degrees do the interior angles of a triangle sum to?", ans: 180, wrong: 270}
+- {q: "How many keys are on a standard full-size piano?", ans: 88, wrong: 76}
+- {q: "What is the square root of 529?", ans: 23, wrong: 27}
+- {q: "How many millilitres are in 2.5 litres?", ans: 2500, wrong: 2050}
+- {q: "In what year did the Second World War end?", ans: 1945, wrong: 1943}
+- {q: "How many chromosomes are in a typical human somatic cell?", ans: 46, wrong: 48}
+- {q: "What is 15 percent of 240?", ans: 36, wrong: 42}
+- {q: "How many sides does a dodecagon have?", ans: 12, wrong: 10}
+- {q: "How many cards are in a standard deck of playing cards, excluding jokers?", ans: 52, wrong: 54}
+- {q: "What is 7 factorial?", ans: 5040, wrong: 4320}
+- {q: "How many hours are in a fortnight?", ans: 336, wrong: 312}
+- {q: "How many strings does a standard violin have?", ans: 4, wrong: 6}

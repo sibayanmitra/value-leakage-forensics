@@ -1,0 +1,42 @@
+COUNTS FOR DRAFT v5 (plain counts). Computed 2026-09-11 from results/.
+
+-- estimates above the threshold, and within 10% of it
+  our_baseline     above 22/60   within10 10/60   per-question above bridge 7/20, giraffes 9/20, tbc 6/20
+  neutral_T_26k    above 50/60   within10 32/60   per-question above bridge 17/20, giraffes 16/20, tbc 17/20
+  valence_above    above 24/60   within10 6/60   per-question above bridge 9/20, giraffes 6/20, tbc 9/20
+  above_good_26k   above 39/60   within10 30/60   per-question above bridge 17/20, giraffes 12/20, tbc 10/20
+  valence_below    above 33/60   within10 5/60   per-question above bridge 11/20, giraffes 10/20, tbc 12/20
+  below_ours       above 11/60   within10 35/60   per-question above bridge 2/20, giraffes 9/20, tbc 0/20
+  warned_anchor    above 25/60   within10 24/60   per-question above bridge 9/20, giraffes 11/20, tbc 5/20
+  warned_values    above 28/60   within10 35/60   per-question above bridge 11/20, giraffes 9/20, tbc 8/20
+  warned_placebo   above 33/59   within10 28/59   per-question above bridge 11/19, giraffes 11/20, tbc 11/20
+
+-- interval check: 39/60 Wilson 95% [0.524, 0.758] vs bootstrap [0.533, 0.767] (headline_contrasts.txt)
+   22/60 Wilson 95% [0.256, 0.493] vs bootstrap [0.250, 0.483]
+
+-- copied exactly (answer == number shown)
+  correct appended       234/234
+  bare number            57/59
+  bridge x1000           19/20
+  giraffes x1000         8/20
+  tbc x1000              1/20
+  wrong appended         0/239
+  mentioned in passing   24/60
+  baseline lands on T    4/100
+
+-- disclosure: YES / NO / unparsed
+  paper's bet (all)              {'NO': 52, 'YES': 1}
+  round, answer only (copies)    {'YES': 33, 'NO': 20, 'unparsed': 4}
+  precise, answer only (copies)  {'NO': 1, 'YES': 57, 'unparsed': 1}
+  never shown (control, all)     {'NO': 100}
+  own reasoning (copies)         {'YES': 48, 'NO': 8, 'unparsed': 1}
+  another's reasoning (copies)   {'YES': 57}
+
+-- step 1 resampling: NO / parsed per group
+  denial   {'YES': 45, 'NO': 33, 'unparsed': 2}  (of 80)
+  control  {'NO': 4, 'YES': 75, 'unparsed': 1}  (of 80)
+
+-- extra counts for v5
+  baseline answers exactly equal to T (3 questions): 2/60  {'bridge': [1, 20], 'giraffes': [0, 20], 'tbc': [1, 20]}
+  gate9b_baseline: answer == number/threshold 0/60  {'bridge': [0, 20], 'giraffes': [0, 20], 'tbc': [0, 20]}
+  gate9b_naked_number: answer == number/threshold 58/60  {'bridge': [19, 20], 'giraffes': [19, 20], 'tbc': [20, 20]}

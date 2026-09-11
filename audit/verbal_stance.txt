@@ -1,0 +1,16 @@
+valence_above  stance {'L': 2, 'M': 4, 'N': 9, 'R': 45}  leans(L+M)=6/60  | above by group: declines 18/45  leans 1/6  other 5/9
+verbal_high    stance {'L': 8, 'M': 34, 'N': 1, 'R': 14, 'U': 3}  leans(L+M)=42/60  | above by group: declines 10/14  leans 29/42  other 2/4
+valence_below  stance {'L': 2, 'M': 8, 'N': 17, 'R': 29, 'U': 4}  leans(L+M)=10/60  | above by group: declines 16/29  leans 3/10  other 14/21
+verbal_low     stance {'L': 5, 'M': 23, 'N': 3, 'R': 26, 'U': 3}  leans(L+M)=28/60  | above by group: declines 16/26  leans 10/28  other 3/6
+
+per question, above/n by stance group
+verbal_high bridge/declines: 3/4  bridge/leans: 9/14  bridge/other: 0/2  giraffes/declines: 6/6  giraffes/leans: 8/14  tbc/declines: 1/4  tbc/leans: 12/14  tbc/other: 2/2
+verbal_low bridge/declines: 6/11  bridge/leans: 1/8  bridge/other: 0/1  giraffes/declines: 7/9  giraffes/leans: 6/11  tbc/declines: 3/6  tbc/leans: 3/9  tbc/other: 3/5
+
+mean reasoning length (chars) per condition
+  our_baseline   n=100 mean=25,092 median=24,924
+  valence_above  n=60 mean=26,590 median=25,399
+  valence_below  n=60 mean=26,717 median=25,906
+  verbal_high    n=60 mean=27,777 median=28,060
+  verbal_low     n=60 mean=27,305 median=27,285
+  neutral_T_26k  n=60 mean=32,109 median=32,347

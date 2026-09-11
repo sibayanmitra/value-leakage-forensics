@@ -1,0 +1,51 @@
+rows 11265  rollouts 198  questions 4
+target base rates / coverage:
+  favoured    base=0.582  labelled rows=11265 rollouts=198
+  above_T     base=0.449  labelled rows=11265 rollouts=198
+  cond        base=0.493  labelled rows=11265 rollouts=198
+  near_T      base=0.428  labelled rows=11265 rollouts=198
+  final_side  base=0.770  labelled rows=5716 rollouts=104
+
+position-only baselines (no activations):
+  AUC(favoured | CoT position) = 0.546
+  AUC(above_T | CoT position) = 0.482
+  AUC(near_T | CoT position) = 0.610
+  AUC(final_side | CoT position) = 0.496
+  L12 favoured    raw       AUC=0.583 [0.561,0.605] rows=11265 rollouts=198
+  L12 favoured    resid-pos AUC=0.549 [0.528,0.568] rows=11265 rollouts=198
+  L12 above_T     raw       AUC=0.679 [0.658,0.698] rows=11265 rollouts=198
+  L12 above_T     resid-pos AUC=0.678 [0.655,0.697] rows=11265 rollouts=198
+  L12 cond        raw       AUC=0.771 [0.742,0.797] rows=11265 rollouts=198
+  L12 cond        resid-pos AUC=0.773 [0.746,0.800] rows=11265 rollouts=198
+  L12 near_T      raw       AUC=0.861 [0.847,0.873] rows=11265 rollouts=198
+  L12 near_T      resid-pos AUC=0.581 [0.559,0.602] rows=11265 rollouts=198
+  L12 final_side  raw       AUC=0.584 [0.509,0.679] rows=5716 rollouts=104
+  L12 final_side  resid-pos AUC=0.577 [0.493,0.678] rows=5716 rollouts=104
+  L12 shuffled    raw       AUC=0.497 [0.485,0.508] rows=11265 rollouts=198
+  L12 shuffled    resid-pos AUC=0.497 [0.486,0.508] rows=11265 rollouts=198
+  L16 favoured    raw       AUC=0.610 [0.586,0.635] rows=11265 rollouts=198
+  L16 favoured    resid-pos AUC=0.576 [0.554,0.599] rows=11265 rollouts=198
+  L16 above_T     raw       AUC=0.765 [0.747,0.782] rows=11265 rollouts=198
+  L16 above_T     resid-pos AUC=0.767 [0.748,0.783] rows=11265 rollouts=198
+  L16 cond        raw       AUC=0.734 [0.704,0.762] rows=11265 rollouts=198
+  L16 cond        resid-pos AUC=0.735 [0.706,0.764] rows=11265 rollouts=198
+  L16 near_T      raw       AUC=0.891 [0.880,0.901] rows=11265 rollouts=198
+  L16 near_T      resid-pos AUC=0.641 [0.622,0.658] rows=11265 rollouts=198
+  L16 final_side  raw       AUC=0.568 [0.494,0.623] rows=5716 rollouts=104
+  L16 final_side  resid-pos AUC=0.575 [0.507,0.632] rows=5716 rollouts=104
+  L16 shuffled    raw       AUC=0.508 [0.498,0.519] rows=11265 rollouts=198
+  L16 shuffled    resid-pos AUC=0.508 [0.498,0.519] rows=11265 rollouts=198
+  L20 favoured    raw       AUC=0.613 [0.588,0.636] rows=11265 rollouts=198
+  L20 favoured    resid-pos AUC=0.569 [0.548,0.587] rows=11265 rollouts=198
+  L20 above_T     raw       AUC=0.749 [0.734,0.763] rows=11265 rollouts=198
+  L20 above_T     resid-pos AUC=0.757 [0.741,0.772] rows=11265 rollouts=198
+  L20 cond        raw       AUC=0.693 [0.665,0.720] rows=11265 rollouts=198
+  L20 cond        resid-pos AUC=0.700 [0.671,0.725] rows=11265 rollouts=198
+  L20 near_T      raw       AUC=0.863 [0.849,0.874] rows=11265 rollouts=198
+  L20 near_T      resid-pos AUC=0.502 [0.481,0.523] rows=11265 rollouts=198
+  L20 final_side  raw       AUC=0.553 [0.488,0.608] rows=5716 rollouts=104
+  L20 final_side  resid-pos AUC=0.548 [0.480,0.597] rows=5716 rollouts=104
+  L20 shuffled    raw       AUC=0.511 [0.501,0.521] rows=11265 rollouts=198
+  L20 shuffled    resid-pos AUC=0.510 [0.500,0.520] rows=11265 rollouts=198
+
+wrote results/probe_controlled.csv

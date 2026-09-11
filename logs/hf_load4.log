@@ -1,0 +1,69 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 14 files:   0%|          | 0/14 [00:00<?, ?it/s]Fetching 14 files: 100%|██████████| 14/14 [00:00<00:00, 779.10it/s]
+Loading weights:   0%|          | 0/1023 [00:00<?, ?it/s]Loading weights:   2%|▏         | 16/1023 [00:00<00:31, 32.12it/s]Loading weights:   4%|▍         | 42/1023 [00:01<00:25, 38.88it/s]Loading weights:   7%|▋         | 68/1023 [00:01<00:23, 41.17it/s]Loading weights:   7%|▋         | 73/1023 [00:01<00:22, 41.72it/s]Loading weights:   8%|▊         | 82/1023 [00:02<00:35, 26.36it/s]Loading weights:  12%|█▏        | 118/1023 [00:03<00:25, 35.31it/s]Loading weights:  12%|█▏        | 122/1023 [00:03<00:25, 34.73it/s]Loading weights:  14%|█▍        | 144/1023 [00:04<00:27, 31.55it/s]Loading weights:  16%|█▌        | 165/1023 [00:04<00:19, 44.96it/s]Loading weights:  17%|█▋        | 174/1023 [00:05<00:31, 27.11it/s]Loading weights:  18%|█▊        | 184/1023 [00:06<00:38, 21.61it/s]Loading weights:  18%|█▊        | 189/1023 [00:06<00:36, 23.05it/s]Loading weights:  22%|██▏       | 220/1023 [00:07<00:27, 28.75it/s]Loading weights:  22%|██▏       | 225/1023 [00:07<00:27, 29.46it/s]Loading weights:  24%|██▍       | 246/1023 [00:07<00:27, 28.31it/s]Loading weights:  24%|██▍       | 250/1023 [00:08<00:26, 28.73it/s]Loading weights:  27%|██▋       | 272/1023 [00:08<00:26, 28.01it/s]Loading weights:  27%|██▋       | 276/1023 [00:09<00:26, 28.53it/s]Loading weights:  28%|██▊       | 286/1023 [00:09<00:34, 21.52it/s]Loading weights:  28%|██▊       | 289/1023 [00:09<00:34, 21.45it/s]Loading weights:  31%|███▏      | 322/1023 [00:10<00:23, 29.67it/s]Loading weights:  32%|███▏      | 325/1023 [00:10<00:23, 29.32it/s]Loading weights:  34%|███▍      | 348/1023 [00:11<00:24, 28.01it/s]Loading weights:  34%|███▍      | 351/1023 [00:11<00:24, 27.30it/s]Loading weights:  37%|███▋      | 374/1023 [00:12<00:23, 27.32it/s]Loading weights:  37%|███▋      | 377/1023 [00:12<00:24, 26.73it/s]Loading weights:  38%|███▊      | 388/1023 [00:13<00:29, 21.51it/s]Loading weights:  39%|███▉      | 397/1023 [00:13<00:23, 26.66it/s]Loading weights:  41%|████▏     | 424/1023 [00:14<00:20, 28.75it/s]Loading weights:  42%|████▏     | 428/1023 [00:14<00:20, 29.12it/s]Loading weights:  44%|████▍     | 450/1023 [00:15<00:20, 27.78it/s]Loading weights:  44%|████▍     | 454/1023 [00:15<00:21, 26.83it/s]Loading weights:  47%|████▋     | 476/1023 [00:16<00:20, 27.28it/s]Loading weights:  47%|████▋     | 479/1023 [00:16<00:20, 27.02it/s]Loading weights:  48%|████▊     | 490/1023 [00:17<00:24, 21.71it/s]Loading weights:  48%|████▊     | 493/1023 [00:17<00:23, 22.11it/s]Loading weights:  51%|█████▏    | 526/1023 [00:18<00:16, 29.91it/s]Loading weights:  52%|█████▏    | 529/1023 [00:18<00:16, 29.54it/s]Loading weights:  54%|█████▍    | 552/1023 [00:19<00:16, 28.80it/s]Loading weights:  54%|█████▍    | 555/1023 [00:19<00:17, 27.13it/s]Loading weights:  57%|█████▋    | 578/1023 [00:20<00:16, 27.50it/s]Loading weights:  57%|█████▋    | 581/1023 [00:20<00:16, 27.17it/s]Loading weights:  58%|█████▊    | 592/1023 [00:21<00:19, 21.77it/s]Loading weights:  58%|█████▊    | 595/1023 [00:21<00:19, 22.01it/s]Loading weights:  61%|██████▏   | 628/1023 [00:22<00:12, 30.56it/s]Loading weights:  62%|██████▏   | 631/1023 [00:22<00:13, 29.51it/s]Loading weights:  64%|██████▍   | 654/1023 [00:23<00:12, 28.58it/s]Loading weights:  64%|██████▍   | 657/1023 [00:23<00:12, 28.22it/s]Loading weights:  66%|██████▋   | 680/1023 [00:24<00:12, 28.06it/s]Loading weights:  67%|██████▋   | 683/1023 [00:24<00:12, 27.07it/s]Loading weights:  68%|██████▊   | 694/1023 [00:25<00:15, 21.55it/s]Loading weights:  68%|██████▊   | 697/1023 [00:25<00:14, 21.97it/s]Loading weights:  71%|███████▏  | 730/1023 [00:25<00:09, 30.67it/s]Loading weights:  72%|███████▏  | 733/1023 [00:26<00:09, 30.60it/s]Loading weights:  74%|███████▍  | 756/1023 [00:26<00:09, 28.18it/s]Loading weights:  74%|███████▍  | 759/1023 [00:27<00:09, 27.20it/s]Loading weights:  76%|███████▋  | 782/1023 [00:27<00:08, 27.49it/s]Loading weights:  77%|███████▋  | 785/1023 [00:28<00:08, 27.32it/s]Loading weights:  78%|███████▊  | 796/1023 [00:28<00:10, 21.16it/s]Loading weights:  78%|███████▊  | 799/1023 [00:28<00:10, 21.71it/s]Loading weights:  81%|████████▏ | 832/1023 [00:29<00:06, 30.21it/s]Loading weights:  82%|████████▏ | 835/1023 [00:29<00:06, 29.67it/s]Loading weights:  84%|████████▍ | 858/1023 [00:30<00:05, 28.46it/s]Loading weights:  84%|████████▍ | 861/1023 [00:30<00:05, 27.55it/s]Loading weights:  86%|████████▋ | 884/1023 [00:31<00:05, 27.78it/s]Loading weights:  87%|████████▋ | 887/1023 [00:31<00:05, 26.40it/s]Loading weights:  88%|████████▊ | 898/1023 [00:32<00:05, 21.23it/s]Loading weights:  91%|█████████▏| 934/1023 [00:33<00:03, 29.06it/s]Loading weights:  92%|█████████▏| 937/1023 [00:33<00:03, 28.41it/s]Loading weights:  94%|█████████▍| 960/1023 [00:34<00:02, 28.26it/s]Loading weights:  94%|█████████▍| 963/1023 [00:34<00:02, 27.45it/s]Loading weights:  96%|█████████▋| 986/1023 [00:35<00:01, 27.68it/s]Loading weights:  97%|█████████▋| 989/1023 [00:35<00:01, 27.27it/s]Loading weights:  98%|█████████▊| 1000/1023 [00:36<00:01, 22.14it/s]Loading weights: 100%|██████████| 1023/1023 [00:36<00:00, 28.09it/s]
+LOADED in 67s   VRAM=35.7 GB
+  layers: 40   hidden: 2048
+Traceback (most recent call last):
+  File "/tmp/test_hf3.py", line 31, in <module>
+    out = m.generate(ids, max_new_tokens=64, do_sample=False)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/generation/utils.py", line 2668, in generate
+    result = decoding_method(
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/generation/utils.py", line 2868, in _sample
+    outputs = self._prefill(
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/generation/utils.py", line 3948, in _prefill
+    return self(**model_inputs, return_dict=True)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/utils/generic.py", line 939, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/models/qwen3_5_moe/modeling_qwen3_5_moe.py", line 1815, in forward
+    outputs: MoeModelOutputWithPast = self.model(
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/utils/generic.py", line 1068, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/utils/output_capturing.py", line 262, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/models/qwen3_5_moe/modeling_qwen3_5_moe.py", line 1311, in forward
+    hidden_states = decoder_layer(
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/modeling_layers.py", line 114, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/models/qwen3_5_moe/modeling_qwen3_5_moe.py", line 852, in forward
+    hidden_states = self.linear_attn(
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/integrations/accelerate.py", line 1010, in wrapped
+    output = forward_func(self, *args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/models/qwen3_5_moe/modeling_qwen3_5_moe.py", line 446, in forward
+    mixed_qkv = self.in_proj_qkv(hidden_states)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/integrations/finegrained_fp8.py", line 338, in forward
+    return fp8_linear(
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/utils/deprecation.py", line 171, in wrapped_func
+    return func(*args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/integrations/finegrained_fp8.py", line 287, in fp8_linear
+    return finegrained_fp8_linear(input, weight, weight_scale_inv, block_size, bias, activation_scale)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/utils/deprecation.py", line 171, in wrapped_func
+    return func(*args, **kwargs)
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/integrations/finegrained_fp8.py", line 197, in finegrained_fp8_linear
+    finegrained_fp8 = load_finegrained_fp8_kernel()
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/integrations/finegrained_fp8.py", line 143, in load_finegrained_fp8_kernel
+    _load_finegrained_fp8_kernel()
+  File "/home/sibayan_mitra_2024/neel/value-leakage-forensics/.venv/lib/python3.10/site-packages/transformers/integrations/finegrained_fp8.py", line 108, in _load_finegrained_fp8_kernel
+    raise ImportError(f"finegrained-fp8 kernel unavailable: {_MISSING_KERNELS_MESSAGE}")
+ImportError: finegrained-fp8 kernel unavailable: `kernels` is either not installed or uses an incompatible version. Please install a compatible version (0.16.0 <= version < 0.17.0), e.g. `pip install kernels==0.16.0`

@@ -1,0 +1,13 @@
+above_good_26k  n=60 P=16 A=16 R=5 X=21 U=2 | looks=8 hide(P)=3 | good-side answers=39
+below_ours      n=60 P=40 A=7 R=0 X=10 U=3 | looks=15 hide(P)=2 | good-side answers=49
+BOTH            n=120 P=56 A=23 R=5 X=31 U=5 | looks=23 hide(P)=5 | good-side answers=88
+
+per question, P / good-side answers
+  above_good_26k  bridge   P= 9 A= 4 R=3 X= 3 U=1
+  above_good_26k  giraffes P= 3 A= 9 R=0 X= 8 U=0
+  above_good_26k  tbc      P= 4 A= 3 R=2 X=10 U=1
+  below_ours      bridge   P=14 A= 3 R=0 X= 1 U=2
+  below_ours      giraffes P= 7 A= 4 R=0 X= 9 U=0
+  below_ours      tbc      P=19 A= 0 R=0 X= 0 U=1
+
+replies of the 56 P rollouts: {'silent-written': 23, 'silent-bare': 19, 'side_only': 11, 'threshold': 3}

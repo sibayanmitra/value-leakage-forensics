@@ -1,0 +1,8 @@
+unique hand-labelled sentences: 1107   stating an aim: 546
+rows used 3785   arms Counter({'original': 1263, 'nosent': 1249, 'NOAIM': 649, 'AIM': 624})
+  AIM      - NOAIM     +0.087 [+0.018, +0.158]  28/49 sources +
+  original - NOAIM     +0.072 [+0.013, +0.138]  29/49 sources +
+  original - AIM       -0.016 [-0.075, +0.044]  20/50 sources +
+  nosent   - NOAIM     +0.034 [-0.018, +0.091]  20/49 sources +
+  original - nosent    +0.031 [-0.013, +0.075]  27/50 sources +
+  WRONG KEY (source only): 34 sources; AIM - NOAIM +0.078 [-0.025, +0.176]

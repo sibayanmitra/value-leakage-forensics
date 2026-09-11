@@ -1,0 +1,5 @@
+two-sided Fisher exact tests, step 2 (NO counts out of 5, resampled vs kept):
+  0/5 vs 4/5 (rollout 11: Y and B): p = 0.048
+  1/5 vs 3/5 (rollout 55 B): p = 0.524
+  3/5 vs 5/5 (rollout 1 D): p = 0.444
+  4/5 vs 5/5 (rollout 24 D): p = 1.000

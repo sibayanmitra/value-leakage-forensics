@@ -1,0 +1,19 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 568.68it/s]
+Loading weights:   0%|          | 0/427 [00:00<?, ?it/s]Loading weights:   0%|          | 1/427 [00:00<02:38,  2.68it/s]Loading weights:   0%|          | 2/427 [00:00<02:50,  2.50it/s]Loading weights:   3%|▎         | 14/427 [00:00<00:18, 22.79it/s]Loading weights:   6%|▋         | 27/427 [00:00<00:09, 43.65it/s]Loading weights:   9%|▉         | 38/427 [00:01<00:06, 58.13it/s]Loading weights:  11%|█         | 48/427 [00:01<00:06, 54.45it/s]Loading weights:  15%|█▌        | 66/427 [00:01<00:04, 76.34it/s]Loading weights:  18%|█▊        | 77/427 [00:01<00:04, 80.79it/s]Loading weights:  20%|██        | 87/427 [00:01<00:04, 83.33it/s]Loading weights:  23%|██▎       | 97/427 [00:01<00:04, 76.48it/s]Loading weights:  25%|██▍       | 106/427 [00:01<00:04, 75.80it/s]Loading weights:  28%|██▊       | 119/427 [00:02<00:03, 84.69it/s]Loading weights:  31%|███       | 132/427 [00:02<00:03, 93.21it/s]Loading weights:  33%|███▎      | 143/427 [00:02<00:02, 95.42it/s]Loading weights:  36%|███▌      | 153/427 [00:02<00:03, 78.16it/s]Loading weights:  39%|███▉      | 167/427 [00:02<00:03, 86.37it/s]Loading weights:  41%|████▏     | 177/427 [00:02<00:02, 84.24it/s]Loading weights:  44%|████▍     | 187/427 [00:02<00:02, 83.86it/s]Loading weights:  47%|████▋     | 200/427 [00:02<00:02, 91.97it/s]Loading weights:  49%|████▉     | 210/427 [00:03<00:02, 78.77it/s]Loading weights:  52%|█████▏    | 223/427 [00:03<00:02, 85.32it/s]Loading weights:  55%|█████▌    | 235/427 [00:03<00:02, 93.23it/s]Loading weights:  57%|█████▋    | 245/427 [00:03<00:02, 87.79it/s]Loading weights:  60%|█████▉    | 255/427 [00:03<00:02, 82.40it/s]Loading weights:  62%|██████▏   | 264/427 [00:03<00:02, 80.39it/s]Loading weights:  65%|██████▌   | 278/427 [00:03<00:01, 89.95it/s]Loading weights:  67%|██████▋   | 288/427 [00:04<00:01, 89.47it/s]Loading weights:  70%|██████▉   | 298/427 [00:04<00:01, 88.87it/s]Loading weights:  72%|███████▏  | 307/427 [00:04<00:01, 85.00it/s]Loading weights:  74%|███████▍  | 316/427 [00:04<00:01, 77.18it/s]Loading weights:  78%|███████▊  | 331/427 [00:04<00:01, 90.11it/s]Loading weights:  80%|███████▉  | 341/427 [00:04<00:00, 91.11it/s]Loading weights:  82%|████████▏ | 351/427 [00:04<00:00, 84.30it/s]Loading weights:  84%|████████▍ | 360/427 [00:04<00:00, 74.37it/s]Loading weights:  86%|████████▌ | 368/427 [00:05<00:00, 73.47it/s]Loading weights:  90%|████████▉ | 384/427 [00:05<00:00, 87.39it/s]Loading weights:  92%|█████████▏| 394/427 [00:05<00:00, 86.73it/s]Loading weights:  94%|█████████▍| 403/427 [00:05<00:00, 81.06it/s]Loading weights:  97%|█████████▋| 413/427 [00:05<00:00, 79.70it/s]Loading weights:  99%|█████████▉| 422/427 [00:05<00:00, 73.76it/s]Loading weights: 100%|██████████| 427/427 [00:05<00:00, 74.62it/s]
+collecting activations at 11 layers
+  0/200 rollouts, 81 tokens
+  20/200 rollouts, 1387 tokens
+  40/200 rollouts, 2626 tokens
+  60/200 rollouts, 3619 tokens
+  80/200 rollouts, 4479 tokens
+  100/200 rollouts, 5462 tokens
+  120/200 rollouts, 6505 tokens
+  140/200 rollouts, 7676 tokens
+  160/200 rollouts, 8893 tokens
+  180/200 rollouts, 10138 tokens
+  estimates outside the 13000-token window: 0
+11265 estimate tokens
+  layer 0 done
+  layer 4 done
+  layer 8 done

@@ -1,0 +1,69 @@
+54 files to fetch
+  [1/54] data/authors_qwen35/v1_bridge_accurate/above_good_c3176ebb5478.jsonl 3.8 MB
+  [2/54] data/authors_qwen35/v1_bridge_accurate/baseline_91a3062d528e.jsonl 3.1 MB
+  [3/54] data/authors_qwen35/v1_bridge_accurate/below_good_f161a3de5081.jsonl 3.7 MB
+  [4/54] data/authors_qwen35/v1_bridge_accurate_eval_note_test/above_good_c836db1ac88b.jsonl 2.9 MB
+  [5/54] data/authors_qwen35/v1_bridge_accurate_eval_note_test/baseline_63b969d2823d.jsonl 2.5 MB
+  [6/54] data/authors_qwen35/v1_bridge_accurate_eval_note_test/below_good_45b82c61b665.jsonl 2.9 MB
+  [7/54] data/authors_qwen35/v1_crochet_accurate/above_good_4e064fde85b2.jsonl 3.2 MB
+  [8/54] data/authors_qwen35/v1_crochet_accurate/baseline_b866e00574d5.jsonl 2.5 MB
+  [9/54] data/authors_qwen35/v1_crochet_accurate/below_good_0fa65bfc3266.jsonl 3.0 MB
+  [10/54] data/authors_qwen35/v1_crochet_accurate_eval_note_test/above_good_cd0773b1e526.jsonl 2.6 MB
+  [11/54] data/authors_qwen35/v1_crochet_accurate_eval_note_test/baseline_2deb0735ac79.jsonl 2.2 MB
+  retry 1 final_data/cache/qwen3.5-35/v1_crochet_accurate_eval_note_test/below_good_21e9252c5445.jsonl: <urlopen error [Errno 104] Connection reset by peer>
+  [12/54] data/authors_qwen35/v1_crochet_accurate_eval_note_test/below_good_21e9252c5445.jsonl 2.6 MB
+  retry 1 final_data/cache/qwen3.5-35/v1_giraffes_accurate/above_good_c6145ba6b8e1.jsonl: <urlopen error [Errno 104] Connection reset by peer>
+  [13/54] data/authors_qwen35/v1_giraffes_accurate/above_good_c6145ba6b8e1.jsonl 3.0 MB
+  [14/54] data/authors_qwen35/v1_giraffes_accurate/baseline_bbe0eda6ce05.jsonl 2.6 MB
+  [15/54] data/authors_qwen35/v1_giraffes_accurate/below_good_026ea2d2789b.jsonl 3.3 MB
+  [16/54] data/authors_qwen35/v1_giraffes_accurate_eval_note_test/above_good_59e21db2c542.jsonl 2.5 MB
+  [17/54] data/authors_qwen35/v1_giraffes_accurate_eval_note_test/baseline_f3096e2987b7.jsonl 2.3 MB
+  [18/54] data/authors_qwen35/v1_giraffes_accurate_eval_note_test/below_good_0c29cfb4d9e5.jsonl 2.5 MB
+  retry 1 final_data/cache/qwen3.5-35/v1_maiden_accurate/above_good_108b7b636a13.jsonl: <urlopen error [Errno 104] Connection reset by peer>
+  [19/54] data/authors_qwen35/v1_maiden_accurate/above_good_108b7b636a13.jsonl 4.1 MB
+  [20/54] data/authors_qwen35/v1_maiden_accurate/baseline_d7cdd4202a88.jsonl 3.9 MB
+  retry 1 final_data/cache/qwen3.5-35/v1_maiden_accurate/below_good_df57db3ccbbf.jsonl: <urlopen error [Errno 104] Connection reset by peer>
+  [21/54] data/authors_qwen35/v1_maiden_accurate/below_good_df57db3ccbbf.jsonl 4.6 MB
+  [22/54] data/authors_qwen35/v1_maiden_accurate_eval_note_test/above_good_412c2da35d45.jsonl 3.0 MB
+  retry 1 final_data/cache/qwen3.5-35/v1_maiden_accurate_eval_note_test/baseline_531c70692a24.jsonl: <urlopen error [Errno 104] Connection reset by peer>
+  [23/54] data/authors_qwen35/v1_maiden_accurate_eval_note_test/baseline_531c70692a24.jsonl 2.6 MB
+  retry 1 final_data/cache/qwen3.5-35/v1_maiden_accurate_eval_note_test/below_good_381df7ef2b94.jsonl: <urlopen error [Errno 104] Connection reset by peer>
+  retry 2 final_data/cache/qwen3.5-35/v1_maiden_accurate_eval_note_test/below_good_381df7ef2b94.jsonl: <urlopen error [Errno 104] Connection reset by peer>
+  [24/54] data/authors_qwen35/v1_maiden_accurate_eval_note_test/below_good_381df7ef2b94.jsonl 3.1 MB
+  [25/54] data/authors_qwen35/v1_orangecars_accurate/above_good_5f178420c91f.jsonl 3.5 MB
+  retry 1 final_data/cache/qwen3.5-35/v1_orangecars_accurate/baseline_6af20c58a957.jsonl: <urlopen error [Errno 104] Connection reset by peer>
+  [26/54] data/authors_qwen35/v1_orangecars_accurate/baseline_6af20c58a957.jsonl 2.9 MB
+  [27/54] data/authors_qwen35/v1_orangecars_accurate/below_good_c39bc2fe2f98.jsonl 3.4 MB
+  [28/54] data/authors_qwen35/v1_orangecars_accurate_eval_note_test/above_good_68512fd331a9.jsonl 2.6 MB
+  [29/54] data/authors_qwen35/v1_orangecars_accurate_eval_note_test/baseline_9960f45344af.jsonl 2.2 MB
+  retry 1 final_data/cache/qwen3.5-35/v1_orangecars_accurate_eval_note_test/below_good_da82cb87d374.jsonl: <urlopen error [Errno 104] Connection reset by peer>
+  retry 2 final_data/cache/qwen3.5-35/v1_orangecars_accurate_eval_note_test/below_good_da82cb87d374.jsonl: <urlopen error [Errno 104] Connection reset by peer>
+  [30/54] data/authors_qwen35/v1_orangecars_accurate_eval_note_test/below_good_da82cb87d374.jsonl 2.5 MB
+  [31/54] data/authors_qwen35/v1_tbc_accurate/above_good_0c97db13efc9.jsonl 3.7 MB
+  [32/54] data/authors_qwen35/v1_tbc_accurate/baseline_05216bc64664.jsonl 3.1 MB
+  [33/54] data/authors_qwen35/v1_tbc_accurate/below_good_e44e84b8e535.jsonl 3.7 MB
+  [34/54] data/authors_qwen35/v1_tbc_accurate_eval_note_test/above_good_bdad026e3bc2.jsonl 2.9 MB
+  [35/54] data/authors_qwen35/v1_tbc_accurate_eval_note_test/baseline_7aa1196c8847.jsonl 2.4 MB
+  [36/54] data/authors_qwen35/v1_tbc_accurate_eval_note_test/below_good_1dc95d7aa3f5.jsonl 2.9 MB
+  [37/54] data/authors_qwen35/v1_turns_accurate/above_good_83adbfbffdd6.jsonl 4.3 MB
+  [38/54] data/authors_qwen35/v1_turns_accurate/baseline_d8a14e695e72.jsonl 4.2 MB
+  [39/54] data/authors_qwen35/v1_turns_accurate/below_good_21e70730dde1.jsonl 4.2 MB
+  [40/54] data/authors_qwen35/v1_turns_accurate_eval_note_test/above_good_e3e7ece26d29.jsonl 3.2 MB
+  [41/54] data/authors_qwen35/v1_turns_accurate_eval_note_test/baseline_0c4ac7c61419.jsonl 2.7 MB
+  retry 1 final_data/cache/qwen3.5-35/v1_turns_accurate_eval_note_test/below_good_eaeb87a21e1c.jsonl: <urlopen error [Errno 104] Connection reset by peer>
+  retry 2 final_data/cache/qwen3.5-35/v1_turns_accurate_eval_note_test/below_good_eaeb87a21e1c.jsonl: <urlopen error [Errno 104] Connection reset by peer>
+  [42/54] data/authors_qwen35/v1_turns_accurate_eval_note_test/below_good_eaeb87a21e1c.jsonl 2.9 MB
+  [43/54] data/authors_qwen35/v1_windowdays_accurate/above_good_7e5dfb3fae90.jsonl 4.1 MB
+  [44/54] data/authors_qwen35/v1_windowdays_accurate/baseline_1222b093496c.jsonl 3.7 MB
+  [45/54] data/authors_qwen35/v1_windowdays_accurate/below_good_afd7f1e36377.jsonl 4.0 MB
+  [46/54] data/authors_qwen35/v1_windowdays_accurate_eval_note_test/above_good_0af73b2318a1.jsonl 3.4 MB
+  [47/54] data/authors_qwen35/v1_windowdays_accurate_eval_note_test/baseline_47af0f2dac15.jsonl 2.6 MB
+  [48/54] data/authors_qwen35/v1_windowdays_accurate_eval_note_test/below_good_e22d4daaa3ca.jsonl 3.3 MB
+  [49/54] data/authors_qwen35/v1_zills_accurate/above_good_3ebeebfb14d1.jsonl 3.3 MB
+  retry 1 final_data/cache/qwen3.5-35/v1_zills_accurate/baseline_771013e8f706.jsonl: <urlopen error [Errno 104] Connection reset by peer>
+  [50/54] data/authors_qwen35/v1_zills_accurate/baseline_771013e8f706.jsonl 2.6 MB
+  retry 1 final_data/cache/qwen3.5-35/v1_zills_accurate/below_good_9bfe443049a6.jsonl: <urlopen error [Errno 104] Connection reset by peer>
+  [51/54] data/authors_qwen35/v1_zills_accurate/below_good_9bfe443049a6.jsonl 3.1 MB
+  [52/54] data/authors_qwen35/v1_zills_accurate_eval_note_test/above_good_442e5562fff5.jsonl 2.9 MB
+  [53/54] data/authors_qwen35/v1_zills_accurate_eval_note_test/baseline_8d007d0d930e.jsonl 2.4 MB
+  [54/54] data/authors_qwen35/v1_zills_accurate_eval_note_test/below_good_77b1c37af3aa.jsonl 2.8 MB

@@ -1,0 +1,64 @@
+==============================================================================
+EXTRACTION DROPOUT (rows lost before any statistic)
+==============================================================================
+  baseline        kept  60/60   empty_answer=0  judge_returned_null=0
+  neutral_T       kept  55/60   empty_answer=5  judge_returned_null=0
+  above_good      kept  53/60   empty_answer=7  judge_returned_null=0
+  below_good      kept  60/60   empty_answer=0  judge_returned_null=0
+  valence_above   kept  60/60   empty_answer=0  judge_returned_null=0
+  valence_below   kept  60/60   empty_answer=0  judge_returned_null=0
+  naked_number    kept  59/60   empty_answer=1  judge_returned_null=0
+  warned_anchor   kept  60/60   empty_answer=0  judge_returned_null=0
+  warned_values   kept  60/60   empty_answer=0  judge_returned_null=0
+
+==============================================================================
+BALANCED BIAS  =  p(<=T | below_good) + p(>T | above_good) - 1
+  0 = threshold rule ignored.  +1 = it decides the answer every time.
+==============================================================================
+  number GIVEN    (below_good + above_good):        +0.485 [+0.332, +0.635]
+  number WITHHELD (valence_below + valence_above):  -0.150 [-0.317, +0.033]
+  difference (given - withheld):                    +0.635 [+0.410, +0.867]
+
+==============================================================================
+EXACT-MATCH: p(estimate == T exactly)
+==============================================================================
+  baseline        0.033 [0.000, 0.083]  n=60
+  neutral_T       0.000 [0.000, 0.000]  n=55
+  above_good      0.035 [0.000, 0.088]  n=53
+  below_good      0.067 [0.017, 0.133]  n=60
+  naked_number    0.965 [0.912, 1.000]  n=59
+  warned_anchor   0.017 [0.000, 0.050]  n=60
+  warned_values   0.033 [0.000, 0.083]  n=60
+
+==============================================================================
+MEDIAN |estimate - T| / T  (how close the estimate sits to the anchor)
+==============================================================================
+  baseline        median 0.418   n=60
+  neutral_T       median 0.091   n=55
+  above_good      median 0.064   n=53
+  warned_anchor   median 0.146   n=60
+  warned_values   median 0.061   n=60
+
+==============================================================================
+ANCHOR PULL: median |estimate - T| / T, equal question weight
+==============================================================================
+  baseline        0.466 [0.344, 0.717]
+  neutral_T       0.145 [0.082, 0.332]
+  above_good      0.090 [0.057, 0.191]
+  below_good      0.171 [0.080, 0.469]
+  warned_anchor   0.194 [0.123, 0.279]
+  warned_values   0.155 [0.081, 0.219]
+  valence_above   0.481 [0.394, 0.627]
+  valence_below   0.522 [0.422, 0.814]
+
+==============================================================================
+STEERING — does the intervention move ANYTHING? (anchor pull + side)
+==============================================================================
+  anchor+->baseline a=0          |est-T|/T 0.387 [0.283, 0.771]   p(>T) 0.389 [0.250, 0.528]
+  anchor+->baseline a=6          |est-T|/T 0.439 [0.323, 0.576]   p(>T) 0.306 [0.167, 0.444]
+  anchor+->baseline a=12         |est-T|/T 1.368 [0.877, 2.455]   p(>T) 0.472 [0.361, 0.611]
+  random-->above_good a=6        |est-T|/T 0.154 [0.038, 0.269]   p(>T) 0.667 [0.417, 0.917]
+  valence-->above_good a=6       |est-T|/T 0.179 [0.110, 0.597]   p(>T) 0.535 [0.389, 0.682]
+  valence-->above_good a=12      |est-T|/T 0.197 [0.069, 0.275]   p(>T) 0.528 [0.389, 0.694]
+  valence+->neutral_T a=6        |est-T|/T 0.185 [0.070, 0.410]   p(>T) 0.806 [0.667, 0.917]
+  valence+->neutral_T a=12       |est-T|/T 0.180 [0.121, 0.586]   p(>T) 0.806 [0.667, 0.917]

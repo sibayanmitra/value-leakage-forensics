@@ -1,0 +1,3 @@
+E2 half c done Sunday 06 September 2026 01:44:09 PM IST; starting neutral_T half A on GPU0
+logs/chain_na.sh: line 6: 3908890 Killed                  VLF_GPU=0 .venv/bin/python src/gen_neutral.py --n 20 --batch 5 --max-new 12500 --questions bridge,crochet,giraffes,maiden,orangecars --out results/neutral_a.jsonl > logs/neutral_a2.log 2>&1
+neutral A done Sunday 06 September 2026 01:44:52 PM IST

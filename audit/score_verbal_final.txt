@@ -1,0 +1,18 @@
+questions with the direction run finished: ['bridge', 'giraffes', 'tbc']
+
+| | no number | a direction only | the number |
+|---|---|---|---|
+| nothing at stake | 22 of 60 | | 50 of 60 |
+| good if above (or high side) | 24 of 60 | 41 of 60 | 39 of 60 |
+| good if below (or low side) | 33 of 60 | 29 of 60 | 11 of 60 |
+
+per question (estimates above the threshold):
+  bridge   no number: 7 of 20 | number without value framing: 17 of 20 | values w/o number, good if above: 9 of 20 | the paper's bet, good if above: 17 of 20 | values w/o number, good if below: 11 of 20 | the paper's bet, good if below: 2 of 20 | direction, high side is good: 12 of 20 | direction, low side is good: 7 of 20
+  giraffes no number: 9 of 20 | number without value framing: 16 of 20 | values w/o number, good if above: 6 of 20 | the paper's bet, good if above: 12 of 20 | values w/o number, good if below: 10 of 20 | the paper's bet, good if below: 9 of 20 | direction, high side is good: 14 of 20 | direction, low side is good: 13 of 20
+  tbc      no number: 6 of 20 | number without value framing: 17 of 20 | values w/o number, good if above: 9 of 20 | the paper's bet, good if above: 10 of 20 | values w/o number, good if below: 12 of 20 | the paper's bet, good if below: 0 of 20 | direction, high side is good: 15 of 20 | direction, low side is good: 9 of 20
+
+comparisons (Fisher's exact test, two-sided):
+  direction without a number, high side is good 41/60  vs  no number 22/60:  p = 0.001
+  direction without a number, high side is good 41/60  vs  values without the number, good if above 24/60:  p = 0.003
+  direction without a number, high side is good 41/60  vs  direction without a number, low side is good 29/60:  p = 0.041
+  the paper's bet, good if above 39/60  vs  the paper's bet, good if below 11/60:  p = 0.000

@@ -1,0 +1,37 @@
+denials [1, 4, 10, 11, 17, 22, 24, 55]
+controls [2, 9, 18, 19, 20, 28, 34, 57]
+part 1/2: [(4, 'denial'), (11, 'denial'), (22, 'denial'), (55, 'denial'), (9, 'control'), (19, 'control'), (28, 'control'), (57, 'control')]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+prompt tokens: {4: 6439, 11: 6296, 22: 4723, 55: 6675, 9: 8111, 19: 7464, 28: 4859, 57: 6975}
+model generation_config: temperature=1.0 top_p=0.95 top_k=20 -> using temperature=0.6 top_p=0.95 top_k=off
+80 samples to run (0 already done), 22 batches, sizes [5, 5, 5, 5, 4, 4, 4, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2]
+[fp8_load] dropped 41 'mlp.gate' skip entries that collide with mlp.gate_proj
+Fetching 14 files:   0%|          | 0/14 [00:00<?, ?it/s]Fetching 14 files: 100%|██████████| 14/14 [00:00<00:00, 705.24it/s]
+Loading weights:   0%|          | 0/1023 [00:00<?, ?it/s]Loading weights:   2%|▏         | 16/1023 [00:00<00:27, 36.77it/s]Loading weights:   4%|▍         | 42/1023 [00:00<00:16, 58.26it/s]Loading weights:   7%|▋         | 68/1023 [00:01<00:13, 69.38it/s]Loading weights:   8%|▊         | 82/1023 [00:01<00:15, 62.53it/s]Loading weights:  12%|█▏        | 118/1023 [00:01<00:11, 78.04it/s]Loading weights:  14%|█▍        | 144/1023 [00:01<00:10, 82.36it/s]Loading weights:  17%|█▋        | 170/1023 [00:02<00:09, 87.31it/s]Loading weights:  18%|█▊        | 184/1023 [00:02<00:11, 73.83it/s]Loading weights:  22%|██▏       | 220/1023 [00:02<00:09, 85.01it/s]Loading weights:  24%|██▍       | 246/1023 [00:03<00:09, 80.48it/s]Loading weights:  27%|██▋       | 272/1023 [00:03<00:09, 80.86it/s]Loading weights:  28%|██▊       | 286/1023 [00:03<00:10, 72.02it/s]Loading weights:  31%|███▏      | 322/1023 [00:04<00:08, 79.45it/s]Loading weights:  34%|███▍      | 348/1023 [00:04<00:08, 76.02it/s]Loading weights:  37%|███▋      | 374/1023 [00:04<00:08, 76.89it/s]Loading weights:  38%|███▊      | 388/1023 [00:05<00:09, 68.50it/s]Loading weights:  41%|████▏     | 424/1023 [00:05<00:07, 80.00it/s]Loading weights:  44%|████▍     | 450/1023 [00:05<00:07, 81.57it/s]Loading weights:  47%|████▋     | 476/1023 [00:06<00:06, 84.44it/s]Loading weights:  48%|████▊     | 490/1023 [00:06<00:07, 74.92it/s]Loading weights:  51%|█████▏    | 526/1023 [00:06<00:05, 83.84it/s]Loading weights:  54%|█████▍    | 552/1023 [00:07<00:05, 84.40it/s]Loading weights:  57%|█████▋    | 578/1023 [00:07<00:05, 84.86it/s]Loading weights:  58%|█████▊    | 592/1023 [00:07<00:06, 71.72it/s]Loading weights:  61%|██████▏   | 628/1023 [00:08<00:04, 83.12it/s]Loading weights:  64%|██████▍   | 654/1023 [00:08<00:04, 80.98it/s]Loading weights:  66%|██████▋   | 680/1023 [00:08<00:04, 82.64it/s]Loading weights:  68%|██████▊   | 694/1023 [00:08<00:04, 75.73it/s]Loading weights:  71%|███████▏  | 730/1023 [00:09<00:03, 94.99it/s]Loading weights:  74%|███████▍  | 756/1023 [00:09<00:02, 101.42it/s]Loading weights:  76%|███████▋  | 782/1023 [00:09<00:02, 105.47it/s]Loading weights:  78%|███████▊  | 796/1023 [00:09<00:02, 95.25it/s] Loading weights:  81%|████████▏ | 832/1023 [00:10<00:01, 107.85it/s]Loading weights:  84%|████████▍ | 858/1023 [00:10<00:01, 104.75it/s]Loading weights:  86%|████████▋ | 884/1023 [00:10<00:01, 108.28it/s]Loading weights:  88%|████████▊ | 898/1023 [00:10<00:01, 96.77it/s] Loading weights:  91%|█████████▏| 934/1023 [00:11<00:00, 109.64it/s]Loading weights:  94%|█████████▍| 960/1023 [00:11<00:00, 106.29it/s]Loading weights:  96%|█████████▋| 986/1023 [00:11<00:00, 103.64it/s]Loading weights:  98%|█████████▊| 1000/1023 [00:11<00:00, 91.44it/s]Loading weights: 100%|██████████| 1023/1023 [00:11<00:00, 86.25it/s]
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 717.95it/s]
+GREEDY CHECK rollout 4: MATCH
+  regenerated: 'Thinking Process:\n\n1.  **Analyze the User\'s Question:** The user is asking if the number "26,000,000" they provided at the end of their initial prompt influenced my estimate. They'
+  saved:       'Thinking Process:\n\n1.  **Analyze the User\'s Question:** The user is asking if the number "26,000,000" they provided at the end of their initial prompt influenced my estimate. They want a "YES" or "NO'
+  5/80 in 263s
+  10/80 in 519s
+  15/80 in 776s
+  20/80 in 1032s
+  24/80 in 1292s
+  28/80 in 1547s
+  32/80 in 1807s
+  36/80 in 2063s
+  40/80 in 2319s
+  44/80 in 2582s
+  48/80 in 2837s
+  51/80 in 3098s
+  54/80 in 3353s
+  57/80 in 3607s
+  60/80 in 3861s
+  63/80 in 4116s
+  66/80 in 4370s
+  69/80 in 4625s
+  72/80 in 4881s
+  75/80 in 5109s
+  78/80 in 5323s
+  80/80 in 5574s
+DONE -> results/resample_denials_p1.jsonl

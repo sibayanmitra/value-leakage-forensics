@@ -1,0 +1,9 @@
+traces: 180   cached(free): 0   billable: 180 ~= $0.31
+  balance $4.60 | est. cost $0.31 | reserve $2.50
+
+done in 719s  spent $0.375
+  traces with >=1 estimate: 180/180
+  total estimate tokens   : 9608
+  median per trace        : 53
+  located (offset found)  : 9608
+  dropped / reordered     : 35 / 521

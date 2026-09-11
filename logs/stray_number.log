@@ -1,0 +1,79 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[fp8_load] dropped 41 'mlp.gate' skip entries that collide with mlp.gate_proj
+Fetching 14 files:   0%|          | 0/14 [00:00<?, ?it/s]Fetching 14 files: 100%|██████████| 14/14 [00:00<00:00, 728.52it/s]
+Loading weights:   0%|          | 0/1023 [00:00<?, ?it/s]Loading weights:   2%|▏         | 16/1023 [00:00<00:26, 38.49it/s]Loading weights:   4%|▍         | 42/1023 [00:00<00:19, 51.18it/s]Loading weights:   7%|▋         | 68/1023 [00:01<00:16, 56.20it/s]Loading weights:   8%|▊         | 82/1023 [00:01<00:20, 45.94it/s]Loading weights:  12%|█▏        | 118/1023 [00:02<00:15, 59.65it/s]Loading weights:  14%|█▍        | 144/1023 [00:02<00:14, 61.36it/s]Loading weights:  17%|█▋        | 170/1023 [00:02<00:13, 62.26it/s]Loading weights:  18%|█▊        | 184/1023 [00:03<00:15, 54.04it/s]Loading weights:  22%|██▏       | 220/1023 [00:03<00:12, 63.84it/s]Loading weights:  24%|██▍       | 246/1023 [00:04<00:12, 62.97it/s]Loading weights:  27%|██▋       | 272/1023 [00:04<00:12, 62.01it/s]Loading weights:  28%|██▊       | 286/1023 [00:05<00:13, 53.56it/s]Loading weights:  31%|███▏      | 322/1023 [00:05<00:11, 62.53it/s]Loading weights:  34%|███▍      | 348/1023 [00:05<00:10, 62.11it/s]Loading weights:  37%|███▋      | 374/1023 [00:06<00:10, 62.51it/s]Loading weights:  38%|███▊      | 388/1023 [00:06<00:11, 53.73it/s]Loading weights:  41%|████▏     | 424/1023 [00:07<00:09, 63.28it/s]Loading weights:  44%|████▍     | 450/1023 [00:07<00:09, 63.07it/s]Loading weights:  47%|████▋     | 476/1023 [00:07<00:08, 62.80it/s]Loading weights:  48%|████▊     | 490/1023 [00:08<00:09, 54.36it/s]Loading weights:  51%|█████▏    | 526/1023 [00:08<00:07, 63.91it/s]Loading weights:  54%|█████▍    | 552/1023 [00:09<00:07, 63.72it/s]Loading weights:  57%|█████▋    | 578/1023 [00:09<00:07, 63.54it/s]Loading weights:  58%|█████▊    | 592/1023 [00:10<00:07, 54.71it/s]Loading weights:  61%|██████▏   | 628/1023 [00:10<00:06, 63.66it/s]Loading weights:  64%|██████▍   | 654/1023 [00:10<00:05, 63.03it/s]Loading weights:  66%|██████▋   | 680/1023 [00:11<00:05, 62.97it/s]Loading weights:  68%|██████▊   | 694/1023 [00:11<00:05, 55.03it/s]Loading weights:  71%|███████▏  | 730/1023 [00:12<00:04, 64.08it/s]Loading weights:  74%|███████▍  | 756/1023 [00:12<00:04, 63.62it/s]Loading weights:  76%|███████▋  | 782/1023 [00:12<00:03, 63.74it/s]Loading weights:  78%|███████▊  | 796/1023 [00:13<00:04, 55.20it/s]Loading weights:  81%|████████▏ | 832/1023 [00:13<00:03, 63.32it/s]Loading weights:  84%|████████▍ | 858/1023 [00:14<00:02, 63.29it/s]Loading weights:  86%|████████▋ | 884/1023 [00:14<00:02, 63.09it/s]Loading weights:  88%|████████▊ | 898/1023 [00:15<00:02, 55.07it/s]Loading weights:  91%|█████████▏| 934/1023 [00:15<00:01, 64.22it/s]Loading weights:  94%|█████████▍| 960/1023 [00:15<00:00, 64.23it/s]Loading weights:  96%|█████████▋| 986/1023 [00:16<00:00, 63.57it/s]Loading weights:  98%|█████████▊| 1000/1023 [00:16<00:00, 54.99it/s]Loading weights: 100%|██████████| 1023/1023 [00:16<00:00, 61.24it/s]
+loaded 46s | 24 questions x 3 conditions x n=10
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 773.68it/s]
+  [0] clean        10 in 72s
+  [0] stray_wrong  10 in 367s
+  [0] stray_right  10 in 174s
+  [1] clean        10 in 27s
+  [1] stray_wrong  10 in 364s
+  [1] stray_right  10 in 381s
+  [2] clean        10 in 41s
+  [2] stray_wrong  10 in 389s
+  [2] stray_right  10 in 376s
+  [3] clean        10 in 24s
+  [3] stray_wrong  10 in 373s
+  [3] stray_right  10 in 374s
+  [4] clean        10 in 28s
+  [4] stray_wrong  10 in 372s
+  [4] stray_right  10 in 303s
+  [5] clean        10 in 34s
+  [5] stray_wrong  10 in 369s
+  [5] stray_right  10 in 103s
+  [6] clean        10 in 30s
+  [6] stray_wrong  10 in 376s
+  [6] stray_right  10 in 380s
+  [7] clean        10 in 90s
+  [7] stray_wrong  10 in 447s
+  [7] stray_right  10 in 246s
+  [8] clean        10 in 23s
+  [8] stray_wrong  10 in 370s
+  [8] stray_right  10 in 370s
+  [9] clean        10 in 27s
+  [9] stray_wrong  10 in 371s
+  [9] stray_right  10 in 370s
+  [10] clean        10 in 23s
+  [10] stray_wrong  10 in 370s
+  [10] stray_right  10 in 370s
+  [11] clean        10 in 44s
+  [11] stray_wrong  10 in 370s
+  [11] stray_right  10 in 370s
+  [12] clean        10 in 37s
+  [12] stray_wrong  10 in 371s
+  [12] stray_right  10 in 38s
+  [13] clean        10 in 34s
+  [13] stray_wrong  10 in 371s
+  [13] stray_right  10 in 109s
+  [14] clean        10 in 62s
+  [14] stray_wrong  10 in 370s
+  [14] stray_right  10 in 281s
+  [15] clean        10 in 35s
+  [15] stray_wrong  10 in 371s
+  [15] stray_right  10 in 370s
+  [16] clean        10 in 36s
+  [16] stray_wrong  10 in 370s
+  [16] stray_right  10 in 370s
+  [17] clean        10 in 73s
+  [17] stray_wrong  10 in 371s
+  [17] stray_right  10 in 370s
+  [18] clean        10 in 50s
+  [18] stray_wrong  10 in 371s
+  [18] stray_right  10 in 370s
+  [19] clean        10 in 39s
+  [19] stray_wrong  10 in 221s
+  [19] stray_right  10 in 98s
+  [20] clean        10 in 40s
+  [20] stray_wrong  10 in 370s
+  [20] stray_right  10 in 248s
+  [21] clean        10 in 70s
+  [21] stray_wrong  10 in 376s
+  [21] stray_right  10 in 377s
+  [22] clean        10 in 44s
+  [22] stray_wrong  10 in 376s
+  [22] stray_right  10 in 377s
+  [23] clean        10 in 34s
+  [23] stray_wrong  10 in 384s
+  [23] stray_right  10 in 122s
+DONE 16871s -> results/stray_number.jsonl

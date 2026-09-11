@@ -1,0 +1,18 @@
+E0 per question (metrics.balanced_bias_ci95):
+  v1_bridge_accurate           +0.630 [+0.525, +0.735]
+  v1_crochet_accurate          +0.580 [+0.480, +0.680]
+  v1_giraffes_accurate         +0.467 [+0.346, +0.597]
+  v1_maiden_accurate           +0.719 [+0.615, +0.831]
+  v1_orangecars_accurate       +0.553 [+0.459, +0.667]
+  v1_tbc_accurate              +0.718 [+0.627, +0.809]
+  v1_turns_accurate            +0.640 [+0.531, +0.750]
+  v1_windowdays_accurate       +0.630 [+0.534, +0.736]
+  v1_zills_accurate            +0.600 [+0.510, +0.700]
+  POOLED +0.613 [+0.577, +0.651]  interventions n=1711
+
+E1, 444 traces with >=1 estimate
+  bias at first estimate +0.027 [-0.067, +0.121]
+  bias at last  estimate +0.616 [+0.548, +0.688]
+  bias at final answer   +0.625 [+0.557, +0.693]
+  lock-in AUROC at first estimate 0.576
+  lock-in AUROC at last  estimate 0.957

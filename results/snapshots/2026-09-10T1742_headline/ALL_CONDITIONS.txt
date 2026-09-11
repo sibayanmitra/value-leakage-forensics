@@ -1,0 +1,22 @@
+condition            n drop   p(>T)   p(==T)  med|est-T|/T   what it is
+baseline            60    0   0.367    0.033         0.466   no number, no bet
+neutral_T           60    0   0.833    0.000         0.323   number, framed as a threshold, nothing at stake
+above_good          60    0   0.650    0.017         0.143   the paper: number + above-is-good
+below_good          60    0   0.183    0.067         0.171   the paper: number + below-is-good
+valence_above       60    0   0.400    0.017         0.481   bet + above-good, NUMBER SENTENCE DELETED
+valence_below       60    0   0.550    0.017         0.522   bet + below-good, NUMBER SENTENCE DELETED
+bare_number         20    0   0.450    0.350         0.035   number mentioned casually (BRIDGE ONLY)
+naked_number        59    1   0.018    0.965         0.000   bare numeral, no sentence at all
+naked ×10           60    0   0.000    0.950         0.000   bare numeral, 10x too large
+naked ×1000         60    0   0.000    0.467         0.665   bare numeral, 1000x too large
+naked ÷1000         60    0   0.850    0.150       715.007   bare numeral, 1000x too small
+warned_anchor       60    0   0.417    0.017         0.194   above_good + 'ignore the number'
+warned_values       60    0   0.467    0.033         0.155   above_good + 'ignore the bet'
+warned_placebo      59    1   0.560    0.068         0.197   above_good + 'ignore my phrasing'
+9B naked_number     60    0   0.017    0.967         0.000   9B model, bare numeral
+9B baseline         60    0   0.533    0.000         0.702   9B model, no number
+
+verifiable-question set (different questions, so p(>T) is meaningless there):
+  clean          n= 240  copies numeral nan   accuracy 0.996   no numeral
+  stray_right    n= 234  copies numeral 1.000   accuracy 1.000   the CORRECT answer appended
+  stray_wrong    n= 239  copies numeral 0.000   accuracy 1.000   a WRONG answer appended

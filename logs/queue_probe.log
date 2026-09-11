@@ -1,0 +1,41 @@
+[queue] deps clear 2026-09-06T21:35:43+05:30
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 642.46it/s]
+Loading weights:   0%|          | 0/427 [00:00<?, ?it/s]Loading weights:   0%|          | 1/427 [00:00<02:20,  3.04it/s]Loading weights:   0%|          | 2/427 [00:00<02:39,  2.67it/s]Loading weights:   3%|▎         | 14/427 [00:00<00:17, 23.92it/s]Loading weights:   6%|▋         | 27/427 [00:00<00:08, 45.68it/s]Loading weights:   9%|▉         | 40/427 [00:01<00:06, 64.12it/s]Loading weights:  12%|█▏        | 50/427 [00:01<00:06, 62.03it/s]Loading weights:  15%|█▌        | 66/427 [00:01<00:04, 82.88it/s]Loading weights:  19%|█▊        | 80/427 [00:01<00:03, 92.49it/s]Loading weights:  22%|██▏       | 92/427 [00:01<00:03, 98.82it/s]Loading weights:  24%|██▍       | 104/427 [00:01<00:03, 87.01it/s]Loading weights:  28%|██▊       | 119/427 [00:01<00:03, 98.44it/s]Loading weights:  31%|███       | 132/427 [00:01<00:02, 105.74it/s]Loading weights:  34%|███▎      | 144/427 [00:02<00:02, 103.88it/s]Loading weights:  36%|███▋      | 155/427 [00:02<00:03, 85.49it/s] Loading weights:  40%|████      | 171/427 [00:02<00:02, 102.00it/s]Loading weights:  43%|████▎     | 183/427 [00:02<00:02, 100.86it/s]Loading weights:  45%|████▌     | 194/427 [00:02<00:02, 98.59it/s] Loading weights:  48%|████▊     | 205/427 [00:02<00:02, 94.77it/s]Loading weights:  52%|█████▏    | 220/427 [00:02<00:01, 104.98it/s]Loading weights:  54%|█████▍    | 231/427 [00:02<00:01, 103.32it/s]Loading weights:  57%|█████▋    | 242/427 [00:03<00:01, 95.13it/s] Loading weights:  59%|█████▉    | 254/427 [00:03<00:01, 94.69it/s]Loading weights:  62%|██████▏   | 266/427 [00:03<00:01, 97.27it/s]Loading weights:  65%|██████▌   | 278/427 [00:03<00:01, 103.09it/s]Loading weights:  68%|██████▊   | 291/427 [00:03<00:01, 109.07it/s]Loading weights:  71%|███████▏  | 305/427 [00:03<00:01, 107.29it/s]Loading weights:  74%|███████▍  | 316/427 [00:03<00:01, 96.93it/s] Loading weights:  77%|███████▋  | 329/427 [00:03<00:00, 103.35it/s]Loading weights:  81%|████████  | 345/427 [00:04<00:00, 97.81it/s] Loading weights:  84%|████████▍ | 360/427 [00:04<00:00, 102.13it/s]Loading weights:  87%|████████▋ | 371/427 [00:04<00:00, 103.39it/s]Loading weights:  90%|████████▉ | 384/427 [00:04<00:00, 102.64it/s]Loading weights:  93%|█████████▎| 398/427 [00:04<00:00, 111.00it/s]Loading weights:  96%|█████████▋| 411/427 [00:04<00:00, 114.48it/s]Loading weights:  99%|█████████▉| 423/427 [00:04<00:00, 94.15it/s] Loading weights: 100%|██████████| 427/427 [00:04<00:00, 87.44it/s]
+collecting activations at 11 layers
+  0/200 rollouts, 37 tokens
+  20/200 rollouts, 775 tokens
+  40/200 rollouts, 1534 tokens
+  60/200 rollouts, 2017 tokens
+  80/200 rollouts, 2366 tokens
+  100/200 rollouts, 2830 tokens
+  120/200 rollouts, 3372 tokens
+  140/200 rollouts, 3989 tokens
+  160/200 rollouts, 4581 tokens
+  180/200 rollouts, 5049 tokens
+5508 estimate tokens
+  layer 0 done
+  layer 4 done
+  layer 8 done
+  layer 12 done
+  layer 16 done
+  layer 20 done
+  layer 24 done
+  layer 28 done
+  layer 29 done
+  layer 30 done
+  layer 31 done
+target  above_T   cond  favoured  shuffled
+layer                                     
+0         0.481  0.514     0.506     0.510
+4         0.463  0.518     0.500     0.502
+8         0.553  0.590     0.508     0.494
+12        0.686  0.687     0.544     0.502
+16        0.779  0.648     0.568     0.490
+20        0.751  0.596     0.553     0.501
+24        0.689  0.553     0.518     0.513
+28        0.612  0.529     0.525     0.510
+29        0.617  0.511     0.529     0.504
+30        0.606  0.514     0.524     0.505
+31        0.609  0.510     0.525     0.507
+[queue] done 2026-09-06T21:52:21+05:30

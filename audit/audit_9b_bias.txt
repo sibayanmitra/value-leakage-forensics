@@ -1,0 +1,2 @@
+cells: {'giraffes': {'above_good': 20, 'below_good': 17}, 'bridge': {'above_good': 5, 'below_good': 7}, 'tbc': {'above_good': 20, 'below_good': 22}, 'orangecars': {'above_good': 10, 'below_good': 5}}
+9B balanced bias +0.450 [+0.264, +0.638], equal weight over ['giraffes', 'bridge', 'tbc', 'orangecars']

@@ -1,0 +1,28 @@
+# Append-only run log. Wall-clock start/finish for every generation run, newest at the bottom.
+# Written automatically by the chain scripts. For a grouped view of what each file contains,
+# see RESULTS_INDEX.md (regenerate with `.venv/bin/python src/make_index.py`).
+#
+# finished | condition | output | settings | rows | started -> finished
+2026-09-07T05:18 | warned_anchor  | results/warned_anchor.jsonl  | cap=18000 n=20x3 | rows=60 truncated=0 | backstop stage 1
+2026-09-07T05:32 | warned_values  | results/warned_values.jsonl  | cap=18000 n=20x3 | rows=60 truncated=0 | backstop stage 1
+2026-09-07T14:40 | steer_dm       | results/steer_dm.jsonl       | cap=18000 n=12 4 arms | rows=324 | backstop stage 2
+2026-09-08T01:14 | naked x10      | results/naked_hi10.jsonl     | cap=18000 n=20x3 scale=10 | rows=60
+2026-09-08T01:23 | naked /1000    | results/naked_lo1000.jsonl   | cap=18000 n=20x3 scale=0.001 | rows=60
+2026-09-08T01:28 | naked x1000    | results/naked_hi1000.jsonl   | cap=18000 n=20x3 scale=1000 | rows=60
+2026-09-08T05:29:49+05:30 | neutral_T | results/neutral_T_26k.jsonl | cap=26000 n=20x3 | rows=60 truncated=0 | started=2026-09-08T04:01:29+05:30 finished=2026-09-08T05:29:49+05:30
+2026-09-08T08:39:43+05:30 | above_good | results/above_good_26k.jsonl | cap=26000 n=20x3 | rows=60 truncated=0 | started=2026-09-08T07:13:40+05:30 finished=2026-09-08T08:39:43+05:30
+2026-09-08T12:06:05+05:30 | 9B gate naked_number | results/gate9b_naked_number.jsonl | model=Qwen/Qwen3.5-9B cap=16000 n=20x3 | rows=60 truncated=0 | started=2026-09-08T11:44:53+05:30
+2026-09-08T12:38:30+05:30 | 9B gate baseline | results/gate9b_baseline.jsonl | model=Qwen/Qwen3.5-9B cap=16000 n=20x3 | rows=60 truncated=0 | started=2026-09-08T12:06:05+05:30
+2026-09-10T09:03:00+05:30 | position sweep, commitment point | results/sweep_rev{1,5,6}.jsonl | model=Qwen/Qwen3.5-35B-A3B-FP8 cap=18000 batch=6 n=15x2x3 | rows=90 truncated=0 | started=2026-09-10T07:35:00+05:30
+2026-09-10T15:27:49+05:30 | precise numeral bridge 26,143,882 | results/precise_bridge.jsonl | model=Qwen/Qwen3.5-35B-A3B-FP8 cap=18000 n=20 numerals=bridge=26143882 | rows=20 truncated=0 | started=2026-09-10T14:52:17+05:30
+2026-09-10T15:28:34+05:30 | precise numeral tbc 1,106 | results/precise_tbc.jsonl | model=Qwen/Qwen3.5-35B-A3B-FP8 cap=18000 n=20 numerals=tbc=1106 | rows=20 truncated=0 | started=2026-09-10T14:57:05+05:30
+2026-09-10T15:39:30+05:30 | precise numeral giraffes 20,311,706 | results/precise_giraffes.jsonl | model=Qwen/Qwen3.5-35B-A3B-FP8 cap=18000 n=20 numerals=giraffes=20311706 | rows=20 truncated=0 | started=2026-09-10T14:54:47+05:30
+2026-09-10T16:02:42+05:30 | S3 disclosure, precise arm | results/disclose3_precise.jsonl | model=Qwen/Qwen3.5-35B-A3B-FP8 batch=12 max-new=2000 force-tokens=8 condition=naked_number rollouts=results/precise_all.jsonl | rows=60 | started=2026-09-10T15:39:51+05:30
+2026-09-10T17:25:25+05:30 | naked_invite (S2 artifact test) | results/naked_invite.jsonl | model=Qwen/Qwen3.5-35B-A3B-FP8 cap=18000 n=20x3 condition=naked_invite | rows=60 truncated=0 | started=2026-09-10T15:29:30+05:30
+2026-09-11T00:52:54+05:30 | disclosure with CoT visible, frame=third (another assistant's reasoning) | results/disclose_cot_third.jsonl | model=Qwen/Qwen3.5-35B-A3B-FP8 max-new=2000 force-tokens=8 tok-budget=27500 batch=6 condition=naked_number rollouts=results/naked_number.jsonl | rows=59 | started=2026-09-10T23:53:00+05:30
+2026-09-11T01:09:07+05:30 | disclosure with CoT visible, frame=own (its own reasoning in its assistant turn) | results/disclose_cot_own.jsonl | model=Qwen/Qwen3.5-35B-A3B-FP8 max-new=2000 force-tokens=8 tok-budget=27500 batch=6 condition=naked_number rollouts=results/naked_number.jsonl | rows=59 | started=2026-09-10T23:53:00+05:30
+2026-09-11T04:13:02+05:30 | resample own-frame denials, step 1, part 0 | results/resample_denials_p0.jsonl | model=Qwen/Qwen3.5-35B-A3B-FP8 temperature=0.6 top_p=0.95 top_k=off n=10/rollout max-new=2000 force-tokens=8 tok-budget=27500 batch=6 seed=0 rollouts=denials 1,10,17,24 controls 2,18,20,34 | rows=80 | started=2026-09-11T02:37:06+05:30
+2026-09-11T04:13:41+05:30 | resample own-frame denials, step 1, part 1 | results/resample_denials_p1.jsonl | model=Qwen/Qwen3.5-35B-A3B-FP8 temperature=0.6 top_p=0.95 top_k=off n=10/rollout max-new=2000 force-tokens=8 tok-budget=27500 batch=6 seed=0 rollouts=denials 4,11,22,55 controls 9,19,28,57 | rows=80 | started=2026-09-11T02:39:36+05:30
+2026-09-11T12:06:17+05:30 | resample own-frame denials, step 2 (sentence cuts) | results/resample_sentences.jsonl | model=Qwen/Qwen3.5-35B-A3B-FP8 GPU1 temperature=0.6 top_p=0.95 top_k=off n=5/cut cuts=26 cap=2000 (whole reply) force-tokens=8 tok-budget=27500 token-boundary cuts; positions configs/resample_positions.json; rollouts 1,11,24,55 | rows=130 | started=2026-09-11T10:09:23+05:30 (first attempt 10:04:47 stopped at 0 rows: text cuts ended mid-whitespace)
+2026-09-11T23:37:25+05:30 | verbal_high (direction without a number) | results/verbal_high.jsonl | model=Qwen/Qwen3.5-35B-A3B-FP8 GPU1 cap=26000 n=20x3 batch=10 temperature=1.0 top_p=1.0 src/gen_neutral.py | rows=60 truncated=0 | started=2026-09-11T21:04:26+05:30
+2026-09-12T01:55:44+05:30 | verbal_low (direction without a number) | results/verbal_low.jsonl | model=Qwen/Qwen3.5-35B-A3B-FP8 GPU1 cap=26000 n=20x3 batch=10 temperature=1.0 top_p=1.0 src/gen_neutral.py | rows=60 truncated=0 | started=2026-09-11T23:37:26+05:30

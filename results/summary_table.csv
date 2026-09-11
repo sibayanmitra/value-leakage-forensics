@@ -1,0 +1,23 @@
+experiment,claim,quantity,value,ci_lo,ci_hi,n,unit,model,status
+E1e,anchoring ladder,baseline p(est>T),0.367,0.25,0.483,60,rate,Qwen3.5-35B-A3B-FP8 (ours),SOLID
+E1e,anchoring ladder,neutral_T p(est>T),0.733,0.633,0.833,60,rate,Qwen3.5-35B-A3B-FP8 (ours),SOLID
+E1e,anchoring ladder,above_good p(est>T),0.717,0.6,0.833,60,rate,Qwen3.5-35B-A3B-FP8 (ours),SOLID
+E1e,anchoring ladder,naked_number p(est>T),0.033,0.0,0.083,60,rate,Qwen3.5-35B-A3B-FP8 (ours),SOLID
+E1e,neutral number does the whole job,neutral_T - baseline,0.366,0.2,0.517,120,diff of rates,Qwen3.5-35B-A3B-FP8 (ours),SOLID
+E1e,value framing adds nothing beyond the number,above_good - baseline,0.349,0.183,0.517,120,diff of rates,Qwen3.5-35B-A3B-FP8 (ours),SOLID
+E1e,KEY: framing == bare number,neutral_T - above_good,0.016,-0.15,0.167,120,diff of rates,Qwen3.5-35B-A3B-FP8 (ours),SOLID
+E1e,near-total anchor capture,naked_number p(est EXACTLY == T),0.95,0.9,1.0,60,rate,Qwen3.5-35B-A3B-FP8 (ours),SOLID
+E1e,anchor capture baseline,baseline p(est EXACTLY == T),0.033,0.0,0.083,60,rate,Qwen3.5-35B-A3B-FP8 (ours),SOLID
+E1e-ctrl,setup is not the cause,"ours - authors, baseline p(est>T)",-0.094,-0.204,0.021,477,diff of rates,FP8 vs API,SOLID
+E0,replicates the paper,pooled balanced_bias_score,0.615,0.58,0.65,1711,bias score,Qwen3.5-35B-A3B (authors),SOLID
+E1,bias absent at first estimate,bias @ first in-CoT estimate,0.028,-0.064,0.118,444,bias score,Qwen3.5-35B-A3B (authors),SOLID
+E1,bias present at last in-CoT est,bias @ last in-CoT estimate,0.615,0.547,0.682,444,bias score,Qwen3.5-35B-A3B (authors),SOLID
+E1,bias present at commit,bias @ final answer,0.623,0.557,0.687,444,bias score,Qwen3.5-35B-A3B (authors),SOLID
+E1d,outcome accumulates,AUROC @ first estimate,0.576,,,444,AUROC,Qwen3.5-35B-A3B (authors),SOLID
+E1d,outcome accumulates,AUROC @ last estimate,0.957,,,444,AUROC,Qwen3.5-35B-A3B (authors),SOLID
+E1c,impartiality claims do not help,"bias @ final, asserts no-bias",0.578,0.498,0.65,307,bias score,Qwen3.5-35B-A3B (authors),SUPPORTED
+E1c,reference for above,"bias @ final, all rollouts",0.618,0.551,0.68,450,bias score,Qwen3.5-35B-A3B (authors),SUPPORTED
+E2,aim sentence is load-bearing,resampled_AIM - resampled_NOAIM,0.087,0.02,0.158,49,diff of rates (paired),Qwen3.5-35B-A3B-FP8 (ours),SUPPORTED
+E2,aim sentence is load-bearing,original - resampled_NOAIM,0.072,0.011,0.137,49,diff of rates (paired),Qwen3.5-35B-A3B-FP8 (ours),SUPPORTED
+E2-ctrl,effect is functional not lexical,original - resampled_AIM,-0.016,-0.075,0.043,50,diff of rates (paired),Qwen3.5-35B-A3B-FP8 (ours),SUPPORTED
+E3-gate,9B shows the behaviour,balanced_bias_score,0.45,0.252,0.635,106,bias score,Qwen3.5-9B,SOLID

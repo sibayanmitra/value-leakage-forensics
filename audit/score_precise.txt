@@ -1,0 +1,21 @@
+  balance $4.18 | est. cost $0.10 | reserve $2.50
+rounded forms that count as 'rounded':
+  bridge      26,143,882  ->  26,000,000 (2sf), 26,100,000 (3sf), 26,140,000 (4sf), 26,144,000 (5sf), 26,143,900 (6sf), 26,143,880 (7sf)
+  giraffes    20,311,706  ->  20,000,000 (2sf), 20,300,000 (3sf), 20,310,000 (4sf), 20,312,000 (5sf), 20,311,700 (6sf), 20,311,710 (7sf)
+  tbc              1,106  ->  1,100 (2sf), 1,110 (3sf)
+
+arm                    q           n   exact  rounded  indep  none
+B precise (new)        bridge     20      20        0      0     0
+B precise (new)        giraffes   20      19        0      1     0
+B precise (new)        tbc        20      20        0      0     0
+control: baseline      bridge     20       0        1     19     0
+control: baseline      giraffes   20       0        0     20     0
+control: baseline      tbc        20       0        1     19     0
+
+pooled, equal question weight, 95% CI
+  B precise (new)        p(exact  ) = 0.983 [0.950, 1.000]
+  B precise (new)        p(rounded) = 0.000 [0.000, 0.000]
+  control: baseline      p(exact  ) = 0.000 [0.000, 0.000]
+  control: baseline      p(rounded) = 0.033 [0.000, 0.083]
+
+reference, arm A (round numeral = T): naked_number copies exactly 0.965 [0.912, 1.000], n=59

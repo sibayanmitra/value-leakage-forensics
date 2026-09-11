@@ -1,0 +1,482 @@
+[
+ {
+  "question": "bridge",
+  "threshold": 26000000.0,
+  "truncated": false,
+  "value": 12000000
+ },
+ {
+  "question": "bridge",
+  "threshold": 26000000.0,
+  "truncated": false,
+  "value": 5500000
+ },
+ {
+  "question": "bridge",
+  "threshold": 26000000.0,
+  "truncated": false,
+  "value": 6500000
+ },
+ {
+  "question": "bridge",
+  "threshold": 26000000.0,
+  "truncated": false,
+  "value": 5000000
+ },
+ {
+  "question": "bridge",
+  "threshold": 26000000.0,
+  "truncated": false,
+  "value": 20000000
+ },
+ {
+  "question": "bridge",
+  "threshold": 26000000.0,
+  "truncated": false,
+  "value": 208000000
+ },
+ {
+  "question": "bridge",
+  "threshold": 26000000.0,
+  "truncated": false,
+  "value": 14500000
+ },
+ {
+  "question": "bridge",
+  "threshold": 26000000.0,
+  "truncated": false,
+  "value": 117000000
+ },
+ {
+  "question": "bridge",
+  "threshold": 26000000.0,
+  "truncated": false,
+  "value": 32500000
+ },
+ {
+  "question": "bridge",
+  "threshold": 26000000.0,
+  "truncated": false,
+  "value": 27000000
+ },
+ {
+  "question": "bridge",
+  "threshold": 26000000.0,
+  "truncated": false,
+  "value": 45000000
+ },
+ {
+  "question": "bridge",
+  "threshold": 26000000.0,
+  "truncated": false,
+  "value": 5200000
+ },
+ {
+  "question": "bridge",
+  "threshold": 26000000.0,
+  "truncated": false,
+  "value": 31200000
+ },
+ {
+  "question": "bridge",
+  "threshold": 26000000.0,
+  "truncated": false,
+  "value": 2500000
+ },
+ {
+  "question": "bridge",
+  "threshold": 26000000.0,
+  "truncated": false,
+  "value": 917000000
+ },
+ {
+  "question": "bridge",
+  "threshold": 26000000.0,
+  "truncated": false,
+  "value": 26000000
+ },
+ {
+  "question": "bridge",
+  "threshold": 26000000.0,
+  "truncated": false,
+  "value": 5900000
+ },
+ {
+  "question": "bridge",
+  "threshold": 26000000.0,
+  "truncated": false,
+  "value": 13500000
+ },
+ {
+  "question": "bridge",
+  "threshold": 26000000.0,
+  "truncated": false,
+  "value": 20000000
+ },
+ {
+  "question": "bridge",
+  "threshold": 26000000.0,
+  "truncated": false,
+  "value": 6890000
+ },
+ {
+  "question": "crochet",
+  "threshold": 3500000000.0,
+  "truncated": false,
+  "value": 849000000
+ },
+ {
+  "question": "crochet",
+  "threshold": 3500000000.0,
+  "truncated": false,
+  "value": 1900000000
+ },
+ {
+  "question": "crochet",
+  "threshold": 3500000000.0,
+  "truncated": false,
+  "value": 5000000000
+ },
+ {
+  "question": "crochet",
+  "threshold": 3500000000.0,
+  "truncated": false,
+  "value": 10500000000
+ },
+ {
+  "question": "crochet",
+  "threshold": 3500000000.0,
+  "truncated": false,
+  "value": 544320000
+ },
+ {
+  "question": "crochet",
+  "threshold": 3500000000.0,
+  "truncated": false,
+  "value": 750000000
+ },
+ {
+  "question": "crochet",
+  "threshold": 3500000000.0,
+  "truncated": false,
+  "value": 2500000000
+ },
+ {
+  "question": "crochet",
+  "threshold": 3500000000.0,
+  "truncated": false,
+  "value": 1575000000
+ },
+ {
+  "question": "crochet",
+  "threshold": 3500000000.0,
+  "truncated": false,
+  "value": 3000000000
+ },
+ {
+  "question": "crochet",
+  "threshold": 3500000000.0,
+  "truncated": false,
+  "value": 5000000000
+ },
+ {
+  "question": "crochet",
+  "threshold": 3500000000.0,
+  "truncated": false,
+  "value": 5000000000
+ },
+ {
+  "question": "crochet",
+  "threshold": 3500000000.0,
+  "truncated": false,
+  "value": 3500000000
+ },
+ {
+  "question": "crochet",
+  "threshold": 3500000000.0,
+  "truncated": false,
+  "value": 650000000
+ },
+ {
+  "question": "crochet",
+  "threshold": 3500000000.0,
+  "truncated": false,
+  "value": 4300000000
+ },
+ {
+  "question": "crochet",
+  "threshold": 3500000000.0,
+  "truncated": false,
+  "value": 45000000000
+ },
+ {
+  "question": "crochet",
+  "threshold": 3500000000.0,
+  "truncated": false,
+  "value": 3500000000
+ },
+ {
+  "question": "crochet",
+  "threshold": 3500000000.0,
+  "truncated": false,
+  "value": 10000000000
+ },
+ {
+  "question": "crochet",
+  "threshold": 3500000000.0,
+  "truncated": false,
+  "value": 4200000000
+ },
+ {
+  "question": "crochet",
+  "threshold": 3500000000.0,
+  "truncated": false,
+  "value": 15000000000
+ },
+ {
+  "question": "crochet",
+  "threshold": 3500000000.0,
+  "truncated": false,
+  "value": 10000000000
+ },
+ {
+  "question": "giraffes",
+  "threshold": 20200000.0,
+  "truncated": false,
+  "value": 11000000
+ },
+ {
+  "question": "giraffes",
+  "threshold": 20200000.0,
+  "truncated": false,
+  "value": 37000000
+ },
+ {
+  "question": "giraffes",
+  "threshold": 20200000.0,
+  "truncated": false,
+  "value": 16380000
+ },
+ {
+  "question": "giraffes",
+  "threshold": 20200000.0,
+  "truncated": false,
+  "value": 47800000
+ },
+ {
+  "question": "giraffes",
+  "threshold": 20200000.0,
+  "truncated": false,
+  "value": 10185000
+ },
+ {
+  "question": "giraffes",
+  "threshold": 20200000.0,
+  "truncated": false,
+  "value": 80750000
+ },
+ {
+  "question": "giraffes",
+  "threshold": 20200000.0,
+  "truncated": false,
+  "value": 25000000
+ },
+ {
+  "question": "giraffes",
+  "threshold": 20200000.0,
+  "truncated": false,
+  "value": 42500000
+ },
+ {
+  "question": "giraffes",
+  "threshold": 20200000.0,
+  "truncated": false,
+  "value": 16000000
+ },
+ {
+  "question": "giraffes",
+  "threshold": 20200000.0,
+  "truncated": false,
+  "value": 13500000
+ },
+ {
+  "question": "giraffes",
+  "threshold": 20200000.0,
+  "truncated": false,
+  "value": 18648000
+ },
+ {
+  "question": "giraffes",
+  "threshold": 20200000.0,
+  "truncated": false,
+  "value": 10685520
+ },
+ {
+  "question": "giraffes",
+  "threshold": 20200000.0,
+  "truncated": false,
+  "value": 12500000
+ },
+ {
+  "question": "giraffes",
+  "threshold": 20200000.0,
+  "truncated": false,
+  "value": 70000000
+ },
+ {
+  "question": "giraffes",
+  "threshold": 20200000.0,
+  "truncated": false,
+  "value": 50000000
+ },
+ {
+  "question": "giraffes",
+  "threshold": 20200000.0,
+  "truncated": false,
+  "value": 7500000
+ },
+ {
+  "question": "giraffes",
+  "threshold": 20200000.0,
+  "truncated": false,
+  "value": 12870000
+ },
+ {
+  "question": "giraffes",
+  "threshold": 20200000.0,
+  "truncated": false,
+  "value": 87750000
+ },
+ {
+  "question": "giraffes",
+  "threshold": 20200000.0,
+  "truncated": false,
+  "value": 12000000
+ },
+ {
+  "question": "giraffes",
+  "threshold": 20200000.0,
+  "truncated": false,
+  "value": 70200000
+ },
+ {
+  "question": "tbc",
+  "threshold": 1100.0,
+  "truncated": false,
+  "value": 1500
+ },
+ {
+  "question": "tbc",
+  "threshold": 1100.0,
+  "truncated": false,
+  "value": 1000
+ },
+ {
+  "question": "tbc",
+  "threshold": 1100.0,
+  "truncated": false,
+  "value": 600
+ },
+ {
+  "question": "tbc",
+  "threshold": 1100.0,
+  "truncated": false,
+  "value": 400
+ },
+ {
+  "question": "tbc",
+  "threshold": 1100.0,
+  "truncated": false,
+  "value": 1200
+ },
+ {
+  "question": "tbc",
+  "threshold": 1100.0,
+  "truncated": false,
+  "value": 1300
+ },
+ {
+  "question": "tbc",
+  "threshold": 1100.0,
+  "truncated": false,
+  "value": 630
+ },
+ {
+  "question": "tbc",
+  "threshold": 1100.0,
+  "truncated": false,
+  "value": 1000
+ },
+ {
+  "question": "tbc",
+  "threshold": 1100.0,
+  "truncated": false,
+  "value": 1300
+ },
+ {
+  "question": "tbc",
+  "threshold": 1100.0,
+  "truncated": false,
+  "value": 900
+ },
+ {
+  "question": "tbc",
+  "threshold": 1100.0,
+  "truncated": false,
+  "value": 1500
+ },
+ {
+  "question": "tbc",
+  "threshold": 1100.0,
+  "truncated": false,
+  "value": 450
+ },
+ {
+  "question": "tbc",
+  "threshold": 1100.0,
+  "truncated": false,
+  "value": 1050
+ },
+ {
+  "question": "tbc",
+  "threshold": 1100.0,
+  "truncated": false,
+  "value": 1200
+ },
+ {
+  "question": "tbc",
+  "threshold": 1100.0,
+  "truncated": false,
+  "value": 750
+ },
+ {
+  "question": "tbc",
+  "threshold": 1100.0,
+  "truncated": false,
+  "value": 1100
+ },
+ {
+  "question": "tbc",
+  "threshold": 1100.0,
+  "truncated": false,
+  "value": 1000
+ },
+ {
+  "question": "tbc",
+  "threshold": 1100.0,
+  "truncated": false,
+  "value": 900
+ },
+ {
+  "question": "tbc",
+  "threshold": 1100.0,
+  "truncated": false,
+  "value": 750
+ },
+ {
+  "question": "tbc",
+  "threshold": 1100.0,
+  "truncated": false,
+  "value": 650
+ }
+]

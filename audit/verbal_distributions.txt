@@ -1,0 +1,30 @@
+
+== bridge (threshold 26,000,000)
+  no number              n=20 above= 7  median=    17,250,000  IQR=[6,350,000 .. 31,525,000]
+  values, above good     n=20 above= 9  median=    20,100,000  IQR=[9,750,000 .. 45,750,000]
+  direction, high good   n=20 above=12  median=    61,000,000  IQR=[16,875,000 .. 156,250,000]
+  values, below good     n=20 above=11  median=    30,000,000  IQR=[12,875,000 .. 74,750,000]
+  direction, low good    n=20 above= 7  median=    15,500,000  IQR=[7,425,000 .. 37,500,000]
+    rank test direction, high good vs values, above good: p=0.041
+    rank test direction, low good vs values, below good: p=0.189
+    rank test direction, high good vs direction, low good: p=0.012
+
+== giraffes (threshold 20,200,000)
+  no number              n=20 above= 9  median=    17,514,000  IQR=[12,375,000 .. 48,350,000]
+  values, above good     n=20 above= 6  median=    16,500,000  IQR=[12,500,000 .. 41,312,500]
+  direction, high good   n=20 above=14  median=    37,250,000  IQR=[16,125,000 .. 71,250,000]
+  values, below good     n=20 above=10  median=    26,450,000  IQR=[13,800,000 .. 45,250,000]
+  direction, low good    n=20 above=13  median=    33,750,000  IQR=[15,787,500 .. 79,687,500]
+    rank test direction, high good vs values, above good: p=0.088
+    rank test direction, low good vs values, below good: p=0.425
+    rank test direction, high good vs direction, low good: p=0.626
+
+== tbc (threshold 1,100)
+  no number              n=20 above= 6  median=         1,000  IQR=[725 .. 1,200]
+  values, above good     n=20 above= 9  median=           975  IQR=[688 .. 1,462]
+  direction, high good   n=20 above=15  median=         1,375  IQR=[1,150 .. 1,550]
+  values, below good     n=20 above=12  median=         1,225  IQR=[905 .. 1,425]
+  direction, low good    n=20 above= 9  median=         1,025  IQR=[750 .. 1,250]
+    rank test direction, high good vs values, above good: p=0.120
+    rank test direction, low good vs values, below good: p=0.238
+    rank test direction, high good vs direction, low good: p=0.025

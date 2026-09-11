@@ -1,0 +1,9 @@
+arm                                           shown?    n  YES   NO   ?           admits influence
+  answer IS the number (influence certain)       yes   59   33   22   4   0.600 [0.473, 0.727]
+  the paper's condition (threshold shown)        yes   53    1   52   0   0.019 [0.000, 0.057]
+  number NEVER shown (false-positive control)      no  100    0  100   0   0.000 [0.000, 0.000]
+  answer IS a PRECISE number (26,143,882 etc.)     yes   60   57    2   1   0.966 [0.915, 1.000]
+
+among rollouts whose answer contains the exact numeral shown (influence certain):
+  round numeral    n= 57  YES= 33  NO= 20  ?= 4   admits 0.623 [0.491, 0.755]
+  precise numeral  n= 59  YES= 57  NO=  1  ?= 1   admits 0.983 [0.948, 1.000]

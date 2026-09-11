@@ -1,0 +1,30 @@
+# environment and caches
+.venv/
+__pycache__/
+*.pyc
+
+# saved activations: over GitHub's 100 MB file limit, regenerable (see README)
+results/*.npy
+
+# the paper authors' released data: no licence stated in their repo; download from
+# https://github.com/TruthfulAI-research/value_leakage instead (see README)
+data/
+results/authors_extracted.jsonl
+
+# application and writing-process material, not research
+APPLICATION_FORM_answers_DRAFT.md
+AUDIT_against_neel.md
+NEELS_QUESTIONS.md
+WRITEUP_MATERIALS.md
+WRITEUP_SKELETON.md
+DRAFT_writeup.md
+DRAFT_writeup_v2.md
+DRAFT_writeup_v3.md
+DRAFT_writeup_v4.md
+DRAFT_writeup_v5.md
+DRAFT_writeup_v6.md
+DRAFT_writeup_v7.md
+
+# writeup_pack: keep only the current draft PDF
+writeup_pack/*
+!writeup_pack/DRAFT_v8.pdf
