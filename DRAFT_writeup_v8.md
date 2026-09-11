@@ -757,6 +757,18 @@ after it, the first "I will say NO", and a reason about how the answer will look
 passes a standard significance test on its own (Fisher's exact test, p = 0.048). The others could be
 noise. In answer 24 the NO is already fixed before any sentence I picked.
 
+**Which importance this is.** Thought Anchors separates *resampling* importance, where the rewrite may
+repeat the sentence almost word for word, from *counterfactual* importance, where you keep only the
+rewrites that say something different. Mine is the second: at answer 11's key sentence the five
+rewrites have a similarity to the original of 0.35 to 0.68, and across all 130 rewrites the median is
+0.50, with 18% above 0.8. So the model wrote a genuinely different sentence each time, and the swing is
+not an artefact of it repeating itself.
+
+**I never edit the reasoning.** Every run here keeps a real prefix and lets the model write the rest,
+so each continuation is one the model could have produced. I do not delete a sentence, write a
+sentence for it, or block its attention, which is where the usual "the model is now off-policy and
+confused" objection bites.
+
 In answer 11, when the model writes its own version of the backtrack, it often starts the same turn
 toward NO, but without the claim of an independent calculation all 5 rewrites end YES. The reasons
 about how the answer will look never move the verdict. Rewrite one, and the model writes another:
@@ -774,7 +786,9 @@ hours on one. 100 per sentence would have needed about 40 GPU-hours, so I could 
 For contrast, I ran the same rewriting on answers with only the number attached. There, no sentence
 carries the copying. Rewrite the sentence that decides to use the number, and all 15 rewrites still
 copy it, including ones that write *"Wait, I shouldn't just copy."* in its place
-(`results/sweep_rev1.jsonl` line 27). The number sits in the prompt, and the model reads it again.
+(`results/sweep_rev1.jsonl` line 27). That decision is overdetermined: the number sits in the prompt,
+the model reads it again, and whatever it writes in that slot it ends up in the same place. The denial
+is the opposite case, where one sentence can decide the outcome.
 
 In the paper's bet, the motivated backtracking Aditya described is there too:
 
