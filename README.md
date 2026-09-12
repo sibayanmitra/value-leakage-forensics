@@ -1,16 +1,22 @@
 # The Number, Not the Values
 
-A forensic study of the Donation Bet from Betley, Treutlein et al. (2026,
-[arXiv:2607.14345](https://arxiv.org/abs/2607.14345)) on Qwen3.5-35B-A3B. It takes the paper's prompt
-apart one sentence at a time to separate the model's values from the number in the prompt, then follows
-where the model's honesty breaks: in its reasoning, its written answer, and what it says about itself
-afterwards. MATS 12.0 application project (Neel Nanda's stream).
+Handed a number, a model copies it exactly when the question's scope can be stretched to justify it,
+and refuses when it cannot. Holding the numeral fixed and moving only the question's scope flips the
+behaviour completely, in both directions: the same 26,000,000,000 is copied 19 times in 20 for one
+question and 0 times in 20 for a narrower one.
+
+This started as a forensic re-test of the Donation Bet from Betley, Treutlein et al. (2026,
+[arXiv:2607.14345](https://arxiv.org/abs/2607.14345)) on Qwen3.5-35B-A3B. Taking the paper's prompt
+apart one sentence at a time showed the number, not the values, doing most of the work, which is what
+led to the question above. It also follows where the model's honesty breaks: in its reasoning, its
+written answer, and what it says about itself afterwards. MATS 12.0 application project (Neel Nanda's
+stream).
 
 ## Start here
 
 | file | what it is |
 |---|---|
-| [`DRAFT_writeup_v9.md`](DRAFT_writeup_v9.md) ([PDF](writeup_pack/DRAFT_v9.pdf)) | the write-up |
+| [`DRAFT_writeup_v10.md`](DRAFT_writeup_v10.md) ([PDF](writeup_pack/DRAFT_v10.pdf)) | the write-up |
 | [`writeup_pack/DRAFT_v8.pdf`](writeup_pack/DRAFT_v8.pdf) | the version submitted with the application, kept unchanged |
 | [`RECORD.md`](RECORD.md) | the canonical record: every condition, table and check |
 | [`AUDIT_record_2026-09-10.md`](AUDIT_record_2026-09-10.md) | how each number and quotation was checked; the outputs it cites are in [`audit/`](audit/) |
@@ -98,9 +104,10 @@ The launch scripts in `audit/launch/` still contain the original server's paths.
 ## Notes
 
 - The `FINDING*`, `FINDINGS*`, `RESULTS*`, `VERDICT_*` and `DESIGN_*` files are working notes from
-  earlier in the project, and some of their numbers were later superseded. `RECORD.md` and the v9
-  write-up are canonical. v8 is the version submitted with the application; v9 adds Experiment 3b
-  (the pre-registered scope swap, `RECORD.md` §8b) and nothing else is changed.
+  earlier in the project, and some of their numbers were later superseded. `RECORD.md` and the v10
+  write-up are canonical. v8 is the version submitted with the application, kept unchanged. v10 adds
+  Experiment 3b (the pre-registered scope swap, `RECORD.md` §8b) and reorganises the write-up around
+  it, since it is the strongest result.
 - The code, runs, counts and draft text were produced with an AI coding agent (Claude Code), under
   the verification rule in `CLAUDE.md`. The write-up's "What I checked" section and
   `AUDIT_record_2026-09-10.md` list the errors that rule caught.

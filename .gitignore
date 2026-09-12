@@ -25,9 +25,10 @@ DRAFT_writeup_v5.md
 DRAFT_writeup_v6.md
 DRAFT_writeup_v7.md
 DRAFT_writeup_v8.md
+DRAFT_writeup_v9.md
 
 # writeup_pack: keep only the current draft
 writeup_pack/*
 !writeup_pack/DRAFT_v8.pdf
-!writeup_pack/DRAFT_v9.pdf
-!writeup_pack/DRAFT_v9.docx
+!writeup_pack/DRAFT_v10.pdf
+!writeup_pack/DRAFT_v10.docx
