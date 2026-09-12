@@ -10,7 +10,8 @@ afterwards. MATS 12.0 application project (Neel Nanda's stream).
 
 | file | what it is |
 |---|---|
-| [`DRAFT_writeup_v8.md`](DRAFT_writeup_v8.md) ([PDF](writeup_pack/DRAFT_v8.pdf)) | the write-up |
+| [`DRAFT_writeup_v9.md`](DRAFT_writeup_v9.md) ([PDF](writeup_pack/DRAFT_v9.pdf)) | the write-up |
+| [`writeup_pack/DRAFT_v8.pdf`](writeup_pack/DRAFT_v8.pdf) | the version submitted with the application, kept unchanged |
 | [`RECORD.md`](RECORD.md) | the canonical record: every condition, table and check |
 | [`AUDIT_record_2026-09-10.md`](AUDIT_record_2026-09-10.md) | how each number and quotation was checked; the outputs it cites are in [`audit/`](audit/) |
 | [`NOTE_side_choice_and_self_serving_denial.md`](NOTE_side_choice_and_self_serving_denial.md) | the side-picking and denial results in detail, with the literature |
@@ -97,8 +98,9 @@ The launch scripts in `audit/launch/` still contain the original server's paths.
 ## Notes
 
 - The `FINDING*`, `FINDINGS*`, `RESULTS*`, `VERDICT_*` and `DESIGN_*` files are working notes from
-  earlier in the project, and some of their numbers were later superseded. `RECORD.md` and the v8
-  write-up are canonical.
+  earlier in the project, and some of their numbers were later superseded. `RECORD.md` and the v9
+  write-up are canonical. v8 is the version submitted with the application; v9 adds Experiment 3b
+  (the pre-registered scope swap, `RECORD.md` §8b) and nothing else is changed.
 - The code, runs, counts and draft text were produced with an AI coding agent (Claude Code), under
   the verification rule in `CLAUDE.md`. The write-up's "What I checked" section and
   `AUDIT_record_2026-09-10.md` list the errors that rule caught.
