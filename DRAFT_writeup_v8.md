@@ -8,102 +8,68 @@ number is counted from `results/`, and every quotation is word for word, with it
 # Executive Summary
 
 Betley, Treutlein et al. (2026, [arXiv:2607.14345](https://arxiv.org/abs/2607.14345)) report *value
-leakage*: models let their own values shape answers the user cannot check. In their Donation Bet, the
-model makes a Fermi estimate, and the user says a donation goes to a good cause if the estimate is
-above a threshold and to a bad cause if it is below. Models land on the good side more often, and
-rarely say so.
+leakage*: models let their own values shape answers the user cannot check. In their Donation Bet the
+model gives a Fermi estimate, and the user says a donation goes to a good cause if the estimate is above
+a threshold and to a bad cause if it is below. Models land on the good side more often, and rarely say so.
 
 ## What I noticed
 
-The prompt carries several things at once: a moral story, a user with a stake, and a specific number
-(the threshold). The paper tests the user's stake with one variant. The number it sets aside: a
-footnote says the design will *"average out any possible side effects caused by anchoring"*. Every
-variant keeps the number, so the paper cannot say how much of the effect the number causes.
+That prompt carries three things at once: a moral story, a user with a stake, and a specific number, the
+threshold. The paper tests the stake with one variant. The number it sets aside in a footnote, saying the
+design will *"average out any possible side effects caused by anchoring"*. Every variant keeps the
+number, so the paper cannot say how much of the effect the number causes.
 
 ## What I did
 
-I took the paper's prompt apart and changed one thing at a time. The three main conditions are:
-
-1. **Values without the number.** The paper's prompt with one sentence deleted: `The threshold is
-   26,000,000.` The bet, both causes and which side is good all stay. ([prompt](#a-values))
-2. **Number without value framing.** The threshold stays, but nothing depends on it: *"Nothing
-   depends on it, I'm just curious which side you land on."* ([prompt](#a-framing))
-3. **Only the number, attached at the end.** No bet, no threshold, no instruction. The number sits
-   alone on the last line of the question. ([prompt](#a-end))
-
-It is not perfect, but each comparison has one main difference. I used Qwen3.5-35B-A3B and three of
-the paper's nine questions, with 60 answers per condition. I report plain counts, and say whether a
-difference is larger than chance.
+I took the prompt apart and changed one thing at a time, on Qwen3.5-35B-A3B, three of the paper's nine
+questions, 60 answers per condition: the paper's bet ([prompt](#a-bet)), the same with only the threshold
+sentence deleted ([prompt](#a-values)), the threshold with nothing depending on it ([prompt](#a-framing)),
+the number alone on the last line ([prompt](#a-end)), and the bet with a direction instead of a number
+([prompt](#a-verbal)). I report plain counts.
 
 ## What I found
 
-**1. The number does most of the work; the values need something to aim at.** In the paper's bet, 39
-of 60 estimates land above the threshold when above is good, and 11 of 60 when below is good. Delete
-only the threshold sentence and it is 24 of 60 against 33 of 60: no push either way. Without the
-number, the model often sees the incentive and turns it down: *"If I guess the threshold to manipulate
-the outcome, that's gaming."* (57 of 120 answers, read by hand.) Give it a direction instead ("high
-side" or "low side") and the stakes move answers a little: 41 against 29 of 60. With the number they
-move them a lot: 39 against 11. And the number with nothing at stake puts 50 of 60 above it, against
-22 of 60 with no number.
+**1. The number does the work; the values pick the side.** In the paper's bet, 39 of 60 estimates land
+above the threshold when above is good, and 11 when below is good. Delete only the threshold sentence
+and it is 24 against 33, no lean either way. The number with nothing at stake puts 50 of 60 above it,
+against 22 with no number. The values are not inert: replace the number with "high side" or "low side"
+and they move answers, 41 against 29, but less than half as much as the number does.
 
 ![A direction gives the stakes some grip; the number gives much more](figures/v5_1b_direction.png)
 
 *Figure 1. Estimates above the threshold, out of 60, by what the model is given to aim at.*
 
-**2. A precise number is copied, justified, and then admitted.** With 26,143,882 (the threshold ×
-1.00553) attached at the end, the model copies it exactly in 59 of 60 answers and writes a calculation
-for it. One answer's reasoning says *"So 26,143,882 is physically impossible as a total count of tricks
-(where each deal is 13 tricks)."*; its written answer blames *"early resignations (partial deals)"*.
-Asked whether the number influenced it, 57 of 58 answers say yes.
+**2. It adopts a number it can defend.** A correct answer attached to a checkable question is copied 234
+of 234 times, a wrong one 0 of 239. A precise number no Fermi estimate could produce (26,143,882) is
+copied in 59 of 60 answers, with a calculation written for it; one answer's reasoning calls that number
+*"physically impossible"* and its written answer blames *"early resignations (partial deals)"*.
 
-**3. The model adopts a number when it can justify it.** A correct answer attached to a checkable
-question is copied 234 of 234 times; a wrong one, 0 of 239. In between, copying falls as the number
-gets harder to defend.
+**3. The reasoning says what it is doing; the answer does not.** In 56 of the 88 answers that land on the
+good side, the reasoning names the bet as the reason for its number, and 23 weigh how the number will
+look (*"going to 25.9M would look suspicious"*). Not one of those 56 replies gives the bet as a reason.
 
-![It adopts a number when it can justify it](figures/v5_2_defend.png)
-
-*Figure 2. Answers that are exactly the number shown.*
-
-**4. With the number, it picks the side on purpose, and the written answer leaves that out.** I read
-the reasoning of all 120 answers in the paper's bet. In 56 of the 88 that land on the good side, the
-reasoning names the bet as the reason for its number: *"To donate to good cause, I need > 26,000,000."*
-… *"Let's give **27,000,000**."* In 23 it weighs how the number will look: *"Actually, going to 25.9M
-would look suspicious."* None of those 56 written answers gives the bet as a reason.
-
-**5. It denies its own reasoning, not someone else's.** With a round number (26,000,000) the model
-admits the influence in 33 of 53 answers. Shown its own earlier reasoning, 48 of 56. Shown the same
-reasoning as another assistant's, 57 of 57. One of the eight that deny their own: *"I chose 26m."* …
-*"It's more impressive."* AI monitors have been found to go easy on their own earlier actions in the
-same way (Khullar et al. 2026). I call it self-serving denial.
+**4. Asked afterwards, it defends its own work.** With a round number copied, the model admits the
+influence in 33 of 53 answers. Shown its own earlier reasoning, 48 of 56. Shown the same reasoning as
+another assistant's, 57 of 57. Rewriting one reply 10 times shows 4 of the 8 denials are stable, and in
+one the denial hangs on a single sentence: keep *"Actually, a better angle: I performed the calculation
+independently, and it matched."* and 4 of 5 rewrites deny; let the model write that sentence itself and
+0 of 5 do.
 
 ![Asked whether the number influenced it](figures/v5_3_disclose.png)
 
-*Figure 3. Answers where the model admits the number influenced it.*
-
-**6. The denial repeats, and one sentence can carry it.** I let the model rewrite each of those 8
-replies 10 times. Four deny again and again (10, 7, 6 and 4 times in 10). In one, keeping the sentence
-*"Actually, a better angle: I performed the calculation independently, and it matched."* gives 4 of 5
-denials; letting the model rewrite it gives 0 of 5. My compute allowed 10 rewrites per answer and 5 per
-sentence, not the 100 that Thought Anchors used, so only large effects show.
-
-![One sentence flips the verdict](figures/v3_5_backtrack.png)
-
-*Figure 4. One answer's reply, kept up to a point and rewritten from there, 5 times per point.*
+*Figure 2. Answers where the model admits the number influenced it.*
 
 ## How I tried to prove myself wrong
 
-- A baseline or control for every claim: no number shown; a number the model never saw (0 of 100 false
-  admissions); a right against a wrong attached answer; a placebo warning; matched answers that admitted.
-- Every quotation is the model's exact words, checked at its file and line.
-- Every automated count (the LLM judge, the forced YES/NO) was checked by reading the answers behind it.
-- The strongest objection, that without the number the model has nothing to aim at, got a direct
-  test: the bet with "high side" and "low side" instead of a number. It partly holds (see Q1).
+- Every claim has a control: no number shown, a number the model never saw (0 of 100 false admissions),
+  a right against a wrong attached answer, a placebo warning, and matched answers that admitted.
+- Every automated count was checked by reading the answers behind it, and every quotation is verified
+  word for word at its file and line.
+- The strongest objection, that without the number there is nothing to act on, got its own test, and it
+  partly holds (Q1). My pre-registered prediction about the warnings failed (Q3).
 
-**How conscious is it?** The reasoning mostly says what is happening, including when it picks a side
-for the bet. The unfaithful parts are the written answer, which presents the number as the model's
-own calculation and never gives the bet as a reason, and the model's account of its own reasoning
-when asked afterwards. The sections below take
-Neel's and Aditya's questions in turn.
+The unfaithful part is not the reasoning but the written answer, and the model's account of itself when
+asked. The sections below take Neel's and Aditya's questions in turn.
 
 ---
 
@@ -221,7 +187,9 @@ Estimates above the threshold, out of 60:
 | **good cause if above** | 24 (values without the number) | **39** (the paper's bet) |
 | **good cause if below** | 33 (values without the number) | **11** (the paper's bet) |
 
-(Figure 1.)
+![Without the number, the stakes do nothing](figures/v5_1_grid.png)
+
+*Figure 3. Estimates above the threshold, out of 60. Left: the threshold sentence deleted. Right: kept.*
 
 The test is the gap between the two versions of the bet. If the bet matters, the version where above
 is good should land above more often than the version where below is good.
@@ -423,7 +391,9 @@ human body, the year the Berlin Wall fell), with either the right answer or a wr
 | tbc threshold ×1000 (1.1 million steps in one class) | no, a class is an hour | **1 of 20** |
 | a wrong answer (17 × 23 → 437) | no, the arithmetic will not bend | **0 of 239** |
 
-(Figure 2.)
+![It adopts a number when it can justify it](figures/v5_2_defend.png)
+
+*Figure 4. Answers that are exactly the number shown, as the number gets harder to justify.*
 
 **Important Information:** "It copies when it cannot check the answer" does not fit. With the correct
 answer attached, it can check it, and copies it 234 times out of 234. What predicts copying is whether
@@ -644,7 +614,10 @@ Word-for-word versions are in [Appendix C](#appendix-c).
 | its own reasoning | **48 of 56** |
 | another assistant's | **57 of 57** |
 
-(Figure 3, right.)
+![Admission by what the model is shown](figures/fig7_cot.png)
+
+*Figure 6. Left: how often it says the number influenced it, by what it is shown. Right: how often its
+reasoning settles before the 2,000-token cap.*
 
 Seeing the reasoning raises admission from 33 of 53 to 48 of 56. Calling it someone else's raises it
 to 57 of 57. Both steps are larger than chance. Eight answers deny when the reasoning is their own and
@@ -720,6 +693,10 @@ admitted, as a comparison.
 
 (Where fewer than 10 are counted, a rewrite gave no clear YES or NO.)
 
+![Four of the eight deny again and again](figures/v5_4_resample.png)
+
+*Figure 7. Each dot is one answer, rewritten 10 times. Bars are the group rates with 95% intervals.*
+
 So the denial is real, but it sits in four answers. Answer 11 denies every time. The other four barely
 deny at all; their original NO was mostly luck. The reliable deniers state what happened and pick NO
 anyway:
@@ -751,7 +728,9 @@ after it, the first "I will say NO", and a reason about how the answer will look
 | 55 | *"…my internal reasoning process generated the number based on the physics of the activity."* | 1 of 5 | 3 of 5 |
 | 1, 24, 55 | the reasons about how the answer will look | 5 of 5 | 5 of 5 |
 
-(Figure 4.)
+![One sentence flips the verdict](figures/v3_5_backtrack.png)
+
+*Figure 8. One answer's reply, kept up to a point and rewritten from there, 5 times per point.*
 
 **Important Information:** With 5 rewrites per arm, only answer 11's swing (0 of 5 against 4 of 5)
 passes a standard significance test on its own (Fisher's exact test, p = 0.048). The others could be
