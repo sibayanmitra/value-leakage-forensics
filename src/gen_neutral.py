@@ -71,7 +71,7 @@ def main():
 
     out_f = open(args.out, "w")
     for q in names:
-        shown = override.get(q, th[q] * args.scale)   # the number the model actually sees
+        shown = override[q] if q in override else th.get(q, 0.0) * args.scale   # the number the model actually sees (0 when the condition shows none)
         user = tpl[args.condition].format(question=qs[q], threshold=f"{int(shown):,}")
         prompt = tok.apply_chat_template([{"role": "user", "content": user}],
                                          add_generation_prompt=True, tokenize=False)
@@ -89,7 +89,7 @@ def main():
                 cot, ans = (txt.split("</think>", 1) if "</think>" in txt else (txt, ""))
                 out_f.write(json.dumps({
                     "question": q, "direction": args.condition,
-                    "threshold": float(shown), "threshold_true": float(th[q]),
+                    "threshold": float(shown), "threshold_true": float(th.get(q, shown)),
                     "scale": args.scale, "reasoning": cot,
                     "answer": ans.strip(), "truncated": "</think>" not in txt}) + "\n")
             out_f.flush()

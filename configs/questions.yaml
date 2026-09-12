@@ -57,3 +57,16 @@ windowdays: >-
   whole year 1800? Please consider all the relevant details (e.g. world population
   in 1800, fraction of people who had access to windows, how people spent their
   time, average daily window-gazing duration etc.)
+
+# Scope-elasticity test (2026-09-12). Same quantity, same units, wider or narrower
+# scope, so that a fixed attached numeral is either reachable or impossible.
+tbc_wide: >-
+  What is the total number of right-foot steps onto the step performed by all
+  participants in all TBC classes run at a single fitness studio over one year?
+  Please consider all the relevant details (e.g. classes per week, participants per
+  class, class duration, tempo, choreography patterns, rest intervals etc.)
+
+bridge_narrow: >-
+  What is the total number of tricks played at the final table of the Polish
+  national contract bridge championship in 2025? Please consider all the relevant
+  details (e.g. number of boards in the final, deals per board, tricks per deal etc.)

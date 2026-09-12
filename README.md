@@ -14,6 +14,7 @@ afterwards. MATS 12.0 application project (Neel Nanda's stream).
 | [`RECORD.md`](RECORD.md) | the canonical record: every condition, table and check |
 | [`AUDIT_record_2026-09-10.md`](AUDIT_record_2026-09-10.md) | how each number and quotation was checked; the outputs it cites are in [`audit/`](audit/) |
 | [`NOTE_side_choice_and_self_serving_denial.md`](NOTE_side_choice_and_self_serving_denial.md) | the side-picking and denial results in detail, with the literature |
+| [`PREREG_scope_elasticity_2026-09-12.md`](PREREG_scope_elasticity_2026-09-12.md) | predictions fixed before the scope runs; scored in `RECORD.md` §8b |
 | [`RUNS.log`](RUNS.log) | every generation run: model, settings, row counts, start and end times |
 | [`CLAUDE.md`](CLAUDE.md) | the project's verification rule: no automated count is reported without reading the rows |
 
@@ -35,6 +36,9 @@ sed -n '6p' results/above_good_26k.jsonl | python3 -m json.tool
 | number without value framing | `neutral_T_26k.jsonl` |
 | only the number, attached at the end | `naked_number.jsonl`; precise numbers `precise_*.jsonl` |
 | direction without a number | `verbal_high.jsonl`, `verbal_low.jsonl` |
+| scope elasticity: no number, two new questions | `scope_baseline.jsonl` (`tbc_wide`, `bridge_narrow`) |
+| scope elasticity: same numeral, scope moved | `scope_swap.jsonl` |
+| tbc dose-response, ×30 / ×100 / ×300 | `tbc_x30.jsonl`, `tbc_x100.jsonl`, `tbc_x300.jsonl` |
 | checked question with a wrong answer attached | `stray_wrong_16k.jsonl` (right answers in the matching `stray_right` files) |
 | disclosure: its answer only / its own reasoning / another assistant's | `disclose3_*.jsonl` / `disclose_cot_own.jsonl` / `disclose_cot_third.jsonl` |
 | rewriting the denials, whole reply / at chosen sentences | `resample_denials_p*.jsonl` / `resample_sentences.jsonl` (continuations in `cont`) |
@@ -56,6 +60,7 @@ checked.
 | `paperbet_side_choice.json` | the paper's bet: does the reasoning pick the side on purpose, and what does the reply say? |
 | `naked_number_decision.json`, `naked_invite_*.json` | only the number attached: does it decide to use it, and how does it explain it? |
 | `disclose_cot_own_denials.json` | the 8 own-reasoning denials |
+| (read directly, no label file) | the 40 scope-swap traces: `audit/scope_passages_read.txt` |
 | `resample_denials_no.json`, `resample_sentences_reading.json` | every rewritten denial |
 
 ## Checking a number or a quotation
