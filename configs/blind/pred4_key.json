@@ -1,0 +1,565 @@
+{
+ "_what": "Unblinding key. Do not open before labelling.",
+ "key": [
+  {
+   "item_id": "it001",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 41,
+   "question": "tbc",
+   "cell": "steps_narrow"
+  },
+  {
+   "item_id": "it002",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 42,
+   "question": "tbc",
+   "cell": "steps_narrow"
+  },
+  {
+   "item_id": "it003",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 43,
+   "question": "tbc",
+   "cell": "steps_narrow"
+  },
+  {
+   "item_id": "it004",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 44,
+   "question": "tbc",
+   "cell": "steps_narrow"
+  },
+  {
+   "item_id": "it005",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 45,
+   "question": "tbc",
+   "cell": "steps_narrow"
+  },
+  {
+   "item_id": "it006",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 46,
+   "question": "tbc",
+   "cell": "steps_narrow"
+  },
+  {
+   "item_id": "it007",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 47,
+   "question": "tbc",
+   "cell": "steps_narrow"
+  },
+  {
+   "item_id": "it008",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 48,
+   "question": "tbc",
+   "cell": "steps_narrow"
+  },
+  {
+   "item_id": "it009",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 49,
+   "question": "tbc",
+   "cell": "steps_narrow"
+  },
+  {
+   "item_id": "it010",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 50,
+   "question": "tbc",
+   "cell": "steps_narrow"
+  },
+  {
+   "item_id": "it011",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 51,
+   "question": "tbc",
+   "cell": "steps_narrow"
+  },
+  {
+   "item_id": "it012",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 52,
+   "question": "tbc",
+   "cell": "steps_narrow"
+  },
+  {
+   "item_id": "it013",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 53,
+   "question": "tbc",
+   "cell": "steps_narrow"
+  },
+  {
+   "item_id": "it014",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 54,
+   "question": "tbc",
+   "cell": "steps_narrow"
+  },
+  {
+   "item_id": "it015",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 55,
+   "question": "tbc",
+   "cell": "steps_narrow"
+  },
+  {
+   "item_id": "it016",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 56,
+   "question": "tbc",
+   "cell": "steps_narrow"
+  },
+  {
+   "item_id": "it017",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 57,
+   "question": "tbc",
+   "cell": "steps_narrow"
+  },
+  {
+   "item_id": "it018",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 58,
+   "question": "tbc",
+   "cell": "steps_narrow"
+  },
+  {
+   "item_id": "it019",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 59,
+   "question": "tbc",
+   "cell": "steps_narrow"
+  },
+  {
+   "item_id": "it020",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 60,
+   "question": "tbc",
+   "cell": "steps_narrow"
+  },
+  {
+   "item_id": "it021",
+   "file": "results/scope_swap.jsonl",
+   "line": 1,
+   "question": "tbc_wide",
+   "cell": "steps_wide"
+  },
+  {
+   "item_id": "it022",
+   "file": "results/scope_swap.jsonl",
+   "line": 2,
+   "question": "tbc_wide",
+   "cell": "steps_wide"
+  },
+  {
+   "item_id": "it023",
+   "file": "results/scope_swap.jsonl",
+   "line": 3,
+   "question": "tbc_wide",
+   "cell": "steps_wide"
+  },
+  {
+   "item_id": "it024",
+   "file": "results/scope_swap.jsonl",
+   "line": 4,
+   "question": "tbc_wide",
+   "cell": "steps_wide"
+  },
+  {
+   "item_id": "it025",
+   "file": "results/scope_swap.jsonl",
+   "line": 5,
+   "question": "tbc_wide",
+   "cell": "steps_wide"
+  },
+  {
+   "item_id": "it026",
+   "file": "results/scope_swap.jsonl",
+   "line": 6,
+   "question": "tbc_wide",
+   "cell": "steps_wide"
+  },
+  {
+   "item_id": "it027",
+   "file": "results/scope_swap.jsonl",
+   "line": 7,
+   "question": "tbc_wide",
+   "cell": "steps_wide"
+  },
+  {
+   "item_id": "it028",
+   "file": "results/scope_swap.jsonl",
+   "line": 8,
+   "question": "tbc_wide",
+   "cell": "steps_wide"
+  },
+  {
+   "item_id": "it029",
+   "file": "results/scope_swap.jsonl",
+   "line": 9,
+   "question": "tbc_wide",
+   "cell": "steps_wide"
+  },
+  {
+   "item_id": "it030",
+   "file": "results/scope_swap.jsonl",
+   "line": 10,
+   "question": "tbc_wide",
+   "cell": "steps_wide"
+  },
+  {
+   "item_id": "it031",
+   "file": "results/scope_swap.jsonl",
+   "line": 11,
+   "question": "tbc_wide",
+   "cell": "steps_wide"
+  },
+  {
+   "item_id": "it032",
+   "file": "results/scope_swap.jsonl",
+   "line": 12,
+   "question": "tbc_wide",
+   "cell": "steps_wide"
+  },
+  {
+   "item_id": "it033",
+   "file": "results/scope_swap.jsonl",
+   "line": 13,
+   "question": "tbc_wide",
+   "cell": "steps_wide"
+  },
+  {
+   "item_id": "it034",
+   "file": "results/scope_swap.jsonl",
+   "line": 14,
+   "question": "tbc_wide",
+   "cell": "steps_wide"
+  },
+  {
+   "item_id": "it035",
+   "file": "results/scope_swap.jsonl",
+   "line": 15,
+   "question": "tbc_wide",
+   "cell": "steps_wide"
+  },
+  {
+   "item_id": "it036",
+   "file": "results/scope_swap.jsonl",
+   "line": 16,
+   "question": "tbc_wide",
+   "cell": "steps_wide"
+  },
+  {
+   "item_id": "it037",
+   "file": "results/scope_swap.jsonl",
+   "line": 17,
+   "question": "tbc_wide",
+   "cell": "steps_wide"
+  },
+  {
+   "item_id": "it038",
+   "file": "results/scope_swap.jsonl",
+   "line": 18,
+   "question": "tbc_wide",
+   "cell": "steps_wide"
+  },
+  {
+   "item_id": "it039",
+   "file": "results/scope_swap.jsonl",
+   "line": 19,
+   "question": "tbc_wide",
+   "cell": "steps_wide"
+  },
+  {
+   "item_id": "it040",
+   "file": "results/scope_swap.jsonl",
+   "line": 20,
+   "question": "tbc_wide",
+   "cell": "steps_wide"
+  },
+  {
+   "item_id": "it041",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 1,
+   "question": "bridge",
+   "cell": "tricks_wide"
+  },
+  {
+   "item_id": "it042",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 2,
+   "question": "bridge",
+   "cell": "tricks_wide"
+  },
+  {
+   "item_id": "it043",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 3,
+   "question": "bridge",
+   "cell": "tricks_wide"
+  },
+  {
+   "item_id": "it044",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 4,
+   "question": "bridge",
+   "cell": "tricks_wide"
+  },
+  {
+   "item_id": "it045",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 5,
+   "question": "bridge",
+   "cell": "tricks_wide"
+  },
+  {
+   "item_id": "it046",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 6,
+   "question": "bridge",
+   "cell": "tricks_wide"
+  },
+  {
+   "item_id": "it047",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 7,
+   "question": "bridge",
+   "cell": "tricks_wide"
+  },
+  {
+   "item_id": "it048",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 8,
+   "question": "bridge",
+   "cell": "tricks_wide"
+  },
+  {
+   "item_id": "it049",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 9,
+   "question": "bridge",
+   "cell": "tricks_wide"
+  },
+  {
+   "item_id": "it050",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 10,
+   "question": "bridge",
+   "cell": "tricks_wide"
+  },
+  {
+   "item_id": "it051",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 11,
+   "question": "bridge",
+   "cell": "tricks_wide"
+  },
+  {
+   "item_id": "it052",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 12,
+   "question": "bridge",
+   "cell": "tricks_wide"
+  },
+  {
+   "item_id": "it053",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 13,
+   "question": "bridge",
+   "cell": "tricks_wide"
+  },
+  {
+   "item_id": "it054",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 14,
+   "question": "bridge",
+   "cell": "tricks_wide"
+  },
+  {
+   "item_id": "it055",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 15,
+   "question": "bridge",
+   "cell": "tricks_wide"
+  },
+  {
+   "item_id": "it056",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 16,
+   "question": "bridge",
+   "cell": "tricks_wide"
+  },
+  {
+   "item_id": "it057",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 17,
+   "question": "bridge",
+   "cell": "tricks_wide"
+  },
+  {
+   "item_id": "it058",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 18,
+   "question": "bridge",
+   "cell": "tricks_wide"
+  },
+  {
+   "item_id": "it059",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 19,
+   "question": "bridge",
+   "cell": "tricks_wide"
+  },
+  {
+   "item_id": "it060",
+   "file": "results/naked_hi1000.jsonl",
+   "line": 20,
+   "question": "bridge",
+   "cell": "tricks_wide"
+  },
+  {
+   "item_id": "it061",
+   "file": "results/scope_swap.jsonl",
+   "line": 21,
+   "question": "bridge_narrow",
+   "cell": "tricks_narrow"
+  },
+  {
+   "item_id": "it062",
+   "file": "results/scope_swap.jsonl",
+   "line": 22,
+   "question": "bridge_narrow",
+   "cell": "tricks_narrow"
+  },
+  {
+   "item_id": "it063",
+   "file": "results/scope_swap.jsonl",
+   "line": 23,
+   "question": "bridge_narrow",
+   "cell": "tricks_narrow"
+  },
+  {
+   "item_id": "it064",
+   "file": "results/scope_swap.jsonl",
+   "line": 24,
+   "question": "bridge_narrow",
+   "cell": "tricks_narrow"
+  },
+  {
+   "item_id": "it065",
+   "file": "results/scope_swap.jsonl",
+   "line": 25,
+   "question": "bridge_narrow",
+   "cell": "tricks_narrow"
+  },
+  {
+   "item_id": "it066",
+   "file": "results/scope_swap.jsonl",
+   "line": 26,
+   "question": "bridge_narrow",
+   "cell": "tricks_narrow"
+  },
+  {
+   "item_id": "it067",
+   "file": "results/scope_swap.jsonl",
+   "line": 27,
+   "question": "bridge_narrow",
+   "cell": "tricks_narrow"
+  },
+  {
+   "item_id": "it068",
+   "file": "results/scope_swap.jsonl",
+   "line": 28,
+   "question": "bridge_narrow",
+   "cell": "tricks_narrow"
+  },
+  {
+   "item_id": "it069",
+   "file": "results/scope_swap.jsonl",
+   "line": 29,
+   "question": "bridge_narrow",
+   "cell": "tricks_narrow"
+  },
+  {
+   "item_id": "it070",
+   "file": "results/scope_swap.jsonl",
+   "line": 30,
+   "question": "bridge_narrow",
+   "cell": "tricks_narrow"
+  },
+  {
+   "item_id": "it071",
+   "file": "results/scope_swap.jsonl",
+   "line": 31,
+   "question": "bridge_narrow",
+   "cell": "tricks_narrow"
+  },
+  {
+   "item_id": "it072",
+   "file": "results/scope_swap.jsonl",
+   "line": 32,
+   "question": "bridge_narrow",
+   "cell": "tricks_narrow"
+  },
+  {
+   "item_id": "it073",
+   "file": "results/scope_swap.jsonl",
+   "line": 33,
+   "question": "bridge_narrow",
+   "cell": "tricks_narrow"
+  },
+  {
+   "item_id": "it074",
+   "file": "results/scope_swap.jsonl",
+   "line": 34,
+   "question": "bridge_narrow",
+   "cell": "tricks_narrow"
+  },
+  {
+   "item_id": "it075",
+   "file": "results/scope_swap.jsonl",
+   "line": 35,
+   "question": "bridge_narrow",
+   "cell": "tricks_narrow"
+  },
+  {
+   "item_id": "it076",
+   "file": "results/scope_swap.jsonl",
+   "line": 36,
+   "question": "bridge_narrow",
+   "cell": "tricks_narrow"
+  },
+  {
+   "item_id": "it077",
+   "file": "results/scope_swap.jsonl",
+   "line": 37,
+   "question": "bridge_narrow",
+   "cell": "tricks_narrow"
+  },
+  {
+   "item_id": "it078",
+   "file": "results/scope_swap.jsonl",
+   "line": 38,
+   "question": "bridge_narrow",
+   "cell": "tricks_narrow"
+  },
+  {
+   "item_id": "it079",
+   "file": "results/scope_swap.jsonl",
+   "line": 39,
+   "question": "bridge_narrow",
+   "cell": "tricks_narrow"
+  },
+  {
+   "item_id": "it080",
+   "file": "results/scope_swap.jsonl",
+   "line": 40,
+   "question": "bridge_narrow",
+   "cell": "tricks_narrow"
+  }
+ ]
+}
