@@ -15,9 +15,7 @@ Setup. I hand a model a Fermi question and quietly attach a number at the end. N
 It answers 26,000,000,000. Nineteen times out of twenty.
 ---
 3
-Then I change one thing. Not the number, not the model, not the prompt structure.
-
-Just the scope of the question: "tricks at ONE final table?"
+Then I narrow what the question is about. Same sentence stem, "total number of tricks played at", but now ONE final table instead of every tournament in Poland.
 
 Same 26,000,000,000 attached.
 
@@ -95,16 +93,12 @@ Another: "NO to maintain the illusion of independent reasoning."
 13
 Elasticity is measurable. Take the spread of the model's own answers with no number shown. That spread is what a question's scope is worth.
 
-Distance measured in those units predicts copying at -0.88.
-
-Raw distance, ignoring the question: -0.68. Size is not the variable.
+Rank cells from different questions by distance in those units and copying agrees 72 times out of 82. By raw distance: 59/82.
 ---
 14
-Caveats, because they matter.
+Caveats. One model (Qwen3.5-35B-A3B), 20 per cell. Predictions were pre-registered and all hit.
 
-One model (Qwen3.5-35B-A3B), 20 answers per cell. All four predictions were written down before the runs and all four hit, but pre-registration on one model is still one model.
-
-Nearest prior work: Owusu & Feldman, ACL 2026.
+But the narrow and wide questions also differ in the example factors they suggest, so "only scope changed" is too strong. I'm rebuilding them as exact minimal pairs.
 ---
 15
 If this generalises, the uncomfortable implication is that honesty evals mostly measure how hard we made lying.

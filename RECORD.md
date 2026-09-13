@@ -544,8 +544,16 @@ Fisher's exact, A1 vs A2: p = 3.0e-10. B1 vs B2: p = 3.0e-10.
 [[FIG:fig9_scope.png|Left: the same numeral, with the question's scope moved. Right: every attached-numeral cell against the numeral's distance from the model's own answers for that question, in units of that question's own spread.]]
 
 **Prediction 1** (wide tbc ≥ 10/20): hit, 20/20. **Prediction 2** (narrow bridge ≤ 5/20): hit, 0/20.
-The same 26,000,000,000 that was copied 19 times in 20 is now copied zero times in 20. Nothing
-changed but the noun phrase naming the scope.
+The same 26,000,000,000 that was copied 19 times in 20 is now copied zero times in 20.
+
+**What changed between the members of a pair, exactly.** An earlier version of this section said
+nothing changed but the noun phrase naming the scope. That was wrong, and the audit in
+[`DESIGN_scope_elasticity_v2.md`](DESIGN_scope_elasticity_v2.md) §1 sets out what actually moved.
+The bridge pair holds the aggregation ("total number of tricks played at") and narrows only the
+referent set, but its parenthetical hint list also changes, from four suggested factors to two. The
+tbc pair additionally changes the aggregation: `tbc` asks for an *average per participant*,
+`tbc_wide` for a *total over all participants*. So the bridge swap is close to a minimal pair and
+carries the causal claim; the tbc swap is supporting evidence until the clean version is run.
 
 **tbc dose-response** (`results/tbc_x{30,100,300}.jsonl`, new runs, against the existing ×1 and
 ×1000). **Prediction 3** (monotone, crossing half between ×10 and ×1000): hit.
@@ -583,9 +591,23 @@ spread (`z` = log10 gap ÷ sd of the baseline log10 answers), puts all sixteen c
 | tbc | 1,100,000 | 3.09 | 0.16 | 19.0 | 1/20 |
 | **bridge_narrow** | **26,000,000,000** | **7.56** | **0.36** | **21.1** | **0/20** |
 
-Spearman across the sixteen cells: |z| against copy rate **−0.877** (p = 8e-6); raw |log10 gap|
-against copy rate **−0.681** (p = 0.0037). Size alone fails on the matched pair — bridge ×1000 and
-tbc ×1000 sit at the same log10 gap, 3.12 and 3.09, and are copied 19/20 and 1/20.
+The sixteen cells are **not independent**: seven are tbc, four bridge, three giraffes, one each for
+the two new questions, and within a question a monotone relationship is close to trivial. A Spearman
+across all sixteen (|z| −0.877, raw gap −0.681) therefore overstates its evidence and is not quoted
+here; see [`DESIGN_scope_elasticity_v2.md`](DESIGN_scope_elasticity_v2.md) §4. The claim that needs
+support is that normalising by each question's own spread makes questions comparable, so the
+statistic uses only pairs of cells drawn from **different** questions:
+
+| measure | all pairs | cross-question pairs only |
+|---|---|---|
+| raw \|log10 gap\| | 85/110 = 0.77 | **59/82 = 0.72** |
+| \|z\| = gap ÷ sd | 98/110 = 0.89 | **72/82 = 0.88** |
+
+Concordant means the cell further away has the lower copy rate; ties in copy rate are excluded.
+Normalising by the question's own spread raises cross-question agreement from 0.72 to 0.88. Size
+alone also fails on the matched pair — bridge ×1000 and tbc ×1000 sit at the same log10 gap, 3.12
+and 3.09, and are copied 19/20 and 1/20. Using a robust spread (MAD) in place of sd changes little:
+sd and MAD agree within 5% on four of the five questions.
 
 **Prediction 4** (refusals name a cap, copies widen scope): hit. All 40 new reasoning traces were
 read; located passages for all 40 are in

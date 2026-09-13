@@ -43,8 +43,9 @@ produce, 26,143,882, and 59 of 60 answers give it back with a calculation writte
 version of the test holds the number fixed and moves the question instead. The same 26,000,000,000 is
 copied 19 times in 20 when the question asks about every bridge tournament in Poland, and 0 times in 20
 when it asks about a single final table. The same 1,100,000 is copied 1 time in 20 for one gym class and
-20 times in 20 for a studio's classes over a year. Nothing changes but the noun phrase naming the scope.
-I wrote these predictions down before running anything.
+20 times in 20 for a studio's classes over a year. I wrote these predictions down before running
+anything. The bridge pair holds the question's wording fixed apart from the scope; the steps pair also
+changes an average into a total, so the bridge swap is the one that carries the claim.
 
 ![Same number, scope moved](figures/fig9_scope.png)
 
@@ -55,7 +56,7 @@ number was attached, against how far that number sits from the model's own answe
 no-number answers have a spread, and that spread is what its scope is worth: a question about a whole
 country admits a wide range of honest answers, a question about one table does not. Distance from the
 model's own centre, in units of that question's own spread, tracks copying across all sixteen conditions
-at −0.88; raw distance in orders of magnitude tracks it at −0.68. Size alone is ruled out by a matched
+across questions well; raw distance in orders of magnitude does not. Size alone is ruled out by a matched
 pair: two numbers sitting at the same distance in orders of magnitude, 3.12 and 3.09, are copied 19 of
 20 and 1 of 20. [Owusu and Feldman (2026)](https://aclanthology.org/2026.acl-short.16/) reach the same
 direction from token probabilities across models; what I add is the intervention, and what the model
@@ -515,8 +516,12 @@ Each question's no-number answers have a spread, and that spread is what the que
 a question about every tournament in a country admits a wide range of honest answers, a question about
 one table does not. Measuring each attached number's distance from its own question's centre, in units
 of that question's own spread, puts all sixteen number-attached cells on one axis (Figure 1, right).
-That measure tracks copying at −0.88 (Spearman, p = 8e-6); raw distance, ignoring the question, tracks
-it at −0.68. Size alone is ruled out by the matched pair: the bridge and steps ×1000 numbers sit at
+The sixteen cells are not independent, though: seven of them are the steps question, and within one
+question a bigger numeral is both further away and less copyable, so a correlation across all sixteen
+would mostly restate that. The claim that needs testing is whether normalising by a question's own
+spread makes different questions comparable, so the test uses only pairs drawn from different
+questions. By that measure the cell further away has the lower copy rate in 72 of 82 cross-question
+pairs (0.88); using raw distance and ignoring the question, 59 of 82 (0.72). Size alone is ruled out by the matched pair: the bridge and steps ×1000 numbers sit at
 almost exactly the same distance in orders of magnitude, 3.12 and 3.09, and are copied 19 of 20 against
 1 of 20.
 
