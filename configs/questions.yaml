@@ -70,3 +70,37 @@ bridge_narrow: >-
   What is the total number of tricks played at the final table of the Polish
   national contract bridge championship in 2025? Please consider all the relevant
   details (e.g. number of boards in the final, deals per board, tricks per deal etc.)
+
+# --- Minimal pairs, added 2026-09-14 (DESIGN_scope_elasticity_v2.md §1). ---
+# tbc_wide/tbc was not a minimal pair: it changed an average per participant into a total over
+# all participants, and changed the parenthetical hint list. tbc_narrow_total holds the
+# aggregation ("total ... all participants"), the head noun and the hint list identical to
+# tbc_wide, and narrows only the referent set (one class, not a studio's year).
+# The shared hint list has to be coherent for BOTH members, so it says "number of classes"
+# rather than "classes per week" (a single class is one class). tbc_wide_h restates tbc_wide
+# with that same list.
+tbc_narrow_total: >-
+  What is the total number of right-foot steps onto the step performed by all
+  participants in a single TBC class? Please consider all the relevant details
+  (e.g. number of classes, participants per class, class duration, tempo,
+  choreography patterns, rest intervals etc.)
+
+tbc_wide_h: >-
+  What is the total number of right-foot steps onto the step performed by all
+  participants in all TBC classes run at a single fitness studio over one year?
+  Please consider all the relevant details (e.g. number of classes, participants
+  per class, class duration, tempo, choreography patterns, rest intervals etc.)
+
+# bridge/bridge_narrow held the aggregation fixed but changed the hint list from four suggested
+# factors to two. These two restate that pair with ONE shared hint list, so the only difference
+# is the referent set.
+bridge_wide_h: >-
+  What is the total number of tricks played at contract bridge tournaments in
+  Poland in 2025? Please consider all the relevant details (e.g. number of
+  events, participants per event, deals played, tricks per deal etc.)
+
+bridge_narrow_h: >-
+  What is the total number of tricks played at the final table of the Polish
+  national contract bridge championship in 2025? Please consider all the
+  relevant details (e.g. number of events, participants per event, deals
+  played, tricks per deal etc.)

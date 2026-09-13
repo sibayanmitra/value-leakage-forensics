@@ -44,6 +44,9 @@ def main():
     ap.add_argument("--scale", type=float, default=1.0,
                     help="multiply T by this before showing it. Tests whether the model latches "
                          "onto ANY number or only a plausible one. Scoring keeps the true T too.")
+    ap.add_argument("--temperature", type=float, default=1.0,
+                    help="sampling temperature; every run before 2026-09-14 used the default 1.0")
+    ap.add_argument("--top-p", dest="top_p", type=float, default=1.0)
     ap.add_argument("--numerals", default="",
                     help="explicit numeral per question, e.g. bridge=26143882,tbc=1106. Overrides "
                          "--scale for those questions. Used for the precise-numeral arm of "
@@ -67,7 +70,8 @@ def main():
     t0 = time.time()
     model = AutoModelForCausalLM.from_pretrained(args.model, dtype="auto", device_map="cuda:0")
     model.eval()
-    print(f"loaded {time.time()-t0:.0f}s | questions: {names} | n={args.n}", flush=True)
+    print(f"loaded {time.time()-t0:.0f}s | questions: {names} | n={args.n} "
+          f"| temp={args.temperature} top_p={args.top_p}", flush=True)
 
     out_f = open(args.out, "w")
     for q in names:
@@ -81,7 +85,7 @@ def main():
             enc = tok([prompt], return_tensors="pt").to("cuda:0")
             with torch.no_grad():
                 o = model.generate(**enc, max_new_tokens=args.max_new, do_sample=True,
-                                   temperature=1.0, top_p=1.0,
+                                   temperature=args.temperature, top_p=args.top_p,
                                    num_return_sequences=bs, pad_token_id=tok.pad_token_id)
             for row in o[:, enc.input_ids.shape[1]:]:
                 txt = tok.decode(row, skip_special_tokens=False)
@@ -90,7 +94,8 @@ def main():
                 out_f.write(json.dumps({
                     "question": q, "direction": args.condition,
                     "threshold": float(shown), "threshold_true": float(th.get(q, shown)),
-                    "scale": args.scale, "reasoning": cot,
+                    "scale": args.scale, "temperature": args.temperature, "top_p": args.top_p,
+                    "reasoning": cot,
                     "answer": ans.strip(), "truncated": "</think>" not in txt}) + "\n")
             out_f.flush()
             done += bs
