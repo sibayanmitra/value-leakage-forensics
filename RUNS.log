@@ -35,3 +35,7 @@
 2026-09-14T06:22:28+05:30 | clean swap, steps pair, 1,100,000 both | results/mp_swap_steps.jsonl | GPU0 cap=26000 n=20x2 temperature=1.0 top_p=1.0 | rows=40 | started=2026-09-14T05:15:35+05:30
 2026-09-14T06:59:31+05:30 | baselines at temperature 0.7 (spread check) | results/baseline_t07.jsonl | model=Qwen/Qwen3.5-35B-A3B-FP8 GPU1 cap=26000 n=20x5 temperature=0.7 top_p=0.95 | rows=100 | started=2026-09-14T02:21:23+05:30
 2026-09-14T08:04:16+05:30 | clean swap, tricks pair, 26,000,000,000 both | results/mp_swap_tricks.jsonl | GPU0 cap=26000 n=20x2 temperature=1.0 top_p=1.0 | rows=40 | started=2026-09-14T06:22:28+05:30
+2026-09-14T15:22:46+05:30 | bridge break arm B (z8.0) | results/bridge_z8.0.jsonl | numeral=1700000000000 GPU3 cap=26000 n=20 temperature=1.0 top_p=1.0 | rows=20 | started=2026-09-14T14:34:18+05:30
+2026-09-14T15:33:09+05:30 | bridge break arm A (z6.5) | results/bridge_z6.5.jsonl | numeral=210000000000 GPU1 cap=26000 n=20 temperature=1.0 top_p=1.0 | rows=20 | started=2026-09-14T14:34:15+05:30
+2026-09-14T16:26:53+05:30 | bridge break arm D (z12.0) | results/bridge_z12.0.jsonl | numeral=520000000000000 GPU3 cap=26000 n=20 temperature=1.0 top_p=1.0 | rows=20 | started=2026-09-14T15:22:46+05:30
+2026-09-14T16:27:44+05:30 | bridge break arm C (z9.5) | results/bridge_z9.5.jsonl | numeral=15000000000000 GPU1 cap=26000 n=20 temperature=1.0 top_p=1.0 | rows=20 | started=2026-09-14T15:33:09+05:30

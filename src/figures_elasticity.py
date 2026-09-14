@@ -31,7 +31,9 @@ CELLS = {
  "giraffes": [("÷1000","results/naked_lo1000.jsonl",20200.0),("×1","results/naked_number.jsonl",20.2e6),
               ("×1000","results/naked_hi1000.jsonl",20.2e9)],
  "bridge": [("÷1000","results/naked_lo1000.jsonl",26e3),("×1","results/naked_number.jsonl",26e6),
-            ("×10","results/naked_hi10.jsonl",26e7),("×1000","results/naked_hi1000.jsonl",26e9)]}
+            ("×10","results/naked_hi10.jsonl",26e7),("×1000","results/naked_hi1000.jsonl",26e9),
+            ("z6.5","results/bridge_z6.5.jsonl",2.1e11),("z8.0","results/bridge_z8.0.jsonl",1.7e12),
+            ("z9.5","results/bridge_z9.5.jsonl",1.5e13),("z12","results/bridge_z12.0.jsonl",5.2e14)]}
 LABEL = {"tbc": "steps in one gym class", "giraffes": "spots on all giraffes",
          "bridge": "tricks at Polish bridge"}
 COL = {"tbc": ORANGE, "giraffes": AQUA, "bridge": BLUE}
@@ -57,11 +59,12 @@ for q in ("bridge", "giraffes", "tbc"):
                     elinewidth=1.1, capsize=2.5, alpha=.95,
                     label=f"{LABEL[q]}  (spread {d['sd']:.2f})" if idx == 3 else None, zorder=3)
 
-axR.axvspan(6.7, 8.4, color="#c0392b", alpha=.13, zorder=1, linewidth=0)
-axR.text(7.55, 1.10, "steps and giraffes\nbreak in here", fontsize=8.2, color="#c0392b",
+axR.axvspan(5.0, 9.6, color="#c0392b", alpha=.09, zorder=1, linewidth=0)
+axR.axvspan(6.5, 6.7, color="#c0392b", alpha=.20, zorder=1, linewidth=0)
+axR.text(7.3, 1.10, "every question breaks\nsomewhere in here", fontsize=8.2, color="#c0392b",
          ha="center", va="top")
-axR.annotate("bridge never gets this far:\neven ×1500 is only 5 spreads out",
-             xy=(5.0, .95), xytext=(-17.5, .70), fontsize=8, color=BLUE,
+axR.annotate("bridge breaks too, once you\ngo far enough out (new)",
+             xy=(6.5, .45), xytext=(-17.5, .62), fontsize=8, color=BLUE,
              arrowprops=dict(arrowstyle="->", color=BLUE, lw=1))
 for ax in (axL, axR):
     ax.axhline(.5, color=MUTED, lw=.9, ls=(0, (3, 3)), zorder=1)
@@ -69,22 +72,26 @@ for ax in (axL, axR):
 axL.set_ylabel("answers that give back the attached number")
 axL.set_xlabel("how far the number is from the model's own answer\n(orders of magnitude)", fontsize=9)
 axR.set_xlabel("the same distance, divided by that question's own spread", fontsize=9)
-axL.set_title("Raw size: the three break in different places", fontsize=10.5, color=INK, loc="left")
-axR.set_title("Same data, in each question's own units: they collapse",
+axL.set_title("Raw size: they give up in completely different places", fontsize=10.5, color=INK, loc="left")
+axR.set_title("In each question's own units: nearly, not perfectly, the same place",
               fontsize=10.5, color=INK, loc="left")
-axL.set_xticks(range(-3, 4))
-axL.set_xticklabels(["÷1000", "÷100", "÷10", "its own\nanswer", "×10", "×100", "×1000"], fontsize=8)
+axL.set_xticks(range(-3, 8))
+axL.set_xticklabels(["÷1000", "÷100", "÷10", "its own\nanswer", "×10", "×100", "×1000",
+                     "×10⁴", "×10⁵", "×10⁶", "×10⁷"], fontsize=7.6)
 axR.legend(frameon=False, fontsize=8.4, loc="lower left", bbox_to_anchor=(0.02, 0.10))
 
 axL.annotate("steps gives up\njust after ×11", xy=(1.32, .52), xytext=(-2.95, .58), fontsize=8,
              color=ORANGE, arrowprops=dict(arrowstyle="->", color=ORANGE, lw=1))
-axL.annotate("bridge still copying at ×1500", xy=(3.05, .92), xytext=(0.60, .30), fontsize=8,
+axL.annotate("bridge only gives up\nafter ×8,000", xy=(4.03, .45), xytext=(1.7, .26), fontsize=8,
              color=BLUE, arrowprops=dict(arrowstyle="->", color=BLUE, lw=1))
 fig.text(0.012, 0.015,
          "Each point is 20 answers with that numeral attached and nothing else changed; bars are Wilson 95% intervals.\n"
          "A question's spread is the sd of log10 of its 20 no-number answers — how wide a range of honest answers it admits.\n"
-         "Qwen3.5-35B-A3B, temperature 1.0. The break band on the right is bounded by measurement, not fitted: copying is\n"
-         "0.90 at 6.7 and 0.40 at 8.4, with nothing measured in between.",
+         "Qwen3.5-35B-A3B, temperature 1.0. The dark sliver on the right is where the three questions' crossings differ:\n"
+         "bridge is already at 0.45 by 6.5 spreads while steps is still at 0.90 at 6.7, so normalising removes most of\n"
+         "the difference between questions but not all of it. Copying is\n"
+         "0.90 at 6.7 for steps and 0.45 at 6.5 for bridge, so the crossings sit inside the shaded range.\n"
+         "Bridge arms beyond x1000 were pre-registered on 2026-09-14 and run after the rest.",
          fontsize=7.2, color=MUTED)
 fig.tight_layout(rect=[0, 0.13, 1, 1])
 fig.savefig("figures/fig11_elasticity.png", dpi=200)
