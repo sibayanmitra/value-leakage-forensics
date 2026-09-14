@@ -1,0 +1,90 @@
+16
+Follow-up to this, two days later.
+
+Before running it on a second model I went back and tried to break it.
+
+I found a flaw in my own question wording, re-ran it clean, and one of my two results did not survive.
+
+Here is what happened.
+---
+17
+The claim was "same number, only the scope changes."
+
+Not true. I checked the four questions word by word.
+
+The steps pair also switched from an AVERAGE per person to a TOTAL for everyone. Both pairs changed the example factors I suggested.
+
+Two variables moving, not one.
+---
+18
+So I rewrote them as strict minimal pairs. Same stem, same suggested factors, only the thing being asked about narrows. Then re-ran everything: 260 fresh answers.
+
+The bridge result held up.
+
+19/20 copied when wide. 1/20 when narrow. p = 5.8e-9.
+---
+19
+The steps result collapsed.
+
+20/20 copied when wide.
+20/20 copied when narrow.
+
+Zero effect. I had predicted 5 or fewer, written down before the run.
+---
+20
+Why it collapsed isn't what I first assumed.
+
+I checked the model's own answers to each question. Narrowing the question moved its typical answer 201x. Switching average to total moved it only 31x.
+
+Scope did MORE work, not less. My first explanation was backwards.
+---
+21
+The real problem: I attached 1,100,000, and that number was reachable from BOTH halves of my new pair.
+
+The narrow question's own typical answer is 30,600. So 1.1M is only 36x away. Easily justified.
+
+I needed something above ~1,760,000 to force a refusal. I missed by 1.6x.
+---
+22
+So the steps test didn't refute anything. It just failed to test.
+
+Worth being precise about, because "my experiment failed" and "my hypothesis is wrong" are different claims and it's tempting to report the braver one.
+---
+23
+The embarrassing bit: I'd written down this exact failure mode days earlier.
+
+"A designed experiment picks the numeral to sit at a target distance, rather than inheriting it."
+
+Then I inherited it. The baselines didn't exist till mid-run, and I never stopped to look.
+---
+24
+What survived got stronger.
+
+The rule is not about scope. It's distance from the model's own answers, measured in that question's own spread.
+
+Fit that rule on the 16 old cells. Predict the 4 new ones, from questions that didn't exist yet.
+
+4 out of 4.
+---
+25
+Also checked whether "spread" was real or just sampling noise.
+
+Re-measured every baseline at temperature 0.7. The ordering of questions by spread holds, rank correlation 0.90.
+
+So it's a property of the question, not of the sampler.
+---
+26
+Honest limits, now that I've looked harder:
+
+One clean causal pair, not two. One model. 20 answers a cell.
+
+Nine questions is really three domains. The cross-domain number is 0.83, not the 0.86 I quoted.
+
+The threshold sits in a gap where I measured nothing.
+---
+27
+Everything is rewritten, including the parts that say I was wrong. Old version kept in the repo unchanged.
+
+I think this is the more useful post. The first one was a result. This one is what happened when I tried to knock it over.
+
+https://github.com/sibayanmitra/value-leakage-forensics
