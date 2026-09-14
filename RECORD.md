@@ -657,9 +657,12 @@ participants over a year*; holding the aggregation fixed and narrowing only the 
 copying at 20/20. So the steps flip was driven by the average-to-total change, not by scope, and it
 is withdrawn as evidence for the scope claim. The tricks pair carries that claim alone.
 
-The z account survives and is strengthened: all four new cells land where it predicts, and across
-**20 cells from 9 questions** the cross-question concordance is **121/141 = 0.86** for |z| against
-**104/141 = 0.74** for raw distance. The transition sits near z ≈ 8 — every cell at z ≤ 7.1 copies at
+The z account survives and is strengthened: all four new cells land where it predicts. Across 20
+cells the cross-question concordance is 121/141 = 0.86 for |z| against 104/141 = 0.74 for raw
+distance — but "9 questions" overstates the independence, because they are variants of only **three
+domains** (four tricks questions, four steps questions, giraffes). Restricting to pairs from
+*different domains* gives the honest figure: **91/109 = 0.83** for |z| against **75/109 = 0.69** for
+raw distance. The transition sits near z ≈ 8 — every cell at z ≤ 7.1 copies at
 0.90 or above, every cell at z ≥ 8.4 at 0.40 or below.
 
 **The temperature check.** Baseline spreads re-measured at temperature 0.7 (`results/baseline_t07.jsonl`).

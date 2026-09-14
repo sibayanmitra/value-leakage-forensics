@@ -80,10 +80,13 @@ Four new cells from four new questions, none of which existed when the z account
 All four sit where the z account puts them. Across **20 cells from 9 questions**, the cell further
 from the model's own answers has the lower copy rate in:
 
-| measure | cross-question pairs concordant |
-|---|---|
-| raw \|log10 gap\| | 104/141 = **0.74** |
-| \|z\| = gap ÷ that question's spread | 121/141 = **0.86** |
+| measure | cross-question | cross-**domain** (honest) |
+|---|---|---|
+| raw \|log10 gap\| | 104/141 = 0.74 | 75/109 = **0.69** |
+| \|z\| = gap ÷ that question's spread | 121/141 = 0.86 | 91/109 = **0.83** |
+
+The nine questions are variants of only three domains (four tricks, four steps, giraffes), so the
+cross-domain column is the one to quote.
 
 The transition is sharp and sits near **z ≈ 8**: every cell at z ≤ 7.1 is copied at 0.90 or above,
 and every cell at z ≥ 8.4 at 0.40 or below.
