@@ -1,7 +1,13 @@
 """Why the clean steps swap did not discriminate (FINDINGS_minimal_pairs_2026-09-14.md).
 
 Each steps question's own no-number answers, on a log scale, with the attached numeral and the
-point at which that question starts refusing (z = 8, read off the 20-cell ladder).
+region where that question starts refusing.
+
+The refusal region is drawn as a BAND, not a line. On the 16 cells that existed before these four
+questions were written, copy rate is 0.90 at z = 6.7 and 0.40 at z = 8.4 and nothing was measured
+between, so the transition is bracketed, not located. A rule fit on those 16 alone (refuse above
+z = 7.5) predicts all four new cells correctly, which is the out-of-sample check that this figure
+is not circular.
 """
 import json, math, re, sys
 import numpy as np
@@ -30,7 +36,7 @@ ROWS = [("tbc", "results/our_baseline.jsonl",
          "ORIGINAL wide\ntotal for all, a studio-year", "20/20", BLUE)]
 SHOWN = 1_100_000.0
 
-fig, ax = plt.subplots(figsize=(11.4, 4.9))
+fig, ax = plt.subplots(figsize=(11.4, 5.6))
 for i, (q, path, lab, rate, col) in enumerate(ROWS):
     y = len(ROWS) - 1 - i
     v = ests(path, q); lg = np.log10(v)
@@ -39,14 +45,19 @@ for i, (q, path, lab, rate, col) in enumerate(ROWS):
                s=16, color=col, alpha=.45, zorder=3, linewidths=0)
     ax.plot([mu - sd, mu + sd], [y, y], color=col, lw=3.2, solid_capstyle="round", zorder=4)
     ax.plot([mu], [y], "|", color=INK, ms=16, mew=2, zorder=5)
-    cut = mu + 8 * sd                     # z = 8, where refusing starts on the 20-cell ladder
-    ax.plot([cut], [y], "v", color="#c0392b", ms=9, zorder=6)
-    ax.plot([mu, cut], [y - .22, y - .22], color=MUTED, lw=.9, ls=(0, (3, 3)), zorder=2)
+    # The transition is NOT measured: on the original 16 cells nothing lies between z = 6.7
+    # (copied 0.90) and z = 8.4 (copied 0.40). Draw the interval, not a line.
+    lo_c, hi_c = mu + 6.7 * sd, mu + 8.4 * sd
+    ax.fill_between([lo_c, hi_c], y - .17, y + .17, color="#c0392b", alpha=.16,
+                    linewidth=0, zorder=2)
+    for xc in (lo_c, hi_c):
+        ax.plot([xc, xc], [y - .17, y + .17], color="#c0392b", lw=1.2, alpha=.65, zorder=3)
+    cut = hi_c
     if cut > 9.0:
-        ax.text(cut - .18, y - .02, "refuses beyond here", fontsize=7.4, color="#c0392b",
+        ax.text(lo_c - .18, y - .02, "starts refusing in here", fontsize=7.4, color="#c0392b",
                 va="center", ha="right")
     else:
-        ax.text(cut + .18, y - .02, "refuses beyond here", fontsize=7.4, color="#c0392b",
+        ax.text(cut + .18, y - .02, "starts refusing in here", fontsize=7.4, color="#c0392b",
                 va="center")
     ax.text(-0.6, y, lab, fontsize=8.4, color=INK2, ha="right", va="center")
     ax.text(11.7, y, rate, fontsize=10, color=col, ha="right", va="center", weight="bold")
@@ -59,11 +70,13 @@ ax.set_xticks(range(0, 12, 2))
 ax.set_xticklabels([f"$10^{{{t}}}$" for t in range(0, 12, 2)])
 ax.set_xlabel("the model's own answer when shown no number (log scale)", fontsize=9)
 ax.text(11.7, 3.62, "copied", fontsize=8.6, color=INK2, ha="right", va="bottom")
-fig.text(0.005, 0.015,
-         "Dots are the 20 no-number answers; the bar is ±1 sd of their spread and the tick is the centre. "
-         "The red marker is 8 spreads above the centre, where refusing begins on the 20-cell ladder. "
-         "1,100,000 clears that line only for the ORIGINAL narrow question, which is the only one that refuses.",
+fig.text(0.012, 0.015,
+         "Dots are the 20 no-number answers; the bar is \u00b11 sd of their spread, the tick is the centre.\n"
+         "The red band is 6.7 to 8.4 spreads above the centre. On the 16 cells that existed before these four\n"
+         "questions were written, copying is 0.90 at 6.7 and 0.40 at 8.4 and nothing was measured in between,\n"
+         "so the band is where refusing must begin, not a fitted line. 1,100,000 clears it only for the\n"
+         "ORIGINAL narrow question \u2014 the only one of the four that refuses.",
          fontsize=7.2, color=MUTED)
-fig.tight_layout(rect=[0.04, 0.06, 1, 1])
+fig.tight_layout(rect=[0.04, 0.20, 1, 1])
 fig.savefig("figures/fig10_steps_failure.png", dpi=200)
 print("wrote figures/fig10_steps_failure.png")

@@ -61,9 +61,29 @@ land between the two: above 10^6.25 ≈ 1,760,000 for the narrow member to refus
 
 ![Why the clean steps swap could not discriminate](figures/fig10_steps_failure.png)
 
-*Figure. Each steps question's own no-number answers. The red marker is where that question starts
-refusing (8 spreads above its centre). 1,100,000 clears the line only for the original narrow
-question, which is the only one that refuses.*
+*Figure. Each steps question's own no-number answers. The red band is where that question starts
+refusing. 1,100,000 clears it only for the original narrow question, the only one of the four that
+refuses.*
+
+**Where the refusal band comes from, and whether it is circular.** It is read off the ladder, and
+the tbc dose-response supplies 5 of the 11 positive-z cells there. The transition itself is **not
+measured**: on the 16 cells that existed before these four questions were written, copying is 0.90
+at z = 6.7 and 0.40 at z = 8.4, and nothing lies in between, so the band is an interval the
+transition must fall inside rather than a fitted line. Two further caveats: the whole transition
+rests on a single intermediate point (giraffes ×1000 at 0.40 is the only cell of the 20 that is
+neither ≥ 0.90 nor ≤ 0.15), and the band was placed after these four cells were in hand.
+
+So it was checked out of sample. Fitting the rule on the original 16 alone (refuse above z = 7.5)
+and predicting the four new cells:
+
+| new cell | z | predicted | actual |
+|---|---|---|---|
+| tbc_wide_h | −1.9 | copy | copied 20/20 |
+| bridge_wide_h | 5.8 | copy | copied 19/20 |
+| tbc_narrow_total | 7.1 | copy | copied 20/20 |
+| bridge_narrow_h | 18.3 | refuse | copied 1/20 |
+
+**4 of 4 correct**, from a rule fixed before any of these questions existed.
 
 **So the clean steps test is uninformative about scope, not evidence against it.** Two separate
 things are true: the original steps pair was confounded (aggregation moved as well as scope), and the
