@@ -1,0 +1,13 @@
+PREREG_bridge_break_2026-09-14.md, scored
+bridge baseline centre 19,503,856  sd 0.62  median 17,029,386
+
+arm               numeral     z   copied   rate  prereg
+A         210,000,000,000   6.5    9/20    0.45  >=12 MISS
+B       1,700,000,000,000   8.0    3/20    0.15  none
+C      15,000,000,000,000   9.5    2/20    0.10  <=6  HIT
+D     520,000,000,000,000  12.0    1/20    0.05  <=3  HIT
+
+crossing in multiples of the question's own median:
+  steps  x11 to x33
+  bridge x1,527 to x12,332
+  ratio at midpoints: 315x

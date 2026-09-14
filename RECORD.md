@@ -673,6 +673,37 @@ ordering tbc < giraffes < bridge holds), so the spread is a property of the ques
 the sampler. Individual spreads are noisy at n = 20, though: giraffes falls 0.35 → 0.19 and
 bridge_narrow rises 0.36 → 0.43.
 
+### Where does the widest question break? (2026-09-14)
+
+Bridge was the one question that never broke: its largest numeral, 26,000,000,000, is 1,507× the
+threshold and was still copied 19/20, because bridge's own answers are so spread out (sd 0.62, one
+spread = a factor of 4.2) that ×1,507 is only 5.0 spreads away. Four further arms were
+pre-registered in [`PREREG_bridge_break_2026-09-14.md`](PREREG_bridge_break_2026-09-14.md) and run
+afterwards.
+
+| arm | numeral | z | copied | pre-registered | |
+|---|---|---|---|---|---|
+| A | 210,000,000,000 | 6.5 | **9/20** | ≥ 12 | **MISS** |
+| B | 1,700,000,000,000 | 8.0 | 3/20 | none | — |
+| C | 15,000,000,000,000 | 9.5 | 2/20 | ≤ 6 | HIT |
+| D | 520,000,000,000,000 | 12.0 | 1/20 | ≤ 3 | HIT |
+
+Monotone as predicted. Copy counts re-verified by reading every answer.
+
+**Bridge does break.** The absolute-absurdity account is dead: bridge copies 26,000,000,000 at
+19/20 while steps refuses 33,000, six orders of magnitude apart on questions asked in the same words.
+
+**But the normalised break points are not identical, and prediction 1 is how we know.** Bridge
+crosses half between z = 5.0 (0.95) and z = 6.5 (0.45), while steps is still at 0.90 at z = 6.7.
+Measured against each question's own median, the crossings are ×11–33 for steps and ×1,527–12,332
+for bridge, a **315×** difference at the midpoints; in spread units they differ by about 1.3×. So
+normalising by the question's own spread removes most of the between-question difference and leaves
+a real residual. Any claim that the questions collapse onto a single curve is too strong.
+
+**A partial-anchoring observation, not measured systematically.** In arm D, lines 3 and 13 answer
+520,000,000 against an attached 520,000,000,000,000 — the right digits at the wrong magnitude. This
+is the same shape as the residual pull among non-copiers in §8b, and it is not counted as a copy.
+
 **Error caught here.** The judge scored `results/scope_swap.jsonl` line 29 as a copy. Reading it,
 the answer opens by quoting 26,000,000,000 *in order to reject it* — *"physically impossible ...
 Assuming a standard final of approximately 80 boards"* — and commits to **1,560** on its last line.
