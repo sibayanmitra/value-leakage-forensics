@@ -40,12 +40,39 @@ single question's spread is not a precise quantity at this sample size.
 
 Tricks: Fisher p = 5.8e-9. Steps: p = 1.
 
-**What the miss means.** The original steps swap (1/20 → 20/20) compared `tbc`, which asks for an
-*average per participant in one class*, against `tbc_wide`, a *total over all participants over a
-year*. `tbc_narrow_total` holds the aggregation and the hint list fixed and narrows only the referent
-set — and copying does not drop at all. **So the original steps flip was driven by the average-to-total
-change, not by the narrowing of scope.** This is exactly the confound named in
-[`DESIGN_scope_elasticity_v2.md`](DESIGN_scope_elasticity_v2.md) §1, and it was worth the runs to find.
+**What the miss means. (Corrected 2026-09-14, after plotting the baselines.)** My first reading of
+this was that the original steps flip was driven by the average-to-total change rather than by scope.
+**That was wrong**, and the baselines say so:
+
+| change | baseline median | factor |
+|---|---|---|
+| `tbc` — average per participant, one class | 1,000 | — |
+| `tbc_narrow_total` — **total** for all participants, one class | 30,600 | ×31 from aggregation |
+| `tbc_wide_h` — total for all participants, **a studio-year** | 6,150,000 | ×201 from scope |
+| `tbc_wide` — the original wide question | 5,020,000 | ×5,020 from both together |
+
+Scope moved the baseline ×201, aggregation only ×31. Scope did more work, not less.
+
+The real reason the clean test missed is that **1,100,000 cannot discriminate between the new pair.**
+It sits only 36× above the new narrow question's median — z = 7.1, just under the z ≈ 8 line where
+refusing starts — so both members can reach it and both copy. To separate them the numeral had to
+land between the two: above 10^6.25 ≈ 1,760,000 for the narrow member to refuse, and below
+10^9.72 for the wide member still to copy. 1,100,000 misses that window by a factor of 1.6.
+
+![Why the clean steps swap could not discriminate](figures/fig10_steps_failure.png)
+
+*Figure. Each steps question's own no-number answers. The red marker is where that question starts
+refusing (8 spreads above its centre). 1,100,000 clears the line only for the original narrow
+question, which is the only one that refuses.*
+
+**So the clean steps test is uninformative about scope, not evidence against it.** Two separate
+things are true: the original steps pair was confounded (aggregation moved as well as scope), and the
+replacement pair was tested with a numeral that neither member had to refuse. The second is my error,
+and a repeat of one I had already written down: `DESIGN_scope_elasticity_v2.md` §5 says "a designed
+experiment picks the numeral to sit at a target z, rather than inheriting it", and I then inherited
+1,100,000 anyway instead of choosing it from the new baselines. The baselines did not exist until the
+run was half finished, which is the reason, not an excuse — the numeral should have been chosen
+between the baseline run and the swap run.
 
 The tricks pair, which never had that confound, reproduces cleanly with the hint list now also held
 fixed: 19/20 against 1/20.
@@ -93,11 +120,13 @@ and every cell at z ≥ 8.4 at 0.40 or below.
 
 ## What this changes in the write-up
 
-1. **The steps swap must be withdrawn as evidence for scope.** It is now known to be confounded, and
-   the clean version does not reproduce it.
+1. **The steps swap must be withdrawn as evidence for scope** — but as *unproven*, not as *refuted*.
+   The original is confounded, and the clean replacement used a numeral both members could reach, so
+   it did not test the question. A third run with a numeral near 10^7.5 would.
 2. **The tricks swap stands**, on a minimal pair, and carries the causal claim alone.
 3. **The framing changes.** "Same number, move the scope" is not the finding. The finding is that
    copying is gated by how far the number sits from the model's own answers *in that question's own
-   spread*; moving the scope is one lever on that quantity and only works when it moves it far
-   enough. Narrowing the words is not the same as narrowing the elasticity, and the steps pair is the
-   proof.
+   spread*; moving the scope is one lever on that quantity, and it only changes behaviour when it
+   moves the number across the refusal line. The steps pair is the clearest demonstration: scope
+   moved the baseline ×201 and behaviour did not change, because the number stayed reachable from
+   both sides.

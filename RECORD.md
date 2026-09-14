@@ -651,11 +651,13 @@ numerals. Full results: [`FINDINGS_minimal_pairs_2026-09-14.md`](FINDINGS_minima
 | steps | `tbc_wide_h` | 6,148,170 | −1.9 | 20/20 | ≥ 15 | HIT |
 | steps | `tbc_narrow_total` | 30,594 | 7.1 | **20/20** | ≤ 5 | **MISS** |
 
-The tricks swap reproduces (Fisher p = 5.8e-9). **The steps swap does not** (p = 1). The original
-steps result compared an *average per participant in one class* against a *total over all
-participants over a year*; holding the aggregation fixed and narrowing only the referent set leaves
-copying at 20/20. So the steps flip was driven by the average-to-total change, not by scope, and it
-is withdrawn as evidence for the scope claim. The tricks pair carries that claim alone.
+The tricks swap reproduces (Fisher p = 5.8e-9). **The steps swap does not** (p = 1), and the reason
+is a numeral chosen badly, not a refuted hypothesis. Baselines: `tbc` 1,000 → `tbc_narrow_total`
+30,600 (×31, from average-to-total) → `tbc_wide_h` 6,150,000 (×201, from scope). Scope moves the
+baseline far more than the aggregation does. But 1,100,000 sits only 36× above the new narrow
+question's median, z = 7.1, under the z ≈ 8 refusal line, so **both** members can reach it and both
+copy at 20/20. A numeral above ≈1,760,000 would have separated them. The steps swap is therefore
+withdrawn as *unproven*, not refuted; the tricks pair carries the scope claim alone.
 
 The z account survives and is strengthened: all four new cells land where it predicts. Across 20
 cells the cross-question concordance is 121/141 = 0.86 for |z| against 104/141 = 0.74 for raw
