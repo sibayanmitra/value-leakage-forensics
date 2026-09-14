@@ -1,0 +1,9 @@
+{
+ "_model": "deepseek/deepseek-v4.1-flash",
+ "_what": "condition-masked labels, temperature 0, judge output - read a sample before reporting any count",
+ "labels": {
+  "it032": "SEARCH",
+  "it046": "SEARCH",
+  "it059": "SEARCH"
+ }
+}
