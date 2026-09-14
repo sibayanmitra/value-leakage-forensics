@@ -35,9 +35,15 @@ CELLS = [("results/naked_hi1000.jsonl", "tbc", "steps_narrow"),
          ("results/scope_swap.jsonl", "bridge_narrow", "tricks_narrow")]
 
 
-def excerpt(text, width=1100):
-    mid = len(text) // 2
-    return " ".join(text[max(0, mid - width // 2): mid + width // 2].split())
+def excerpt(text):
+    """The WHOLE reasoning trace.
+
+    A first version showed a fixed 1,100-character window from the middle. That was wrong: in 29 of
+    the 29 refusing-cell items the labeller did not call CAP, the cap language was present in the
+    full trace and absent from the window in 26 of them. The window, not the labeller, produced the
+    result. The judge has a 1M-token context and the traces are ~4k tokens, so there is no reason
+    to truncate at all."""
+    return " ".join(text.split())
 
 
 items, key = [], []
