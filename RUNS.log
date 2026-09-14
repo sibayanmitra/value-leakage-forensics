@@ -31,3 +31,7 @@
 2026-09-12T16:21:46+05:30 | scope baselines (no number), tbc_wide + bridge_narrow | results/scope_baseline.jsonl | model=Qwen/Qwen3.5-35B-A3B-FP8 GPU1 cap=26000 n=20x2 temperature=1.0 top_p=1.0 src/gen_neutral.py | rows=40 | started=2026-09-12T14:45:56+05:30
 2026-09-12T17:04:03+05:30 | tbc dose-response x300 | results/tbc_x300.jsonl | numeral=330000 GPU2 cap=26000 n=20 temperature=1.0 top_p=1.0 | rows=20 | started=2026-09-12T16:18:05+05:30
 2026-09-12T17:43:05+05:30 | scope swap: same numeral, wider/narrower question | results/scope_swap.jsonl | tbc_wide=1,100,000 bridge_narrow=26,000,000,000 GPU1 cap=26000 n=20x2 | rows=40 | started=2026-09-12T16:21:46+05:30
+2026-09-14T05:15:35+05:30 | minimal-pair baselines (no number) | results/mp_baseline.jsonl | model=Qwen/Qwen3.5-35B-A3B-FP8 GPU0 cap=26000 n=20x4 temperature=1.0 top_p=1.0 | rows=80 | started=2026-09-14T02:21:21+05:30
+2026-09-14T06:22:28+05:30 | clean swap, steps pair, 1,100,000 both | results/mp_swap_steps.jsonl | GPU0 cap=26000 n=20x2 temperature=1.0 top_p=1.0 | rows=40 | started=2026-09-14T05:15:35+05:30
+2026-09-14T06:59:31+05:30 | baselines at temperature 0.7 (spread check) | results/baseline_t07.jsonl | model=Qwen/Qwen3.5-35B-A3B-FP8 GPU1 cap=26000 n=20x5 temperature=0.7 top_p=0.95 | rows=100 | started=2026-09-14T02:21:23+05:30
+2026-09-14T08:04:16+05:30 | clean swap, tricks pair, 26,000,000,000 both | results/mp_swap_tricks.jsonl | GPU0 cap=26000 n=20x2 temperature=1.0 top_p=1.0 | rows=40 | started=2026-09-14T06:22:28+05:30

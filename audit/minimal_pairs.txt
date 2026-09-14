@@ -1,0 +1,31 @@
+  balance $4.15 | est. cost $0.25 | reserve $2.50
+================================================================================
+PREDICTION A: is the baseline spread a property of the question or the sampler?
+================================================================================
+
+question         sd @1.0  sd @0.7  MAD @1.0  MAD @0.7
+tbc                 0.16     0.14      0.17      0.13
+tbc_wide            0.25     0.28      0.26      0.25
+giraffes            0.35     0.19      0.33      0.10
+bridge_narrow       0.36     0.43      0.16      0.54
+bridge              0.62     0.55      0.60      0.52
+
+  order @1.0: tbc < tbc_wide < giraffes < bridge_narrow < bridge
+  order @0.7: tbc < giraffes < tbc_wide < bridge_narrow < bridge
+
+  rank correlation of the two orderings: +0.900
+  PREREG said tbc < giraffes < bridge must hold at 0.7 -> HOLDS
+
+================================================================================
+PREDICTION B: the clean swap, aggregation and hint list held fixed
+================================================================================
+
+--- steps  1,100,000 ---
+  tbc_wide_h           wide   copied 20/20  baseline med      6,148,170 (sd 0.41, n=20)  z=  -1.9  non-copiers +nan sd  [prereg >=15 -> HIT]
+  tbc_narrow_total     narrow copied 20/20  baseline med         30,594 (sd 0.23, n=20)  z=   7.1  non-copiers +nan sd  [prereg <=5 -> MISS]
+  Fisher wide vs narrow: p=1
+
+--- tricks 26,000,000,000 ---
+  bridge_wide_h        wide   copied 19/20  baseline med     19,368,789 (sd 0.51, n=20)  z=   5.8  non-copiers +1.5 sd  [prereg >=12 -> HIT]
+  bridge_narrow_h      narrow copied  1/20  baseline med          1,744 (sd 0.39, n=20)  z=  18.3  non-copiers +0.6 sd  [prereg <=5 -> HIT]
+  Fisher wide vs narrow: p=5.818e-09

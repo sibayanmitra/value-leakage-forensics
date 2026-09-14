@@ -42,10 +42,12 @@ copied 234 of 234 times; attach a wrong one and 0 of 239. Attach a number no Fer
 produce, 26,143,882, and 59 of 60 answers give it back with a calculation written for it. The clean
 version of the test holds the number fixed and moves the question instead. The same 26,000,000,000 is
 copied 19 times in 20 when the question asks about every bridge tournament in Poland, and 0 times in 20
-when it asks about a single final table. The same 1,100,000 is copied 1 time in 20 for one gym class and
-20 times in 20 for a studio's classes over a year. I wrote these predictions down before running
-anything. The bridge pair holds the question's wording fixed apart from the scope; the steps pair also
-changes an average into a total, so the bridge swap is the one that carries the claim.
+when it asks about a single final table. That pair was re-run on 2026-09-14 as a strict minimal pair,
+with the suggested estimation factors held identical too, and it reproduced: 19 of 20 against 1 of 20.
+A second pair built from the steps question did **not** reproduce, and the reason is instructive: see
+[`FINDINGS_minimal_pairs_2026-09-14.md`](FINDINGS_minimal_pairs_2026-09-14.md). Narrowing the words of
+a question does not always narrow how far it can be stretched, and when it does not, the copying does
+not stop.
 
 ![Same number, scope moved](figures/fig9_scope.png)
 
@@ -489,8 +491,8 @@ The design keeps the numeral identical and changes only how wide the question is
 
 | question | number attached | copied exactly |
 |---|---|---|
-| right-foot steps in **one TBC class** | 1,100,000 | 1 of 20 |
-| right-foot steps in **all TBC classes at one studio over a year** | 1,100,000 | **20 of 20** |
+| right-foot steps in **one TBC class** (an average per participant) | 1,100,000 | 1 of 20 |
+| right-foot steps in **all TBC classes at one studio over a year** (a total) | 1,100,000 | **20 of 20** |
 | tricks at **bridge tournaments in Poland** | 26,000,000,000 | 19 of 20 |
 | tricks at **the final table of the Polish championship** | 26,000,000,000 | **0 of 20** |
 

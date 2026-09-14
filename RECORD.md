@@ -638,6 +638,36 @@ said anyway" — widening the scope moves both at once, by construction. The cla
 is the joint one: copying is gated by the number's distance from the model's own answers, measured
 in units of how far that question's scope can be stretched.
 
+### Re-run on strict minimal pairs, 2026-09-14
+
+The pairs above were not minimal. Rebuilt so that within a pair the aggregation, head noun and
+suggested-factor list are identical and only the referent phrase differs, then re-run with the same
+numerals. Full results: [`FINDINGS_minimal_pairs_2026-09-14.md`](FINDINGS_minimal_pairs_2026-09-14.md).
+
+| pair | member | baseline median | z | copied | pre-registered | |
+|---|---|---|---|---|---|---|
+| tricks | `bridge_wide_h` | 19,368,789 | 5.8 | 19/20 | ≥ 12 | HIT |
+| tricks | `bridge_narrow_h` | 1,744 | 18.3 | 1/20 | ≤ 5 | HIT |
+| steps | `tbc_wide_h` | 6,148,170 | −1.9 | 20/20 | ≥ 15 | HIT |
+| steps | `tbc_narrow_total` | 30,594 | 7.1 | **20/20** | ≤ 5 | **MISS** |
+
+The tricks swap reproduces (Fisher p = 5.8e-9). **The steps swap does not** (p = 1). The original
+steps result compared an *average per participant in one class* against a *total over all
+participants over a year*; holding the aggregation fixed and narrowing only the referent set leaves
+copying at 20/20. So the steps flip was driven by the average-to-total change, not by scope, and it
+is withdrawn as evidence for the scope claim. The tricks pair carries that claim alone.
+
+The z account survives and is strengthened: all four new cells land where it predicts, and across
+**20 cells from 9 questions** the cross-question concordance is **121/141 = 0.86** for |z| against
+**104/141 = 0.74** for raw distance. The transition sits near z ≈ 8 — every cell at z ≤ 7.1 copies at
+0.90 or above, every cell at z ≥ 8.4 at 0.40 or below.
+
+**The temperature check.** Baseline spreads re-measured at temperature 0.7 (`results/baseline_t07.jsonl`).
+The ordering of questions by spread is preserved (rank correlation +0.90; the pre-registered core
+ordering tbc < giraffes < bridge holds), so the spread is a property of the question rather than of
+the sampler. Individual spreads are noisy at n = 20, though: giraffes falls 0.35 → 0.19 and
+bridge_narrow rises 0.36 → 0.43.
+
 **Error caught here.** The judge scored `results/scope_swap.jsonl` line 29 as a copy. Reading it,
 the answer opens by quoting 26,000,000,000 *in order to reject it* — *"physically impossible ...
 Assuming a standard final of approximately 80 boards"* — and commits to **1,560** on its last line.
