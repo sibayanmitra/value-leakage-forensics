@@ -1,0 +1,8 @@
+COPIES: 165 answers that gave back the attached numeral
+  flagged by the keyword scan : 8
+  genuinely telling the user  : 6  (3.6%)   [all flagged rows read by hand]
+  presenting it as their own  : 159  (96.4%)
+
+REFUSALS on the two narrow bridge cells: 39
+  replies that state the prompt's number and call it impossible: 21 (54%)
+  [every one printed with context and read, 2026-09-19]
