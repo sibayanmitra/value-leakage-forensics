@@ -12,6 +12,9 @@ led to the question above. It also follows where the model's honesty breaks: in 
 written answer, and what it says about itself afterwards. MATS 12.0 application project (Neel Nanda's
 stream).
 
+**AI agents:** read [`AGENTS.md`](AGENTS.md) first. It lists every headline number with the command that
+reproduces it, the files that are canonical versus superseded, and what this work does not show.
+
 ## Start here
 
 | file | what it is |

@@ -1,0 +1,21 @@
+1. CONCORDANCE: further from the model's own answers -> lower copy rate
+   20 cells, 9 question wordings, 3 topics: {'tricks': 7, 'giraffes': 3, 'steps': 10}
+
+   cross-question pairs
+     raw |log10 distance|             104/141 = 0.74
+     |distance| / question's spread   121/141 = 0.86
+
+   cross-TOPIC pairs (the one to quote)
+     raw |log10 distance|              75/109 = 0.69
+     |distance| / question's spread    91/109 = 0.83
+
+2. CONDITION-MASKED LABELS, labeller deepseek/deepseek-v4.1-flash, whole traces
+   cell              CAP  SEARCH  NEITHER  UNCLEAR
+   steps_narrow       18       1        1        0
+   tricks_narrow      20       0        0        0
+   steps_wide          0      20        0        0
+   tricks_wide         2      18        0        0
+
+   stated limit (CAP): refusing cells 38/40, copying cells 2/40, Fisher p = 1.1e-17
+   Read by hand: one refusing-cell item (it004) is mislabelled NEITHER and should be CAP (39/40);
+   the other three disagreements are traces that contain both patterns. See AUDIT_record §17.
