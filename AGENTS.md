@@ -74,6 +74,11 @@ To read any cited trace: `sed -n 'Np' results/FILE.jsonl | python -m json.tool`.
   than steps. "The questions collapse onto one curve" overstates it; "nearly, not perfectly" is right.
 - **No internal mechanism.** A linear probe and activation steering found no direction that mediates
   the effect.
+- **Position of the number.** In the main experiments the number is alone on the last line, which
+  raises how often the model copies (97% there vs 40% mid-prompt with an independence request). The
+  headline contrasts hold position fixed, so position cannot produce them, but the justifiability
+  contrast has only been tested with the number on the last line. See
+  `NOTE_number_position_2026-09-23.md`; a clean mid-prompt test has not been run.
 - **Copying is a proxy.** The unfaithfulness claim rests on the reply-disclosure counts above, not on
   copy rates alone.
 
