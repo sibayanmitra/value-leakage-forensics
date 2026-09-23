@@ -52,7 +52,7 @@ cached in `results/judge_cache/`, so re-scoring existing answers needs no API ke
 Check every quotation in the record at its file and line:
 
 ```
-python src/audit_quotes.py         # expect 139/139
+python src/audit_quotes.py         # expect 143/143
 python src/audit_draft_quotes.py   # expect 55/55
 ```
 
