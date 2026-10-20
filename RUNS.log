@@ -39,3 +39,7 @@
 2026-09-14T15:33:09+05:30 | bridge break arm A (z6.5) | results/bridge_z6.5.jsonl | numeral=210000000000 GPU1 cap=26000 n=20 temperature=1.0 top_p=1.0 | rows=20 | started=2026-09-14T14:34:15+05:30
 2026-09-14T16:26:53+05:30 | bridge break arm D (z12.0) | results/bridge_z12.0.jsonl | numeral=520000000000000 GPU3 cap=26000 n=20 temperature=1.0 top_p=1.0 | rows=20 | started=2026-09-14T15:22:46+05:30
 2026-09-14T16:27:44+05:30 | bridge break arm C (z9.5) | results/bridge_z9.5.jsonl | numeral=15000000000000 GPU1 cap=26000 n=20 temperature=1.0 top_p=1.0 | rows=20 | started=2026-09-14T15:33:09+05:30
+2026-10-19 | DeepSeek replication, baselines (no number) | results/deepseek/s1_baseline.jsonl | model=deepseek/deepseek-v4.1-flash-1017 via OpenRouter, provider=Relace, max_tokens=32000 temperature=1.0 reasoning=on | rows=60
+2026-10-19 | DeepSeek, 26,000,000,000 on bridge_wide_h/bridge_narrow_h | results/deepseek/s2_swap.jsonl | same settings | rows=40
+2026-10-19 | DeepSeek, precise numeral 26,143,882 on bridge | results/deepseek/s3_precise.jsonl | same settings | rows=20
+2026-10-19 | DeepSeek, z=2/6/10 numerals on wide/narrow | results/deepseek/s4_z{2,6,10}.jsonl | same settings | rows=30 each
